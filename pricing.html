@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing | LootTable</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .hover-lift {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .hover-lift:hover {
+            transform: translateY(-15px) scale(1.02);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+        }
+
+        .img-reveal {
+            transition: transform 1.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+        }
+
+        .glass-card:hover .img-reveal {
+            transform: scale(1.1);
+        }
+
+        @keyframes scale-glow-entry {
+            0% {
+                opacity: 0;
+                transform: scale(0.5);
+                filter: blur(20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1);
+                filter: blur(0);
+            }
+        }
+
+        .pricing-hero-animate {
+            animation: scale-glow-entry 1.5s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+        }
+
+        .pricing-hero-img {
+            border-radius: 50px;
+            box-shadow: 0 0 100px rgba(255, 215, 0, 0.2);
+            filter: drop-shadow(0 0 50px rgba(255, 215, 0, 0.1));
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header / Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-box-seam"></i> LootTable
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="bi bi-list" style="color: var(--text-primary); font-size: 1.5rem;"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto ps-3 align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="boxes.html">Boxes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item pe-3"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-toggles ms-auto ps-3 d-flex align-items-center gap-3">
+                    <a href="login.html" class="btn btn-outline-glass d-flex align-items-center" title="Login">
+                        <i class="bi bi-box-arrow-in-right"></i>
+                    </a>
+                    <a href="dashboard/dashboard.html" class="btn btn-premium d-flex align-items-center"
+                        title="Dashboard">
+                        <i class="bi bi-person-circle"></i>
+                    </a>
+                    <button id="rtlToggle" class="btn btn-outline-glass d-flex align-items-center"
+                        title="Toggle RTL/LTR">
+                        <i class="bi bi-text-left"></i>
+                    </button>
+                    <button id="themeToggle" class="toggle-btn" title="Toggle Theme"><i
+                            class="bi bi-moon-stars"></i></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Pricing Header -->
+    <section class="section-padding overflow-hidden"
+        style="margin-top: 76px; background: radial-gradient(circle at bottom, rgba(255,215,0,0.05), transparent);">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 pricing-hero-animate">
+                    <div class="position-relative mb-5 d-inline-block">
+                        <div class="position-absolute translate-middle top-50 start-50 bg-warning rounded-circle"
+                            style="width: 300px; height: 300px; filter: blur(150px); opacity: 0.1;"></div>
+                        <img src="assets/img/pricing-hero.png" class="img-fluid pricing-hero-img anti-gravity"
+                            style="max-width: 400px; border-radius: 40px;" alt="Pricing Hero">
+                    </div>
+                    <h1 class="display-3 fw-bold mb-4">Choose Your <span class="text-warning">Loot
+                            Tier.</span></h1>
+                    <p class="lead mb-5 mx-auto" style="max-width: 700px;">Unlock the ultimate tabletop
+                        experience. Select a subscription vault that matches your ambition. No hidden fees, cancel
+                        anytime.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Toggle Billing Section -->
+    <section class="pb-5 text-center">
+        <div class="container">
+
+            <!-- Toggle Billing -->
+            <div class="d-inline-flex bg-black p-1 rounded-pill mb-5 border border-secondary"
+                style="background-color: var(--primary-bg);">
+                <div class="form-check form-switch ps-0 m-0 d-flex align-items-center gap-3 pe-3">
+                    <span class="ps-3 text-white fw-bold">Monthly</span>
+                    <input class="form-check-input m-0 my-1 bg-warning border-warning" type="checkbox" role="switch"
+                        id="billingToggle" style="width: 50px; height: 25px;">
+                    <span class="text-secondary">Annually <span class="badge bg-success small ms-1">-20%</span></span>
+                </div>
+            </div>
+
+            <!-- Pricing Cards -->
+            <div class="row g-4 justify-content-center text-start">
+
+                <!-- Standard -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="glass-card h-100 p-5 d-flex flex-column is-visible"
+                        style="opacity:1; transform:translateY(0);">
+                        <h3 class="mb-3">Standard 🎲</h3>
+                        <p class="text-secondary small mb-4">The essentials for casual gamers building a library.</p>
+
+                        <h2 class="display-5 fw-bold mb-1 pricing-val" data-monthly="29.99" data-annual="24.99">
+                            $29.99<span class="fs-6 text-secondary fw-normal">/mo</span></h2>
+                        <p class="text-secondary small mb-4">Billed <span class="billing-term">monthly</span></p>
+
+                        <ul class="list-unstyled mb-5 flex-grow-1">
+                            <li class="mb-3 d-flex align-items-start gap-2"><i
+                                    class="bi bi-check-circle-fill text-warning mt-1"></i> <span
+                                    class="text-secondary">1 Premium Base Game ($40-50 MSRP value)</span></li>
+                            <li class="mb-3 d-flex align-items-start gap-2"><i
+                                    class="bi bi-check-circle-fill text-warning mt-1"></i> <span
+                                    class="text-secondary">1 Small Box or Expansion</span></li>
+                            <li class="mb-3 d-flex align-items-start gap-2"><i
+                                    class="bi bi-check-circle-fill text-warning mt-1"></i> <span
+                                    class="text-secondary">Standard Dashboard Access</span></li>
+                        </ul>
+
+                        <a href="dashboard/subscription.html" class="btn btn-outline-glass w-100 py-3">Select
+                            Standard</a>
+                    </div>
+                </div>
+
+                <!-- Premium -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="glass-card h-100 p-5 position-relative border border-warning d-flex flex-column is-visible"
+                        style="opacity:1; transform:translateY(0); box-shadow: 0 0 30px rgba(255,215,0,0.2);">
+                        <div class="badge badge-premium px-3 py-2 mx-auto mb-3"
+                            style="font-size: 0.9rem; width: fit-content;">Most Popular</div>
+                        <h3 class="mb-3 text-warning">Premium 👑</h3>
+                        <p class="text-secondary small mb-4">For the dedicated connoisseur who wants the absolute best.
+                        </p>
+
+                        <h2 class="display-5 fw-bold mb-1 pricing-val" data-monthly="49.99" data-annual="39.99">
+                            $49.99<span class="fs-6 text-secondary fw-normal">/mo</span></h2>
+                        <p class="text-secondary small mb-4">Billed <span class="billing-term">monthly</span></p>
+
+                        <ul class="list-unstyled mb-5 flex-grow-1">
+                            <li class="mb-3 d-flex align-items-start gap-2"><i
+                                    class="bi bi-star-fill text-warning mt-1"></i> <span>1 High-Value
+                                    Base Game ($60-80 MSRP value)</span></li>
+                            <li class="mb-3 d-flex align-items-start gap-2"><i
+                                    class="bi bi-star-fill text-warning mt-1"></i> <span>2 Premium
+                                    Accessories (Dice, Mats, Coins)</span></li>
+                            <li class="mb-3 d-flex align-items-start gap-2"><i
+                                    class="bi bi-star-fill text-warning mt-1"></i> <span>Exclusive
+                                    Promos & Kickstarter Extras</span></li>
+                            <li class="mb-3 d-flex align-items-start gap-2"><i
+                                    class="bi bi-star-fill text-warning mt-1"></i> <span>Priority
+                                    Shipping</span></li>
+                        </ul>
+
+                        <a href="dashboard/subscription.html" class="btn btn-premium w-100 py-3">Get Premium</a>
+                    </div>
+                </div>
+
+                <!-- Collector -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="glass-card h-100 p-5 d-flex flex-column is-visible"
+                        style="opacity:1; transform:translateY(0);">
+                        <h3 class="mb-3 text-info">Collector 💎</h3>
+                        <p class="text-secondary small mb-4">Massive boxes. Miniatures. Deluxified components.</p>
+
+                        <h2 class="display-5 fw-bold mb-1 pricing-val text-white" data-monthly="89.99"
+                            data-annual="74.99">$89.99<span class="fs-6 text-secondary fw-normal">/mo</span></h2>
+                        <p class="text-secondary small mb-4">Billed <span class="billing-term">monthly</span></p>
+
+                        <ul class="list-unstyled mb-5 flex-grow-1">
+                            <li class="mb-3 d-flex align-items-start gap-2"><i
+                                    class="bi bi-check-circle-fill text-info mt-1"></i> <span
+                                    class="text-secondary">Deluxe / Kickstarter Edition Game ($100+ value)</span></li>
+                            <li class="mb-3 d-flex align-items-start gap-2"><i
+                                    class="bi bi-check-circle-fill text-info mt-1"></i> <span
+                                    class="text-secondary">Miniatures & Painted Upgrades</span></li>
+                            <li class="mb-3 d-flex align-items-start gap-2"><i
+                                    class="bi bi-check-circle-fill text-info mt-1"></i> <span class="text-secondary">VIP
+                                    Dashboard Title</span></li>
+                        </ul>
+
+                        <a href="dashboard/subscription.html" class="btn btn-outline-glass w-100 py-3">Join Elite</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ small -->
+    <section class="section-padding" style="background-color: var(--secondary-bg);">
+        <div class="container text-center">
+            <div class="badge badge-premium mb-3">Support</div>
+            <h2 class="display-6 fw-bold mb-5">Common Questions</h2>
+
+            <div class="row g-4 text-start justify-content-center">
+                <div class="col-md-4">
+                    <div class="glass-card p-4 h-100">
+                        <h5 class="fw-bold mb-3"><i class="bi bi-question-circle text-warning me-2"></i> Can I skip a
+                            month?</h5>
+                        <p class="text-secondary small mb-0">Absolutely. You can skip any month or cancel your
+                            subscription directly from your dashboard with zero penalties.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="glass-card p-4 h-100">
+                        <h5 class="fw-bold mb-3"><i class="bi bi-question-circle text-warning me-2"></i> What games are
+                            inside?</h5>
+                        <p class="text-secondary small mb-0">We curate only highly-rated titles (typically 7.5+ on BGG)
+                            across strategy, thematic, and family categories.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="glass-card p-4 h-100">
+                        <h5 class="fw-bold mb-3"><i class="bi bi-question-circle text-warning me-2"></i> When does it
+                            ship?</h5>
+                        <p class="text-secondary small mb-0">Our monthly vaults ship on the 15th of every month.
+                            Tracking codes are sent automatically once the courier scans the box.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-5">
+                <a href="faq.html" class="btn btn-outline-glass px-5">Explore Full FAQ <i
+                        class="bi bi-arrow-right ms-2"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Section 1: The Loyalty Path -->
+    <section class="section-padding bg-black bg-opacity-50">
+        <div class="container text-center">
+            <div class="badge badge-premium mb-3">Loyalty Quest</div>
+            <h2 class="display-5 fw-bold mb-5">Level Up Your Membership.</h2>
+            <div class="row g-4 mt-2">
+                <div class="col-md-4">
+                    <div class="glass-card p-5 hover-lift h-100 anti-gravity">
+                        <div class="h3 mb-3 text-warning">Month 3</div>
+                        <h4 class="fw-bold mb-3">Bronze Shield</h4>
+                        <p class="text-secondary small">Unlock the "Early Meta" dashboard feature + exclusive monthly
+                            desktop wallpapers.</p>
+                        <i class="bi bi-shield-check h1 opacity-25 mt-3 d-block"></i>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="glass-card p-5 hover-lift h-100 anti-gravity-delayed">
+                        <div class="h3 mb-3 text-warning">Month 6</div>
+                        <h4 class="fw-bold mb-3">Silver Sword</h4>
+                        <p class="text-secondary small">Free shipping voucher + 5% permanent discount on all Archive Box
+                            purchases.</p>
+                        <i class="bi bi-award h1 opacity-25 mt-3 d-block"></i>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="glass-card p-5 hover-lift h-100 anti-gravity">
+                        <div class="h3 mb-3 text-warning">Month 12</div>
+                        <h4 class="fw-bold mb-3">Gold Crown</h4>
+                        <p class="text-secondary small">"The Legend" Physical Pin + early alpha access to our 2026 Board
+                            Game App.</p>
+                        <i class="bi bi-star-fill h1 opacity-25 mt-3 d-block"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Section 2: Gift a Membership -->
+    <section class="section-padding">
+        <div class="container overflow-hidden">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <div class="glass-card p-2 hover-lift anti-gravity">
+                        <div class="overflow-hidden rounded-3">
+                            <img src="assets/img/vault.png" alt="Gifting" class="img-fluid img-reveal">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="badge badge-premium mb-3">Gift Experience</div>
+                    <h2 class="display-5 fw-bold mb-4">Send the Epic Loot.</h2>
+                    <p class="lead text-secondary mb-4">Looking for the ultimate gift for a board game lover? Send a 3,
+                        6, or 12-month membership directly to their door. We'll handle the unboxing experience.</p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <button class="btn btn-premium btn-lg px-4">Gift a Box</button>
+                        <button class="btn btn-outline-glass btn-lg px-4">Corporate Gifting</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container text-center pt-4 border-top border-secondary">
+                <p class="text-secondary small m-0">©
+                    <script>document.write(new Date().getFullYear())</script> LootTable. All rights reserved.
+                </p>
+            </div>
+        </footer>
+
+        <!-- Simple script for toggle UI -->
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const toggle = document.getElementById('billingToggle');
+                const vals = document.querySelectorAll('.pricing-val');
+                const terms = document.querySelectorAll('.billing-term');
+
+                if (toggle) {
+                    toggle.addEventListener('change', () => {
+                        vals.forEach(v => {
+                            let m = v.getAttribute('data-monthly');
+                            let a = v.getAttribute('data-annual');
+                            if (toggle.checked) {
+                                v.innerHTML = '$' + a + '<span class="fs-6 text-secondary fw-normal">/mo</span>';
+                            } else {
+                                v.innerHTML = '$' + m + '<span class="fs-6 text-secondary fw-normal">/mo</span>';
+                            }
+                        });
+                        terms.forEach(t => {
+                            t.innerText = toggle.checked ? 'annually' : 'monthly';
+                        });
+                    });
+                }
+            });
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/main.js"></script>
+</body>
+
+</html>
