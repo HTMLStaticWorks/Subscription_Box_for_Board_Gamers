@@ -50,6 +50,54 @@
             box-shadow: 0 60px 120px rgba(255, 215, 0, 0.15);
             filter: drop-shadow(0 0 30px rgba(255, 215, 0, 0.1));
         }
+
+        .boxes-hero-copy .boxes-hero-heading {
+            text-align: center;
+        }
+
+        .boxes-hero-copy .boxes-hero-tag {
+            display: inline-flex;
+            width: fit-content;
+            margin-inline: auto;
+        }
+
+        .boxes-hero-copy .boxes-hero-actions {
+            justify-content: center;
+        }
+
+        @media (min-width: 992px) {
+            .choose-your-legend .legend-card {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .choose-your-legend .legend-card .btn {
+                margin-top: auto;
+            }
+        }
+
+        .unboxing-feed-cta {
+            margin-bottom: 2rem;
+        }
+
+        .legend-ribbon {
+            top: 14px;
+            right: -34px;
+            width: 140px;
+            text-align: center;
+            font-size: 0.75rem;
+            transform: rotate(45deg);
+        }
+
+        [data-theme="light"] #boxGrid h4 {
+            color: #1f2937 !important;
+        }
+
+        [data-theme="light"] #boxGrid p,
+        [data-theme="light"] #boxGrid .text-secondary,
+        [data-theme="light"] #boxGrid .small {
+            color: #4b5563 !important;
+        }
     </style>
 </head>
 
@@ -81,8 +129,8 @@
                     <a href="login.html" class="btn btn-outline-glass d-flex align-items-center" title="Login">
                         <i class="bi bi-box-arrow-in-right"></i>
                     </a>
-                    <a href="dashboard/dashboard.html" class="btn btn-premium d-flex align-items-center"
-                        title="Dashboard">
+                    <a href="dashboard/dashboard.html#account" class="btn btn-premium d-flex align-items-center"
+                        title="Profile">
                         <i class="bi bi-person-circle"></i>
                     </a>
                     <button id="rtlToggle" class="btn btn-outline-glass d-flex align-items-center"
@@ -101,13 +149,13 @@
         style="margin-top: 76px; background: radial-gradient(circle at top right, rgba(255,215,0,0.05), transparent);">
         <div class="container">
             <div class="row align-items-center g-5">
-                <div class="col-lg-7 text-start boxes-hero-animate">
-                    <div class="badge badge-premium mb-3 px-3 py-2 rounded-pill">Unbox the Meta</div>
-                    <h1 class="display-3 fw-bold mb-4">Legendary <span class="text-warning">Drops.</span>
+                <div class="col-lg-7 text-start boxes-hero-animate boxes-hero-copy">
+                    <div class="badge badge-premium mb-3 px-3 py-2 rounded-pill boxes-hero-tag">Unbox the Meta</div>
+                    <h1 class="display-3 fw-bold mb-4 boxes-hero-heading">Legendary <span class="text-warning">Drops.</span>
                     </h1>
                     <p class="lead mb-5">Browse our complete archive of themed mystery boxes. From
                         Strategy Titans to Party Legends, find the perfect addition to your game shelf.</p>
-                    <div class="d-flex gap-3">
+                    <div class="d-flex gap-3 boxes-hero-actions">
                         <button class="btn btn-premium px-5 py-3">Browse All</button>
                         <button class="btn btn-outline-glass px-5 py-3">How it Works</button>
                     </div>
@@ -142,7 +190,7 @@
             </div>
 
             <!-- Grid -->
-            <div class="row g-4" id="boxGrid">
+            <div class="row g-4 justify-content-center" id="boxGrid">
 
                 <!-- Strategy Box -->
                 <div class="col-lg-4 col-md-6 grid-item strategy">
@@ -273,14 +321,14 @@
     </section>
 
     <!-- New Section 1: Vault Tier Comparison -->
-    <section class="section-padding" style="background-color: var(--secondary-bg);">
+    <section class="section-padding choose-your-legend" style="background-color: var(--secondary-bg);">
         <div class="container text-center">
             <div class="badge badge-premium mb-3">Choose Your Legend</div>
             <h2 class="display-5 fw-bold mb-5">Which Tier Will You Claim?</h2>
 
             <div class="row g-4 justify-content-center">
                 <div class="col-lg-4">
-                    <div class="glass-card h-100 p-5 hover-lift">
+                    <div class="glass-card h-100 p-5 hover-lift legend-card">
                         <i class="bi bi-shield-shaded text-secondary h1 mb-4 d-block"></i>
                         <h3 class="fw-bold mb-3">Silver Vault</h3>
                         <p class="text-secondary small mb-4">Perfect for casual players looking to expand their
@@ -299,10 +347,9 @@
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="glass-card h-100 p-5 border-warning hover-lift shadow-lg position-relative overflow-hidden"
+                    <div class="glass-card h-100 p-5 border-warning hover-lift shadow-lg position-relative overflow-hidden legend-card"
                         style="transform: scale(1.05); z-index: 2;">
-                        <div class="position-absolute top-0 end-0 bg-warning text-dark px-3 py-1 small fw-bold"
-                            style="transform: rotate(45deg) translate(25px, -15px); width: 140px; text-align: center; font-size: 0.75rem;">
+                        <div class="position-absolute bg-warning text-dark px-3 py-1 small fw-bold legend-ribbon">
                             TOP CHOICE</div>
                         <i class="bi bi-trophy-fill text-warning h1 mb-4 d-block"></i>
                         <h3 class="fw-bold mb-3 text-warning">Gold Vault</h3>
@@ -322,7 +369,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="glass-card h-100 p-5 hover-lift">
+                    <div class="glass-card h-100 p-5 hover-lift legend-card">
                         <i class="bi bi-gem text-info h1 mb-4 d-block"></i>
                         <h3 class="fw-bold mb-3">Onyx Vault</h3>
                         <p class="text-secondary small mb-4">For the hardcore strategists. 3 massive games + full
@@ -403,14 +450,14 @@
                 </div>
             </div>
 
-            <div class="mt-5 text-center">
+            <div class="mt-5 text-center unboxing-feed-cta">
                 <button class="btn btn-premium btn-lg px-5">Share Your Unboxing <i
                         class="bi bi-camera-fill ms-2"></i></button>
             </div>
         </div>
 
         <!-- Footer -->
-        <footer class="footer">
+        <footer class="footer d-none">
             <div class="container text-center pt-4 border-top border-secondary">
                 <div class="nav justify-content-center gap-3 mb-3">
                     <a href="dashboard/dashboard.html" class="text-secondary text-decoration-none">Dashboard</a>
@@ -420,6 +467,64 @@
                 <p class="text-secondary small m-0">©
                     <script>document.write(new Date().getFullYear())</script> LootTable. All rights reserved.
                 </p>
+            </div>
+        </footer>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-4 text-start">
+                        <div class="footer-logo">
+                            <i class="bi bi-box-seam"></i> LootTable
+                        </div>
+                        <p class="text-secondary mb-4 pe-lg-5">Curating the ultimate tabletop experience. From mystery
+                            boxes
+                            to a thriving gamer community, we bring the fun directly to you.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="bi bi-twitter"></i></a>
+                            <a href="#"><i class="bi bi-discord"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-4 text-start">
+                        <h5 class="mb-4">Quick Links</h5>
+                        <ul class="footer-links">
+                            <li><a href="boxes.html">Shop Boxes</a></li>
+                            <li><a href="how-it-works.html">How It Works</a></li>
+                            <li><a href="pricing.html">Pricing</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2 col-md-4 text-start">
+                        <h5 class="mb-4">Community</h5>
+                        <ul class="footer-links">
+                            <li><a href="community.html">Forum</a></li>
+                            <li><a href="events.html">Events</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="testimonials.html">Reviews</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 text-start">
+                        <h5 class="mb-4">Newsletter</h5>
+                        <p class="text-secondary small">Sign up for exclusive dice drops and game keys.</p>
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your email">
+                            <button class="btn btn-premium px-3" type="button"><i class="bi bi-send-fill"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-top border-secondary mt-5 pt-4 text-center text-secondary small">
+                    Â©
+                    <script>document.write(new Date().getFullYear())</script> LootTable. All rights reserved.
+                    <div class="mt-2 text-start d-flex justify-content-center gap-3">
+                        <a href="faq.html" class="text-secondary text-decoration-none">FAQ</a> |
+                        <a href="contact.html" class="text-secondary text-decoration-none">Contact Support</a>
+                    </div>
+                </div>
             </div>
         </footer>
 

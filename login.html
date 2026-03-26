@@ -76,6 +76,12 @@
             text-decoration: none;
         }
 
+        .auth-footer a:hover,
+        .text-accent:hover {
+            color: var(--text-primary) !important;
+            text-decoration: underline;
+        }
+
         /* Fixed Brand Color for both modes in Auth page as requested */
         .auth-brand-text {
             color: var(--text-primary) !important;
@@ -139,7 +145,7 @@
         </div>
 
         <!-- Quick Toggles -->
-        <div class="position-absolute bottom-0 end-0 p-4 d-flex gap-3">
+        <div class="position-absolute top-0 end-0 p-4 d-flex gap-3">
             <button id="themeToggle" class="btn btn-outline-glass rounded-circle p-2" title="Toggle Theme">
                 <i class="bi bi-moon-stars"></i>
             </button>
@@ -157,3 +163,4 @@
 </body>
 
 </html>
+

@@ -55,6 +55,65 @@
             box-shadow: 0 40px 80px rgba(0, 0, 0, 0.6);
             border: 2px solid rgba(255, 255, 255, 0.05);
         }
+
+        @media (max-width: 767.98px) {
+            .events-hero-actions {
+                flex-direction: column;
+                align-items: flex-start !important;
+                gap: 1rem !important;
+            }
+
+            .events-hero-actions .btn-premium {
+                width: 100%;
+            }
+
+            .events-hero-actions .small {
+                margin-top: 0 !important;
+            }
+        }
+
+        .community-hub-copy .community-hub-heading,
+        .community-hub-copy .community-hub-cta {
+            text-align: center;
+        }
+
+        .community-hub-copy .community-hub-cta {
+            display: block;
+            width: fit-content;
+            margin-inline: auto;
+        }
+
+        @media (min-width: 768px) {
+            .hall-of-fame-section .hall-of-fame-card {
+                min-height: 360px;
+            }
+
+            .hall-of-fame-section .hall-of-fame-meta {
+                min-height: 48px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .hall-of-fame-section .hall-of-fame-divider {
+                margin-top: auto;
+            }
+
+            .hall-of-fame-section .hall-of-fame-icons {
+                min-height: 48px;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        [data-theme="light"] .hall-of-fame-section .hall-of-fame-card h3,
+        [data-theme="light"] .hall-of-fame-section .hall-of-fame-card h4 {
+            color: #b8860b !important;
+        }
+
+        [data-theme="light"] .hall-of-fame-section .hall-of-fame-meta {
+            color: #4b5563 !important;
+        }
     </style>
 </head>
 
@@ -86,8 +145,8 @@
                     <a href="login.html" class="btn btn-outline-glass d-flex align-items-center" title="Login">
                         <i class="bi bi-box-arrow-in-right"></i>
                     </a>
-                    <a href="dashboard/dashboard.html" class="btn btn-premium d-flex align-items-center"
-                        title="Dashboard">
+                    <a href="dashboard/dashboard.html#account" class="btn btn-premium d-flex align-items-center"
+                        title="Profile">
                         <i class="bi bi-person-circle"></i>
                     </a>
                     <button id="rtlToggle" class="btn btn-outline-glass d-flex align-items-center"
@@ -111,7 +170,7 @@
                     </h1>
                     <p class="lead mb-5">From nationwide tournaments to local tabletop meetups, join the
                         official LootTable events network and prove your strategy prowess.</p>
-                    <div class="d-flex flex-wrap gap-4 align-items-center">
+                    <div class="d-flex flex-wrap gap-4 align-items-center events-hero-actions">
                         <button class="btn btn-premium px-5 py-3">Explore Calendar</button>
                         <div class="small text-secondary d-flex align-items-center gap-2 mt-2 mt-md-0">
                             <i class="bi bi-calendar-check-fill text-warning h4 m-0"></i> 150+ Monthly Meets
@@ -234,9 +293,9 @@
     <section class="section-padding" style="background-color: var(--secondary-bg);">
         <div class="container overflow-hidden">
             <div class="row align-items-center g-5">
-                <div class="col-lg-6">
+                <div class="col-lg-6 community-hub-copy">
                     <div class="badge badge-premium mb-3">Community Hub</div>
-                    <h2 class="display-5 fw-bold mb-4">Host Your Own Quest.</h2>
+                    <h2 class="display-5 fw-bold mb-4 community-hub-heading">Host Your Own Quest.</h2>
                     <p class="lead text-secondary mb-4">Missing a local group? Take command and start your own
                         официально sanctioned meetup. We'll provide the boxes and handle the registrations.</p>
                     <ul class="list-unstyled mb-5">
@@ -247,7 +306,7 @@
                                 class="bi bi-patch-check-fill text-warning h4 mb-0"></i> <span>Official LootTable
                                 certification</span></li>
                     </ul>
-                    <button class="btn btn-premium btn-lg px-5">Start Your Journey</button>
+                    <button class="btn btn-premium btn-lg px-5 community-hub-cta">Start Your Journey</button>
                 </div>
                 <div class="col-lg-6">
                     <div class="glass-card p-2 hover-lift anti-gravity">
@@ -261,50 +320,50 @@
     </section>
 
     <!-- New Section 2: Hall of Fame Leaderboard -->
-    <section class="section-padding position-relative overflow-hidden"
+    <section class="section-padding position-relative overflow-hidden hall-of-fame-section"
         style="background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('assets/img/stats.png') center/cover no-repeat fixed;">
         <div class="container position-relative z-1 text-center py-5">
             <h2 class="section-title text-white w-100">Hall of Fame</h2>
             <div class="row g-4 mt-5">
                 <div class="col-md-4">
-                    <div class="glass-card p-5 h-100 hover-lift d-flex flex-column align-items-center">
+                    <div class="glass-card p-5 h-100 hover-lift d-flex flex-column align-items-center hall-of-fame-card">
                         <div class="rounded-circle border border-warning p-2 mb-3">
                             <img src="https://ui-avatars.com/api/?name=Viper+9&background=random" class="rounded-circle"
                                 style="width: 80px;" alt="User">
                         </div>
                         <h4 class="text-warning fw-bold">Viper 9</h4>
-                        <p class="mb-0 small text-secondary">Season 4 Grandmaster</p>
-                        <hr class="w-100 border-secondary">
-                        <div class="d-flex gap-3 mt-2 h3 mb-0 text-warning">
+                        <p class="mb-0 small text-secondary hall-of-fame-meta">Season 4 Grandmaster</p>
+                        <hr class="w-100 border-secondary hall-of-fame-divider">
+                        <div class="d-flex gap-3 mt-2 h3 mb-0 text-warning hall-of-fame-icons">
                             <i class="bi bi-shield-shaded"></i> <i class="bi bi-gem"></i>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="glass-card p-5 h-100 hover-lift d-flex flex-column align-items-center border-warning"
+                    <div class="glass-card p-5 h-100 hover-lift d-flex flex-column align-items-center border-warning hall-of-fame-card"
                         style="transform: scale(1.05); z-index: 2;">
                         <div class="rounded-circle border border-warning p-2 mb-3 shadow-lg">
                             <img src="https://ui-avatars.com/api/?name=Loot+Lord&background=random"
                                 class="rounded-circle" style="width: 100px;" alt="User">
                         </div>
                         <h3 class="text-warning fw-bold">Loot Lord</h3>
-                        <p class="mb-0 text-light">Global Rank #1</p>
-                        <hr class="w-100 border-secondary">
-                        <div class="d-flex gap-4 mt-2 h2 mb-0 text-warning">
+                        <p class="mb-0 text-light hall-of-fame-meta">Global Rank #1</p>
+                        <hr class="w-100 border-secondary hall-of-fame-divider">
+                        <div class="d-flex gap-4 mt-2 h2 mb-0 text-warning hall-of-fame-icons">
                             <i class="bi bi-trophy-fill"></i>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="glass-card p-5 h-100 hover-lift d-flex flex-column align-items-center">
+                    <div class="glass-card p-5 h-100 hover-lift d-flex flex-column align-items-center hall-of-fame-card">
                         <div class="rounded-circle border border-warning p-2 mb-3">
                             <img src="https://ui-avatars.com/api/?name=Shadow+X&background=random"
                                 class="rounded-circle" style="width: 80px;" alt="User">
                         </div>
                         <h4 class="text-warning fw-bold">Shadow X</h4>
-                        <p class="mb-0 small text-secondary">Strategy Specialist</p>
-                        <hr class="w-100 border-secondary">
-                        <div class="d-flex gap-3 mt-2 h3 mb-0 text-warning">
+                        <p class="mb-0 small text-secondary hall-of-fame-meta">Strategy Specialist</p>
+                        <hr class="w-100 border-secondary hall-of-fame-divider">
+                        <div class="d-flex gap-3 mt-2 h3 mb-0 text-warning hall-of-fame-icons">
                             <i class="bi bi-star-fill"></i> <i class="bi bi-lightning-fill"></i>
                         </div>
                     </div>
@@ -313,7 +372,7 @@
         </div>
 
         <!-- Footer -->
-        <footer class="footer">
+        <footer class="footer d-none">
             <div class="container text-center pt-4 border-top border-secondary">
                 <div class="nav justify-content-center gap-3 mb-3">
                     <a href="about.html" class="text-secondary text-decoration-none">About</a>
@@ -323,6 +382,64 @@
                 <p class="text-secondary small m-0">©
                     <script>document.write(new Date().getFullYear())</script> LootTable. All rights reserved.
                 </p>
+            </div>
+        </footer>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-4 text-start">
+                        <div class="footer-logo">
+                            <i class="bi bi-box-seam"></i> LootTable
+                        </div>
+                        <p class="text-secondary mb-4 pe-lg-5">Curating the ultimate tabletop experience. From mystery
+                            boxes
+                            to a thriving gamer community, we bring the fun directly to you.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="bi bi-twitter"></i></a>
+                            <a href="#"><i class="bi bi-discord"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-4 text-start">
+                        <h5 class="mb-4">Quick Links</h5>
+                        <ul class="footer-links">
+                            <li><a href="boxes.html">Shop Boxes</a></li>
+                            <li><a href="how-it-works.html">How It Works</a></li>
+                            <li><a href="pricing.html">Pricing</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2 col-md-4 text-start">
+                        <h5 class="mb-4">Community</h5>
+                        <ul class="footer-links">
+                            <li><a href="community.html">Forum</a></li>
+                            <li><a href="events.html">Events</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="testimonials.html">Reviews</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 text-start">
+                        <h5 class="mb-4">Newsletter</h5>
+                        <p class="text-secondary small">Sign up for exclusive dice drops and game keys.</p>
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your email">
+                            <button class="btn btn-premium px-3" type="button"><i class="bi bi-send-fill"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-top border-secondary mt-5 pt-4 text-center text-secondary small">
+                    Â©
+                    <script>document.write(new Date().getFullYear())</script> LootTable. All rights reserved.
+                    <div class="mt-2 text-start d-flex justify-content-center gap-3">
+                        <a href="faq.html" class="text-secondary text-decoration-none">FAQ</a> |
+                        <a href="contact.html" class="text-secondary text-decoration-none">Contact Support</a>
+                    </div>
+                </div>
             </div>
         </footer>
 

@@ -53,6 +53,10 @@
             margin-bottom: 2rem;
         }
 
+        .profile-copy {
+            min-width: 0;
+        }
+
         .profile-avatar {
             width: 100px;
             height: 100px;
@@ -97,9 +101,60 @@
             border-bottom: none;
         }
 
+        .forum-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        [data-theme="light"] #forum h6 a {
+            color: #1f2937 !important;
+        }
+
+        [data-theme="light"] #forum p,
+        [data-theme="light"] #forum .text-secondary {
+            color: #4b5563 !important;
+        }
+
+        .forum-cta:hover {
+            transform: translateY(-2px) scale(1) !important;
+        }
+
         .progress-thin {
             height: 6px;
             border-radius: 3px;
+        }
+
+        .dashboard-nav-actions {
+            margin-left: auto;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        @media (min-width: 992px) {
+            #dashboardNav {
+                flex: 1 1 auto;
+                width: 100%;
+                display: flex !important;
+                justify-content: flex-end;
+                align-items: center;
+            }
+        }
+
+        .subscription-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .cancel-subscription-link {
+            transition: color 0.2s ease, opacity 0.2s ease;
+        }
+
+        .cancel-subscription-link:hover {
+            color: var(--accent-color) !important;
+            opacity: 1;
         }
 
         .nav-active {
@@ -132,6 +187,40 @@
 
             .navbar-nav .nav-link:hover {
                 background: rgba(255, 215, 0, 0.1);
+            }
+
+            .dashboard-nav-actions {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 767.98px) {
+            .profile-copy h2,
+            .profile-copy p {
+                text-align: left;
+            }
+
+            .subscription-actions {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .subscription-actions .btn {
+                width: 100%;
+            }
+
+            .subscription-actions .cancel-subscription-link {
+                margin-top: 0 !important;
+                text-align: center;
+            }
+
+            .forum-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .forum-item {
+                align-items: flex-start;
             }
         }
 
@@ -173,7 +262,7 @@
                     <li class="nav-item"><a class="nav-link text-danger" href="../login.html">Logout</a></li>
                 </ul>
 
-                <div class="ms-auto d-flex align-items-center gap-3">
+                <div class="ms-auto d-flex align-items-center gap-3 dashboard-nav-actions">
                     <button id="rtlToggle" class="btn btn-outline-glass d-flex align-items-center"
                         title="Toggle RTL/LTR">
                         <i class="bi bi-text-left"></i>
@@ -219,7 +308,7 @@
                 <div id="overview" class="profile-header">
                     <img src="https://ui-avatars.com/api/?name=Alex+Gamer&background=FFB300&color=000&bold=true"
                         alt="Avatar" class="profile-avatar">
-                    <div>
+                    <div class="profile-copy">
                         <h2 class="mb-1">Welcome back, Alex!</h2>
                         <p class="text-secondary mb-0">You've unboxed <span class="text-warning fw-bold">12 epic
                                 mysteries</span> so far.</p>
@@ -295,18 +384,18 @@
 
                             <hr class="my-4 border-secondary opacity-25">
 
-                            <div class="d-flex flex-wrap gap-3">
+                            <div class="subscription-actions">
                                 <button class="btn btn-premium btn-sm">Upgrade Plan</button>
                                 <button class="btn btn-outline-glass btn-sm">Update Payment Method</button>
                                 <button
-                                    class="btn btn-link text-secondary text-decoration-none btn-sm ms-md-auto mt-2 mt-md-0">Cancel
+                                    class="btn btn-link text-secondary text-decoration-none btn-sm ms-md-auto mt-2 mt-md-0 cancel-subscription-link">Cancel
                                     Subscription</button>
                             </div>
                         </div>
 
                         <!-- Community Forum Snippet -->
                         <div id="forum" class="glass-card">
-                            <div class="d-flex justify-content-between align-items-center mb-4">
+                            <div class="forum-header mb-4">
                                 <h3 class="mb-0"><i class="bi bi-chat-quote text-warning me-2"></i> Community
                                     Discussions</h3>
                                 <a href="#" class="text-warning text-decoration-none small">Go to Forum <i
@@ -356,7 +445,7 @@
                             </div>
 
                             <div class="mt-4 text-center">
-                                <button class="btn btn-premium w-100">Join a Discussion Group</button>
+                                <button class="btn btn-premium w-100 forum-cta">Join a Discussion Group</button>
                             </div>
                         </div>
                     </div>

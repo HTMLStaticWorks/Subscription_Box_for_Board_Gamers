@@ -441,6 +441,46 @@ a:hover {
   border-radius: 2px;
 }
 
+.premium-heading {
+  display: block;
+  width: 100%;
+  text-align: start;
+}
+
+@media (max-width: 991.98px) {
+  .premium-heading {
+    text-align: center !important;
+  }
+
+  .monthly-spotlight .spotlight-actions {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .interactive-choice .glass-card {
+    min-height: 420px;
+  }
+
+  .interactive-choice .glass-card .position-relative {
+    height: 210px;
+  }
+}
+
+@media (min-width: 768px) {
+  .commanders-council .council-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .commanders-council .council-reviewer {
+    margin-top: auto;
+    min-height: 50px;
+  }
+}
+
 /* Footer */
 .footer {
   background: var(--secondary-bg);
@@ -752,6 +792,39 @@ a:hover {
   padding: 0.4em 0.8em;
   border-radius: 20px;
   font-weight: 600;
+}
+
+.premium-tag {
+  display: inline-flex;
+  margin-inline: auto;
+}
+
+.premium-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.gamer-curator-badge {
+  background-color: rgba(10, 12, 18, 0.78);
+  color: #ffd84d;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.28);
+}
+
+.vault-master-stat {
+  color: #fff;
+}
+
+.vault-master-stat .small {
+  color: rgba(255, 255, 255, 0.78) !important;
+}
+
+.premium-copy .list-unstyled {
+  display: inline-block;
+  margin: 0;
+  text-align: left;
 }
 
 /* Accordion */

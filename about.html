@@ -50,6 +50,28 @@
             box-shadow: 0 50px 100px rgba(0, 0, 0, 0.5);
             mask-image: linear-gradient(to bottom, black 80%, transparent);
         }
+
+        .about-hero-copy .about-hero-actions {
+            justify-content: center;
+        }
+
+        .about-team-title {
+            left: auto;
+            transform: none;
+        }
+
+        @media (max-width: 767.98px) {
+            .about-story-stats,
+            .about-story-stats > div {
+                text-align: center !important;
+            }
+        }
+
+        @media (max-width: 991.98px) {
+            .about-operations-title {
+                text-align: center;
+            }
+        }
     </style>
 </head>
 
@@ -81,8 +103,8 @@
                     <a href="login.html" class="btn btn-outline-glass d-flex align-items-center" title="Login">
                         <i class="bi bi-box-arrow-in-right"></i>
                     </a>
-                    <a href="dashboard/dashboard.html" class="btn btn-premium d-flex align-items-center"
-                        title="Dashboard">
+                    <a href="dashboard/dashboard.html#account" class="btn btn-premium d-flex align-items-center"
+                        title="Profile">
                         <i class="bi bi-person-circle"></i>
                     </a>
                     <button id="rtlToggle" class="btn btn-outline-glass d-flex align-items-center"
@@ -100,13 +122,13 @@
     <section class="section-padding overflow-hidden" style="margin-top: 76px; background-color: var(--primary-bg);">
         <div class="container">
             <div class="row align-items-center g-5">
-                <div class="col-lg-6 hero-animate text-start">
+                <div class="col-lg-6 hero-animate text-start about-hero-copy">
                     <div class="badge badge-premium mb-3">Our Legacy</div>
                     <h1 class="display-3 fw-bold mb-4">Born from a <span class="text-warning">Love</span> of
                         the Game.</h1>
                     <p class="lead mb-5">We're on a mission to bring hidden tabletop gems and legendary
                         expansions directly to your table, one mystery box at a time.</p>
-                    <div class="d-flex gap-3">
+                    <div class="d-flex gap-3 about-hero-actions">
                         <a href="boxes.html" class="btn btn-premium px-4 py-2">Explore Boxes</a>
                         <a href="#story" class="btn btn-outline-glass px-4 py-2">Our Story</a>
                     </div>
@@ -148,7 +170,7 @@
                         gems, hardcore strategy titans, and uproarious party games right to your door every single
                         month.</p>
 
-                    <div class="row text-center mt-5 text-start">
+                    <div class="row text-center mt-5 text-start about-story-stats">
                         <div class="col-md-4 text-start">
                             <h3 class="text-warning mb-1">2M+</h3>
                             <p class="small text-secondary">Games Shipped</p>
@@ -170,7 +192,7 @@
     <!-- Team -->
     <section class="section-padding" style="background-color: var(--secondary-bg);">
         <div class="container text-center">
-            <h2 class="section-title">The Guildmasters</h2>
+            <h2 class="section-title about-team-title">The Guildmasters</h2>
             <div class="row g-4 mt-5">
                 <div class="col-md-4">
                     <div class="glass-card text-center p-4">
@@ -263,7 +285,7 @@
             <div class="row align-items-center g-5">
                 <div class="col-lg-6">
                     <div class="badge badge-premium mb-3">Operations</div>
-                    <h2 class="display-5 fw-bold mb-4">The Global Armory.</h2>
+                    <h2 class="display-5 fw-bold mb-4 about-operations-title">The Global Armory.</h2>
                     <p class="lead text-secondary mb-4">Based in London with satellite hubs in Seattle and Tokyo, our
                         team of curators works around the clock across three time zones to source the rarest tabletop
                         gems.</p>
@@ -295,7 +317,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer d-none">
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-4 text-start">
@@ -323,6 +345,63 @@
             <div class="border-top border-secondary mt-5 pt-4 text-center text-secondary small">
                 ©
                 <script>document.write(new Date().getFullYear())</script> LootTable. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4 text-start">
+                    <div class="footer-logo">
+                        <i class="bi bi-box-seam"></i> LootTable
+                    </div>
+                    <p class="text-secondary mb-4 pe-lg-5">Curating the ultimate tabletop experience. From mystery
+                        boxes
+                        to a thriving gamer community, we bring the fun directly to you.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-discord"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4 text-start">
+                    <h5 class="mb-4">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="boxes.html">Shop Boxes</a></li>
+                        <li><a href="how-it-works.html">How It Works</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-4 text-start">
+                    <h5 class="mb-4">Community</h5>
+                    <ul class="footer-links">
+                        <li><a href="community.html">Forum</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="testimonials.html">Reviews</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-4 text-start">
+                    <h5 class="mb-4">Newsletter</h5>
+                    <p class="text-secondary small">Sign up for exclusive dice drops and game keys.</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Your email">
+                        <button class="btn btn-premium px-3" type="button"><i class="bi bi-send-fill"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-top border-secondary mt-5 pt-4 text-center text-secondary small">
+                Â©
+                <script>document.write(new Date().getFullYear())</script> LootTable. All rights reserved.
+                <div class="mt-2 text-start d-flex justify-content-center gap-3">
+                    <a href="faq.html" class="text-secondary text-decoration-none">FAQ</a> |
+                    <a href="contact.html" class="text-secondary text-decoration-none">Contact Support</a>
+                </div>
             </div>
         </div>
     </footer>

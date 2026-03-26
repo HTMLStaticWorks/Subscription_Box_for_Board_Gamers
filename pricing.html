@@ -52,6 +52,10 @@
             box-shadow: 0 0 100px rgba(255, 215, 0, 0.2);
             filter: drop-shadow(0 0 50px rgba(255, 215, 0, 0.1));
         }
+
+        .gift-experience-actions {
+            margin-bottom: 2rem;
+        }
     </style>
 </head>
 
@@ -83,8 +87,8 @@
                     <a href="login.html" class="btn btn-outline-glass d-flex align-items-center" title="Login">
                         <i class="bi bi-box-arrow-in-right"></i>
                     </a>
-                    <a href="dashboard/dashboard.html" class="btn btn-premium d-flex align-items-center"
-                        title="Dashboard">
+                    <a href="dashboard/dashboard.html#account" class="btn btn-premium d-flex align-items-center"
+                        title="Profile">
                         <i class="bi bi-person-circle"></i>
                     </a>
                     <button id="rtlToggle" class="btn btn-outline-glass d-flex align-items-center"
@@ -121,7 +125,7 @@
     </section>
 
     <!-- Toggle Billing Section -->
-    <section class="pb-5 text-center">
+    <section class="pt-4 pb-5 text-center">
         <div class="container">
 
             <!-- Toggle Billing -->
@@ -323,7 +327,7 @@
                     <h2 class="display-5 fw-bold mb-4">Send the Epic Loot.</h2>
                     <p class="lead text-secondary mb-4">Looking for the ultimate gift for a board game lover? Send a 3,
                         6, or 12-month membership directly to their door. We'll handle the unboxing experience.</p>
-                    <div class="d-flex flex-wrap gap-3">
+                    <div class="d-flex flex-wrap gap-3 gift-experience-actions">
                         <button class="btn btn-premium btn-lg px-4">Gift a Box</button>
                         <button class="btn btn-outline-glass btn-lg px-4">Corporate Gifting</button>
                     </div>
@@ -332,11 +336,69 @@
         </div>
 
         <!-- Footer -->
-        <footer class="footer">
+        <footer class="footer d-none">
             <div class="container text-center pt-4 border-top border-secondary">
                 <p class="text-secondary small m-0">©
                     <script>document.write(new Date().getFullYear())</script> LootTable. All rights reserved.
                 </p>
+            </div>
+        </footer>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-4 text-start">
+                        <div class="footer-logo">
+                            <i class="bi bi-box-seam"></i> LootTable
+                        </div>
+                        <p class="text-secondary mb-4 pe-lg-5">Curating the ultimate tabletop experience. From mystery
+                            boxes
+                            to a thriving gamer community, we bring the fun directly to you.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="bi bi-twitter"></i></a>
+                            <a href="#"><i class="bi bi-discord"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-4 text-start">
+                        <h5 class="mb-4">Quick Links</h5>
+                        <ul class="footer-links">
+                            <li><a href="boxes.html">Shop Boxes</a></li>
+                            <li><a href="how-it-works.html">How It Works</a></li>
+                            <li><a href="pricing.html">Pricing</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2 col-md-4 text-start">
+                        <h5 class="mb-4">Community</h5>
+                        <ul class="footer-links">
+                            <li><a href="community.html">Forum</a></li>
+                            <li><a href="events.html">Events</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="testimonials.html">Reviews</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 text-start">
+                        <h5 class="mb-4">Newsletter</h5>
+                        <p class="text-secondary small">Sign up for exclusive dice drops and game keys.</p>
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your email">
+                            <button class="btn btn-premium px-3" type="button"><i class="bi bi-send-fill"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-top border-secondary mt-5 pt-4 text-center text-secondary small">
+                    Â©
+                    <script>document.write(new Date().getFullYear())</script> LootTable. All rights reserved.
+                    <div class="mt-2 text-start d-flex justify-content-center gap-3">
+                        <a href="faq.html" class="text-secondary text-decoration-none">FAQ</a> |
+                        <a href="contact.html" class="text-secondary text-decoration-none">Contact Support</a>
+                    </div>
+                </div>
             </div>
         </footer>
 

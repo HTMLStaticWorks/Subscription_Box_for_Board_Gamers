@@ -71,7 +71,7 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto ps-3 align-items-center">
+                <ul class="navbar-nav mx-auto ps-3 align-items-center">
                     <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
                     <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
@@ -85,8 +85,8 @@
                     <a href="login.html" class="btn btn-outline-glass d-flex align-items-center" title="Login">
                         <i class="bi bi-box-arrow-in-right"></i>
                     </a>
-                    <a href="dashboard/dashboard.html" class="btn btn-premium d-flex align-items-center"
-                        title="Dashboard">
+                    <a href="dashboard/dashboard.html#account" class="btn btn-premium d-flex align-items-center"
+                        title="Profile">
                         <i class="bi bi-person-circle"></i>
                     </a>
                     <button id="rtlToggle" class="btn btn-outline-glass d-flex align-items-center"
@@ -105,15 +105,15 @@
     <section class="hero-section">
         <div class="hero-bg-particles"></div>
         <div class="container hero-content">
-            <div class="row align-items-center">
-                <div class="col-lg-6 text-start mb-5 mb-lg-0">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 text-start mb-5 mb-lg-0 hero-text-column">
                     <div class="badge badge-premium mb-3 d-inline-block px-3 py-2 rounded-pill border">
                         <i class="bi bi-star-fill text-warning me-2"></i> #1 Board Game Subscription
                     </div>
                     <h1 class="hero-title">Unbox the<br>Unexpected 🎁</h1>
                     <p class="lead mb-4">Discover premium tabletop experiences delivered right to your
                         door every month. From deep strategy to vibrant party games.</p>
-                    <div class="d-flex flex-wrap gap-3">
+                        <div class="hero-btn-group d-flex flex-wrap gap-3">
                         <a href="boxes.html" class="btn btn-premium">Subscribe Now <i
                                 class="bi bi-arrow-right ms-2"></i></a>
                         <a href="how-it-works.html" class="btn btn-outline-glass">See How It Works</a>
@@ -201,11 +201,11 @@
     </section>
 
     <!-- Featured Games Carousel / Cards -->
-    <section class="section-padding">
+    <section class="section-padding sneak-peek-section">
         <div class="container">
             <div class="mb-5">
                 <h2 class="section-title mb-0">Sneak Peek 🎲</h2>
-                <div class="text-center mt-2">
+                <div class="d-flex justify-content-end mt-2">
                     <a href="boxes.html" class="text-warning text-decoration-none">View All <i
                             class="bi bi-arrow-right"></i></a>
                 </div>
@@ -288,40 +288,47 @@
     <section class="section-padding" style="background-color: var(--secondary-bg);">
         <div class="container">
             <h2 class="section-title">The Loot Vault</h2>
-            <div class="row g-4 mt-4">
+            <div class="row g-4 mt-4 vault-grid">
                 <div class="col-md-4">
-                    <div class="glass-card text-center p-4 hover-lift">
-                        <div class="overflow-hidden rounded-3 mb-3">
-                            <img src="assets/img/vault.png" alt="Common" class="img-fluid anti-gravity img-reveal">
+                    <div class="glass-card text-center p-4 hover-lift vault-card">
+                        <div class="overflow-hidden rounded-3 mb-3 vault-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1532634896-26909d0d2d58?auto=format&fit=crop&w=900&q=80"
+                                alt="Common Vault" class="img-fluid vault-card-img">
                         </div>
-                        <h3>Common Vault</h3>
-                        <p class="text-secondary">Essential miniatures and starter card packs to fuel your weekly
-                            sessions.</p>
-                        <span class="badge badge-premium">Silver Tier</span>
+                        <div class="vault-card-body">
+                            <h3>Common Vault</h3>
+                            <p class="text-secondary">Essential miniatures and starter card packs to fuel your weekly
+                                sessions.</p>
+                            <span class="badge badge-premium">Silver Tier</span>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="glass-card text-center p-4 border-warning shadow-lg hover-lift"
-                        style="transform: scale(1.05); z-index: 2;">
-                        <div class="overflow-hidden rounded-3 mb-3">
-                            <img src="assets/img/vault.png" alt="Epic"
-                                class="img-fluid anti-gravity-delayed img-reveal">
+                    <div class="glass-card text-center p-4 border-warning shadow-lg hover-lift vault-card">
+                        <div class="overflow-hidden rounded-3 mb-3 vault-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1519974719765-e6559eac2575?auto=format&fit=crop&w=900&q=80"
+                                alt="Epic Vault" class="img-fluid vault-card-img">
                         </div>
-                        <h3 class="text-warning">Epic Vault</h3>
-                        <p class="text-secondary">Exclusive limited-edition expansions and collector's coins in every
-                            box.</p>
-                        <span class="badge badge-premium">Gold Tier</span>
+                        <div class="vault-card-body">
+                            <h3 class="text-warning">Epic Vault</h3>
+                            <p class="text-secondary">Exclusive limited-edition expansions and collector's coins in every
+                                box.</p>
+                            <span class="badge badge-premium">Gold Tier</span>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="glass-card text-center p-4 hover-lift">
-                        <div class="overflow-hidden rounded-3 mb-3">
-                            <img src="assets/img/vault.png" alt="Legendary" class="img-fluid anti-gravity img-reveal">
+                    <div class="glass-card text-center p-4 hover-lift vault-card">
+                        <div class="overflow-hidden rounded-3 mb-3 vault-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=900&q=80"
+                                alt="Legendary Vault" class="img-fluid vault-card-img">
                         </div>
-                        <h3>Legendary Vault</h3>
-                        <p class="text-secondary">Signed prototypes, mythic-rare dice sets, and early access to
-                            Kickstarter kits.</p>
-                        <span class="badge badge-premium">Onyx Tier</span>
+                        <div class="vault-card-body">
+                            <h3>Legendary Vault</h3>
+                            <p class="text-secondary">Signed prototypes, mythic-rare dice sets, and early access to
+                                Kickstarter kits.</p>
+                            <span class="badge badge-premium">Onyx Tier</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -363,10 +370,10 @@
     </section>
 
     <!-- New Section 3: Game Curator Feature -->
-    <section class="section-padding overflow-hidden">
+    <section class="section-padding overflow-hidden gamer-curator-section">
         <div class="container">
             <div class="row align-items-center flex-column-reverse flex-lg-row">
-                <div class="col-lg-6 mt-5 mt-lg-0">
+                <div class="col-lg-6 mt-5 mt-lg-0 gamer-curator-copy">
                     <h2 class="section-title" style="left:0; transform:none;">Gamer DNA Curator</h2>
                     <p class="lead text-secondary my-4">Our proprietary algorithm scans thousands of releases to match
                         your group's unique playstyle. No more shelf orphans.</p>
@@ -381,7 +388,7 @@
                                 class="bi bi-clock-history text-warning h4 mb-0"></i> <span>Playtime optimization
                                 algorithm</span></li>
                     </ul>
-                    <a href="signup.html" class="btn btn-premium btn-lg px-5">Join the Vault</a>
+                    <a href="signup.html" class="btn btn-premium btn-lg px-5 gamer-curator-cta">Join the Vault</a>
                 </div>
                 <div class="col-lg-6">
                     <div class="glass-card p-2 position-relative anti-gravity shadow-lg hover-lift">
@@ -389,7 +396,7 @@
                             <img src="assets/img/curator.png" alt="Curator" class="img-fluid img-reveal">
                         </div>
                         <div
-                            class="position-absolute translate-middle-y bottom-0 start-0 m-4 badge badge-premium p-3 d-flex align-items-center gap-2">
+                            class="position-absolute translate-middle-y bottom-0 start-0 m-4 badge badge-premium gamer-curator-badge p-3 d-flex align-items-center gap-2">
                             <i class="bi bi-cpu-fill"></i> Smart Recommendation Engine
                         </div>
                     </div>

@@ -50,6 +50,44 @@
             box-shadow: 0 40px 80px rgba(0, 0, 0, 0.6);
             border: 1px solid rgba(255, 215, 0, 0.2);
         }
+
+        [data-theme="light"] .blog-hero-copy .blog-hero-description,
+        [data-theme="light"] .blog-hero-copy .blog-hero-readers {
+            color: #4b5563 !important;
+        }
+
+        [data-theme="light"] .blog-vintage-tag {
+            background-color: rgba(184, 134, 11, 0.12);
+            color: #9a6b00;
+            border-color: #c99500;
+        }
+
+        @media (min-width: 768px) and (max-width: 991.98px) {
+            .blog-hero-heading {
+                text-align: center;
+            }
+
+            .blog-hero-actions {
+                justify-content: center;
+            }
+
+            .vintage-loot-card-body {
+                min-height: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .vintage-loot-link {
+                margin-top: auto !important;
+            }
+        }
+
+        @media (max-width: 991.98px) {
+            .user-showcase-cta {
+                display: block;
+                margin-inline: auto;
+            }
+        }
     </style>
 </head>
 
@@ -81,8 +119,8 @@
                     <a href="login.html" class="btn btn-outline-glass d-flex align-items-center" title="Login">
                         <i class="bi bi-box-arrow-in-right"></i>
                     </a>
-                    <a href="dashboard/dashboard.html" class="btn btn-premium d-flex align-items-center"
-                        title="Dashboard">
+                    <a href="dashboard/dashboard.html#account" class="btn btn-premium d-flex align-items-center"
+                        title="Profile">
                         <i class="bi bi-person-circle"></i>
                     </a>
                     <button id="rtlToggle" class="btn btn-outline-glass d-flex align-items-center"
@@ -101,15 +139,15 @@
         style="margin-top: 76px; background: linear-gradient(135deg, var(--primary-bg), #0a0a0a);">
         <div class="container">
             <div class="row align-items-center g-5">
-                <div class="col-lg-7 text-start blog-hero-animate">
+                <div class="col-lg-7 text-start blog-hero-animate blog-hero-copy">
                     <div class="badge badge-premium mb-3 px-3 py-2 rounded-pill">Latest Dispatch</div>
-                    <h1 class="display-3 fw-bold mb-4">The Meta <span class="text-warning">Revealed.</span>
+                    <h1 class="display-3 fw-bold mb-4 blog-hero-heading">The Meta <span class="text-warning">Revealed.</span>
                     </h1>
-                    <p class="lead mb-5">Deep dives into strategy, exclusive mystery box spoilers, and
+                    <p class="lead mb-5 blog-hero-description">Deep dives into strategy, exclusive mystery box spoilers, and
                         the stories behind the world's most innovative game designers.</p>
-                    <div class="d-flex align-items-center gap-4">
+                    <div class="d-flex align-items-center gap-4 blog-hero-actions">
                         <button class="btn btn-premium px-4 py-2">Join Newsletter</button>
-                        <div class="text-secondary small d-flex align-items-center gap-2">
+                        <div class="text-secondary small d-flex align-items-center gap-2 blog-hero-readers">
                             <i class="bi bi-people"></i> 12k+ Readers
                         </div>
                     </div>
@@ -221,7 +259,7 @@
     <!-- New Section 1: The Vault Collections (Legacy Archive) -->
     <section class="section-padding bg-black bg-opacity-25" style="border-top: 1px solid rgba(255,255,255,0.05);">
         <div class="container text-center">
-            <div class="badge badge-premium mb-3">Vintage Loot</div>
+            <div class="badge badge-premium mb-3 blog-vintage-tag">Vintage Loot</div>
             <h2 class="display-5 fw-bold mb-5">Classic Vault Collections.</h2>
             <div class="row g-4 mt-2">
                 <div class="col-md-4">
@@ -229,12 +267,12 @@
                         <div class="position-absolute top-0 start-0 w-100 h-100"
                             style="background: url('assets/img/stats.png') center/cover; opacity: 0.05; filter: grayscale(1);">
                         </div>
-                        <div class="position-relative z-1">
+                        <div class="position-relative z-1 vintage-loot-card-body">
                             <span class="text-warning small text-uppercase fw-bold mb-2 d-block">Legacy Article</span>
                             <h4 class="fw-bold mb-3">The First 500 Unboxings</h4>
                             <p class="text-secondary small mb-4">A look back at our first batch of Silver boxes and the
                                 community feedback that changed everything.</p>
-                            <a href="#" class="text-warning text-decoration-none small fw-bold mt-2 d-inline-block">Read
+                            <a href="#" class="text-warning text-decoration-none small fw-bold mt-2 d-inline-block vintage-loot-link">Read
                                 Classic <i class="bi bi-chevron-right"></i></a>
                         </div>
                     </div>
@@ -245,13 +283,13 @@
                         <div class="position-absolute top-0 start-0 w-100 h-100"
                             style="background: url('assets/img/vault.png') center/cover; opacity: 0.1; filter: sepia(1);">
                         </div>
-                        <div class="position-relative z-1">
+                        <div class="position-relative z-1 vintage-loot-card-body">
                             <span class="text-warning small text-uppercase fw-bold mb-2 d-block">Member Only</span>
                             <h4 class="fw-bold mb-3 text-warning">Secrets of the Onyx Box</h4>
                             <p class="text-secondary small mb-4">How we sourced the rare Kickstarter bundles that became
                                 our #1 highest-rated box of all time.</p>
                             <a href="#"
-                                class="text-warning text-decoration-none small fw-bold mt-2 d-inline-block">Elite
+                                class="text-warning text-decoration-none small fw-bold mt-2 d-inline-block vintage-loot-link">Elite
                                 Archive <i class="bi bi-lock"></i></a>
                         </div>
                     </div>
@@ -261,12 +299,12 @@
                         <div class="position-absolute top-0 start-0 w-100 h-100"
                             style="background: url('assets/img/curator.png') center/cover; opacity: 0.05; filter: grayscale(1);">
                         </div>
-                        <div class="position-relative z-1">
+                        <div class="position-relative z-1 vintage-loot-card-body">
                             <span class="text-warning small text-uppercase fw-bold mb-2 d-block">Editorial</span>
                             <h4 class="fw-bold mb-3">Why Cards Always Warp?</h4>
                             <p class="text-secondary small mb-4">The definitive guide to card humidity, storage cases,
                                 and vertical vs. horizontal game shelving.</p>
-                            <a href="#" class="text-warning text-decoration-none small fw-bold mt-2 d-inline-block">Read
+                            <a href="#" class="text-warning text-decoration-none small fw-bold mt-2 d-inline-block vintage-loot-link">Read
                                 Classic <i class="bi bi-chevron-right"></i></a>
                         </div>
                     </div>
@@ -277,7 +315,7 @@
 
     <!-- New Section 2: Community Game Room Spotlight -->
     <section class="section-padding">
-        <div class="container">
+        <div class="container mb-5">
             <div class="row align-items-center g-5">
                 <div class="col-lg-6">
                     <div class="badge badge-premium mb-3">User Showcase</div>
@@ -294,7 +332,7 @@
                             </div>
                         </div>
                     </div>
-                    <button class="btn btn-premium btn-lg px-5">Submit Your Room</button>
+                    <button class="btn btn-premium btn-lg px-5 user-showcase-cta">Submit Your Room</button>
                 </div>
                 <div class="col-lg-6">
                     <div class="glass-card p-2 hover-lift anti-gravity-delayed shadow-lg">
@@ -312,7 +350,7 @@
         </div>
 
         <!-- Footer -->
-        <footer class="footer">
+        <footer class="footer d-none">
             <div class="container text-center pt-4 border-top border-secondary">
                 <div class="nav justify-content-center gap-3 mb-3">
                     <a href="about.html" class="text-secondary text-decoration-none">About</a>
@@ -322,6 +360,64 @@
                 <p class="text-secondary small m-0">©
                     <script>document.write(new Date().getFullYear())</script> LootTable. All rights reserved.
                 </p>
+            </div>
+        </footer>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-4 text-start">
+                        <div class="footer-logo">
+                            <i class="bi bi-box-seam"></i> LootTable
+                        </div>
+                        <p class="text-secondary mb-4 pe-lg-5">Curating the ultimate tabletop experience. From mystery
+                            boxes
+                            to a thriving gamer community, we bring the fun directly to you.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="bi bi-twitter"></i></a>
+                            <a href="#"><i class="bi bi-discord"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-4 text-start">
+                        <h5 class="mb-4">Quick Links</h5>
+                        <ul class="footer-links">
+                            <li><a href="boxes.html">Shop Boxes</a></li>
+                            <li><a href="how-it-works.html">How It Works</a></li>
+                            <li><a href="pricing.html">Pricing</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2 col-md-4 text-start">
+                        <h5 class="mb-4">Community</h5>
+                        <ul class="footer-links">
+                            <li><a href="community.html">Forum</a></li>
+                            <li><a href="events.html">Events</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="testimonials.html">Reviews</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 text-start">
+                        <h5 class="mb-4">Newsletter</h5>
+                        <p class="text-secondary small">Sign up for exclusive dice drops and game keys.</p>
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your email">
+                            <button class="btn btn-premium px-3" type="button"><i class="bi bi-send-fill"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-top border-secondary mt-5 pt-4 text-center text-secondary small">
+                    Â©
+                    <script>document.write(new Date().getFullYear())</script> LootTable. All rights reserved.
+                    <div class="mt-2 text-start d-flex justify-content-center gap-3">
+                        <a href="faq.html" class="text-secondary text-decoration-none">FAQ</a> |
+                        <a href="contact.html" class="text-secondary text-decoration-none">Contact Support</a>
+                    </div>
+                </div>
             </div>
         </footer>
 
