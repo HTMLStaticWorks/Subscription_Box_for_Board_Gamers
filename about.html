@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us | LootTable</title>
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
 
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
@@ -49,10 +50,20 @@
             border-radius: 30px;
             box-shadow: 0 50px 100px rgba(0, 0, 0, 0.5);
             mask-image: linear-gradient(to bottom, black 80%, transparent);
+            max-width: 80%;
+            height: auto;
         }
 
-        .about-hero-copy .about-hero-actions {
-            justify-content: center;
+        @media (max-width: 991.98px) {
+            .about-hero-copy .about-hero-actions {
+                justify-content: center;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .about-hero-copy .about-hero-actions {
+                justify-content: flex-start;
+            }
         }
 
         .about-team-title {
@@ -61,8 +72,9 @@
         }
 
         @media (max-width: 767.98px) {
+
             .about-story-stats,
-            .about-story-stats > div {
+            .about-story-stats>div {
                 text-align: center !important;
             }
         }
@@ -72,13 +84,20 @@
                 text-align: center;
             }
         }
+
+        /* About page hero viewport fix */
+        .about-hero-section {
+            min-height: calc(100vh - 76px);
+            display: flex;
+            align-items: center;
+        }
     </style>
 </head>
 
 <body>
 
     <!-- Header / Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+    <nav class="navbar navbar-expand-xl navbar-custom fixed-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <i class="bi bi-box-seam"></i> LootTable
@@ -89,7 +108,7 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto ps-3 align-items-center">
+                <ul class="navbar-nav mx-auto ps-3 align-items-center">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
                     <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
@@ -118,203 +137,218 @@
         </div>
     </nav>
 
-    <!-- Page Header -->
-    <section class="section-padding overflow-hidden" style="margin-top: 76px; background-color: var(--primary-bg);">
-        <div class="container">
-            <div class="row align-items-center g-5">
-                <div class="col-lg-6 hero-animate text-start about-hero-copy">
-                    <div class="badge badge-premium mb-3">Our Legacy</div>
-                    <h1 class="display-3 fw-bold mb-4">Born from a <span class="text-warning">Love</span> of
-                        the Game.</h1>
-                    <p class="lead mb-5">We're on a mission to bring hidden tabletop gems and legendary
-                        expansions directly to your table, one mystery box at a time.</p>
-                    <div class="d-flex gap-3 about-hero-actions">
-                        <a href="boxes.html" class="btn btn-premium px-4 py-2">Explore Boxes</a>
-                        <a href="#story" class="btn btn-outline-glass px-4 py-2">Our Story</a>
-                    </div>
-                </div>
-                <div class="col-lg-6 hero-animate" style="animation-delay: 0.3s;">
-                    <div class="position-relative">
-                        <div class="position-absolute translate-middle top-50 start-50 bg-warning rounded-circle"
-                            style="width: 400px; height: 400px; filter: blur(120px); opacity: 0.15; z-index: -1;"></div>
-                        <img src="assets/img/about-hero.png" class="img-fluid about-hero-img anti-gravity"
-                            alt="About Hero">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Story Section -->
-    <section class="section-padding">
-        <div class="container">
-            <div class="row align-items-center g-5">
-                <div class="col-lg-6 text-center text-lg-end mystery-box pe-lg-5">
-                    <!-- Abstract graphic representing a die and cards -->
-                    <svg width="300" height="300" viewBox="0 0 24 24" fill="none" class="anti-gravity img-fluid">
-                        <rect x="4" y="4" width="16" height="16" rx="3" stroke="#D4AF37" stroke-width="1.5"
-                            fill="rgba(212,175,55,0.1)" />
-                        <circle cx="8" cy="8" r="1.5" fill="#D4AF37" />
-                        <circle cx="16" cy="16" r="1.5" fill="#D4AF37" />
-                        <circle cx="8" cy="16" r="1.5" fill="#D4AF37" />
-                        <circle cx="16" cy="8" r="1.5" fill="#D4AF37" />
-                        <circle cx="12" cy="12" r="1.5" fill="#D4AF37" />
-                    </svg>
-                </div>
-                <div class="col-lg-6 border-start border-warning ps-lg-5 text-start">
-                    <h2 class="mb-4">From our table to yours.</h2>
-                    <p class="text-secondary mb-3">LootTable started in a cramped apartment where our weekly game nights
-                        grew too large for the room. We realized finding incredible games hidden beneath the mainstream
-                        monopolies was harder than it should be.</p>
-                    <p class="text-secondary mb-4">So, we created LootTable. A curated experience that delivers indie
-                        gems, hardcore strategy titans, and uproarious party games right to your door every single
-                        month.</p>
-
-                    <div class="row text-center mt-5 text-start about-story-stats">
-                        <div class="col-md-4 text-start">
-                            <h3 class="text-warning mb-1">2M+</h3>
-                            <p class="small text-secondary">Games Shipped</p>
-                        </div>
-                        <div class="col-md-4 text-start">
-                            <h3 class="text-warning mb-1">50+</h3>
-                            <p class="small text-secondary">Indie Partners</p>
-                        </div>
-                        <div class="col-md-4 text-start">
-                            <h3 class="text-warning mb-1">4.9/5</h3>
-                            <p class="small text-secondary">Gamer Rating</p>
+    <main class="main-content">
+        <!-- Page Header -->
+        <section class="section-padding overflow-hidden about-hero-section"
+            style="margin-top: 76px; background-color: var(--primary-bg);">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6 hero-animate text-center text-lg-start about-hero-copy">
+                        <div class="badge badge-premium mb-3">Our Legacy</div>
+                        <h1 class="display-3 fw-bold mb-4">Born from a <span class="text-warning">Love</span> of
+                            the Game.</h1>
+                        <p class="lead mb-5">We're on a mission to bring hidden tabletop gems and legendary
+                            expansions directly to your table, one mystery box at a time.</p>
+                        <div class="d-flex gap-3 about-hero-actions">
+                            <a href="boxes.html" class="btn btn-premium px-4 py-2">Explore Boxes</a>
+                            <a href="#story" class="btn btn-outline-glass px-4 py-2">Our Story</a>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Team -->
-    <section class="section-padding" style="background-color: var(--secondary-bg);">
-        <div class="container text-center">
-            <h2 class="section-title about-team-title">The Guildmasters</h2>
-            <div class="row g-4 mt-5">
-                <div class="col-md-4">
-                    <div class="glass-card text-center p-4">
-                        <img src="https://ui-avatars.com/api/?name=Sam+M"
-                            class="avatar avatar-lg mb-3 mx-auto border-warning border-3"
-                            style="width:100px; height:100px;">
-                        <h5>Sam Mercer</h5>
-                        <p class="text-secondary small mb-3">CEO & Chief Nerd</p>
-                        <div class="social-links justify-content-center">
-                            <a href="#" style="width: 30px; height: 30px;"><i class="bi bi-twitter small"></i></a>
-                            <a href="#" style="width: 30px; height: 30px;"><i class="bi bi-linkedin small"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="glass-card text-center p-4">
-                        <img src="https://ui-avatars.com/api/?name=E+K"
-                            class="avatar avatar-lg mb-3 mx-auto border-warning border-3"
-                            style="width:100px; height:100px;">
-                        <h5>Elena Kwan</h5>
-                        <p class="text-secondary small mb-3">Head of Curation</p>
-                        <div class="social-links justify-content-center">
-                            <a href="#" style="width: 30px; height: 30px;"><i class="bi bi-twitter small"></i></a>
-                            <a href="#" style="width: 30px; height: 30px;"><i class="bi bi-linkedin small"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="glass-card text-center p-4">
-                        <img src="https://ui-avatars.com/api/?name=M+D"
-                            class="avatar avatar-lg mb-3 mx-auto border-warning border-3"
-                            style="width:100px; height:100px;">
-                        <h5>Marcus Dunn</h5>
-                        <p class="text-secondary small mb-3">Community Manager</p>
-                        <div class="social-links justify-content-center">
-                            <a href="#" style="width: 30px; height: 30px;"><i class="bi bi-twitter small"></i></a>
-                            <a href="#" style="width: 30px; height: 30px;"><i class="bi bi-linkedin small"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- New Section 1: Our Core Mechanics (Values) -->
-    <section class="section-padding position-relative overflow-hidden" style="background-color: var(--secondary-bg);">
-        <div class="container text-center">
-            <div class="badge badge-premium mb-3">Our DNA</div>
-            <h2 class="display-5 fw-bold mb-5">The Core Mechanics.</h2>
-            <div class="row g-4 mt-2">
-                <div class="col-md-3">
-                    <div class="glass-card p-4 h-100 hover-lift border-0 bg-dark bg-opacity-25">
-                        <i class="bi bi-shield-check text-warning h1 mb-3 d-block"></i>
-                        <h4 class="fw-bold mb-3">Quality Unlocked</h4>
-                        <p class="text-secondary small mb-0">Every box is hand-vetted. We only ship games we'd be proud
-                            to own ourselves. No filler, ever.</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="glass-card p-4 h-100 hover-lift border-0 bg-dark bg-opacity-25">
-                        <i class="bi bi-people-fill text-info h1 mb-3 d-block"></i>
-                        <h4 class="fw-bold mb-3">Player First</h4>
-                        <p class="text-secondary small mb-0">Our community defines our path. We listen to your reviews
-                            and refine our monthly selections based on your meta.</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="glass-card p-4 h-100 hover-lift border-0 bg-dark bg-opacity-25">
-                        <i class="bi bi-lightning-charge text-danger h1 mb-3 d-block"></i>
-                        <h4 class="fw-bold mb-3">Infinite Innovation</h4>
-                        <p class="text-secondary small mb-0">From QR-integrated tutorials to custom app expansions, we
-                            are bridging the physical and digital divide.</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="glass-card p-4 h-100 hover-lift border-0 bg-dark bg-opacity-25">
-                        <i class="bi bi-eye-fill text-success h1 mb-3 d-block"></i>
-                        <h4 class="fw-bold mb-3">True Transparency</h4>
-                        <p class="text-secondary small mb-0">No hidden costs. No shady kickbacks. Just straightforward,
-                            epic gaming at the best possible value.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- New Section 2: The Global Armory -->
-    <section class="section-padding overflow-hidden">
-        <div class="container">
-            <div class="row align-items-center g-5">
-                <div class="col-lg-6">
-                    <div class="badge badge-premium mb-3">Operations</div>
-                    <h2 class="display-5 fw-bold mb-4 about-operations-title">The Global Armory.</h2>
-                    <p class="lead text-secondary mb-4">Based in London with satellite hubs in Seattle and Tokyo, our
-                        team of curators works around the clock across three time zones to source the rarest tabletop
-                        gems.</p>
-                    <div class="row g-3">
-                        <div class="col-6">
-                            <div class="p-3 border border-secondary rounded hover-lift">
-                                <h3 class="fw-bold text-warning mb-0">12k+</h3>
-                                <small class="text-secondary text-uppercase">Sq. Ft Warehouse</small>
+                    <div class="col-lg-6 hero-animate" style="animation-delay: 0.3s;">
+                        <div class="position-relative">
+                            <div class="position-absolute translate-middle top-50 start-50 bg-warning rounded-circle"
+                                style="width: 400px; height: 400px; filter: blur(120px); opacity: 0.15; z-index: -1;">
                             </div>
+                            <img src="assets/img/about-hero.png" class="img-fluid about-hero-img anti-gravity"
+                                alt="About Hero">
                         </div>
-                        <div class="col-6">
-                            <div class="p-3 border border-secondary rounded hover-lift">
-                                <h3 class="fw-bold text-warning mb-0">14</h3>
-                                <small class="text-secondary text-uppercase">Official Partners</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Story Section -->
+        <section class="section-padding">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6 text-center text-lg-end mystery-box pe-lg-5">
+                        <!-- Abstract graphic representing a die and cards -->
+                        <svg width="300" height="300" viewBox="0 0 24 24" fill="none" class="anti-gravity img-fluid">
+                            <rect x="4" y="4" width="16" height="16" rx="3" stroke="#D4AF37" stroke-width="1.5"
+                                fill="rgba(212,175,55,0.1)" />
+                            <circle cx="8" cy="8" r="1.5" fill="#D4AF37" />
+                            <circle cx="16" cy="16" r="1.5" fill="#D4AF37" />
+                            <circle cx="8" cy="16" r="1.5" fill="#D4AF37" />
+                            <circle cx="16" cy="8" r="1.5" fill="#D4AF37" />
+                            <circle cx="12" cy="12" r="1.5" fill="#D4AF37" />
+                        </svg>
+                    </div>
+                    <div class="col-lg-6 border-start border-warning ps-lg-5 text-start">
+                        <h2 class="mb-4">From our table to yours.</h2>
+                        <p class="text-secondary mb-3">LootTable started in a cramped apartment where our weekly game
+                            nights
+                            grew too large for the room. We realized finding incredible games hidden beneath the
+                            mainstream
+                            monopolies was harder than it should be.</p>
+                        <p class="text-secondary mb-4">So, we created LootTable. A curated experience that delivers
+                            indie
+                            gems, hardcore strategy titans, and uproarious party games right to your door every single
+                            month.</p>
+
+                        <div class="row text-center mt-5 text-start about-story-stats">
+                            <div class="col-md-4 text-start">
+                                <h3 class="text-warning mb-1">2M+</h3>
+                                <p class="small text-secondary">Games Shipped</p>
+                            </div>
+                            <div class="col-md-4 text-start">
+                                <h3 class="text-warning mb-1">50+</h3>
+                                <p class="small text-secondary">Indie Partners</p>
+                            </div>
+                            <div class="col-md-4 text-start">
+                                <h3 class="text-warning mb-1">4.9/5</h3>
+                                <p class="small text-secondary">Gamer Rating</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="position-relative">
-                        <div class="position-absolute bg-warning rounded-circle top-50 start-50 translate-middle"
-                            style="width: 350px; height: 350px; filter: blur(100px); opacity: 0.1;"></div>
-                        <img src="assets/img/vault.png" class="img-fluid rounded-4 anti-gravity img-reveal shadow-lg"
-                            alt="HQ">
+            </div>
+        </section>
+
+        <!-- Team -->
+        <section class="section-padding" style="background-color: var(--secondary-bg);">
+            <div class="container text-center">
+                <h2 class="section-title about-team-title">The Guildmasters</h2>
+                <div class="row g-4 mt-5">
+                    <div class="col-md-4">
+                        <div class="glass-card text-center p-4">
+                            <img src="https://ui-avatars.com/api/?name=Sam+M"
+                                class="avatar avatar-lg mb-3 mx-auto border-warning border-3"
+                                style="width:100px; height:100px;">
+                            <h5>Sam Mercer</h5>
+                            <p class="text-secondary small mb-3">CEO & Chief Nerd</p>
+                            <div class="social-links justify-content-center">
+                                <a href="#" style="width: 30px; height: 30px;"><i class="bi bi-twitter small"></i></a>
+                                <a href="#" style="width: 30px; height: 30px;"><i class="bi bi-linkedin small"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="glass-card text-center p-4">
+                            <img src="https://ui-avatars.com/api/?name=E+K"
+                                class="avatar avatar-lg mb-3 mx-auto border-warning border-3"
+                                style="width:100px; height:100px;">
+                            <h5>Elena Kwan</h5>
+                            <p class="text-secondary small mb-3">Head of Curation</p>
+                            <div class="social-links justify-content-center">
+                                <a href="#" style="width: 30px; height: 30px;"><i class="bi bi-twitter small"></i></a>
+                                <a href="#" style="width: 30px; height: 30px;"><i class="bi bi-linkedin small"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="glass-card text-center p-4">
+                            <img src="https://ui-avatars.com/api/?name=M+D"
+                                class="avatar avatar-lg mb-3 mx-auto border-warning border-3"
+                                style="width:100px; height:100px;">
+                            <h5>Marcus Dunn</h5>
+                            <p class="text-secondary small mb-3">Community Manager</p>
+                            <div class="social-links justify-content-center">
+                                <a href="#" style="width: 30px; height: 30px;"><i class="bi bi-twitter small"></i></a>
+                                <a href="#" style="width: 30px; height: 30px;"><i class="bi bi-linkedin small"></i></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- New Section 1: Our Core Mechanics (Values) -->
+        <section class="section-padding position-relative overflow-hidden"
+            style="background-color: var(--secondary-bg);">
+            <div class="container text-center">
+                <div class="badge badge-premium mb-3">Our DNA</div>
+                <h2 class="display-5 fw-bold mb-5">The Core Mechanics.</h2>
+                <div class="row g-4 mt-2">
+                    <div class="col-lg-3">
+                        <div class="glass-card p-4 h-100 hover-lift border-0 bg-dark bg-opacity-25">
+                            <i class="bi bi-shield-check text-warning h1 mb-3 d-block"></i>
+                            <h4 class="fw-bold mb-3">Quality Unlocked</h4>
+                            <p class="text-secondary small mb-0">Every box is hand-vetted. We only ship games we'd be
+                                proud
+                                to own ourselves. No filler, ever.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="glass-card p-4 h-100 hover-lift border-0 bg-dark bg-opacity-25">
+                            <i class="bi bi-people-fill text-info h1 mb-3 d-block"></i>
+                            <h4 class="fw-bold mb-3">Player First</h4>
+                            <p class="text-secondary small mb-0">Our community defines our path. We listen to your
+                                reviews
+                                and refine our monthly selections based on your meta.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="glass-card p-4 h-100 hover-lift border-0 bg-dark bg-opacity-25">
+                            <i class="bi bi-lightning-charge text-danger h1 mb-3 d-block"></i>
+                            <h4 class="fw-bold mb-3">Infinite Innovation</h4>
+                            <p class="text-secondary small mb-0">From QR-integrated tutorials to custom app expansions,
+                                we
+                                are bridging the physical and digital divide.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="glass-card p-4 h-100 hover-lift border-0 bg-dark bg-opacity-25">
+                            <i class="bi bi-eye-fill text-success h1 mb-3 d-block"></i>
+                            <h4 class="fw-bold mb-3">True Transparency</h4>
+                            <p class="text-secondary small mb-0">No hidden costs. No shady kickbacks. Just
+                                straightforward,
+                                epic gaming at the best possible value.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Section 2: The Global Armory -->
+        <section class="section-padding overflow-hidden">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6 text-center text-lg-start">
+                        <div class="badge badge-premium mb-3">Operations</div>
+                        <h2 class="display-5 fw-bold mb-4 about-operations-title">The Global Armory.</h2>
+                        <p class="lead text-secondary mb-4">Based in London with satellite hubs in Seattle and Tokyo,
+                            our
+                            team of curators works around the clock across three time zones to source the rarest
+                            tabletop
+                            gems.</p>
+                        <div class="row g-3">
+                            <div class="col-6">
+                                <div class="p-3 border border-secondary rounded hover-lift">
+                                    <h3 class="fw-bold text-warning mb-0">12k+</h3>
+                                    <small class="text-secondary text-uppercase">Sq. Ft Warehouse</small>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="p-3 border border-secondary rounded hover-lift">
+                                    <h3 class="fw-bold text-warning mb-0">14</h3>
+                                    <small class="text-secondary text-uppercase">Official Partners</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="position-relative">
+                            <div class="position-absolute bg-warning rounded-circle top-50 start-50 translate-middle"
+                                style="width: 350px; height: 350px; filter: blur(100px); opacity: 0.1;"></div>
+                            <img src="assets/img/vault.png"
+                                class="img-fluid rounded-4 anti-gravity img-reveal shadow-lg" alt="HQ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
 
     <!-- Footer -->
     <footer class="footer d-none">
@@ -396,7 +430,7 @@
                 </div>
             </div>
             <div class="border-top border-secondary mt-5 pt-4 text-center text-secondary small">
-                Â©
+                ©
                 <script>document.write(new Date().getFullYear())</script> LootTable. All rights reserved.
                 <div class="mt-2 text-start d-flex justify-content-center gap-3">
                     <a href="faq.html" class="text-secondary text-decoration-none">FAQ</a> |

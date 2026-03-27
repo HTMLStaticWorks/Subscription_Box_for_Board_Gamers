@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Manage your LootTable subscription, skip months, and join the gamer community.">
     <title>Member Dashboard - LootTable 🎲</title>
+    <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
@@ -132,7 +133,7 @@
             justify-content: flex-end;
         }
 
-        @media (min-width: 992px) {
+        @media (min-width: 1200px) {
             #dashboardNav {
                 flex: 1 1 auto;
                 width: 100%;
@@ -162,7 +163,7 @@
             color: var(--accent-color) !important;
         }
 
-        @media (max-width: 991.98px) {
+        @media (max-width: 1199.98px) {
             .dashboard-wrapper {
                 flex-direction: column;
                 margin-top: 76px;
@@ -241,7 +242,7 @@
 <body>
 
     <!-- Header / Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+    <nav class="navbar navbar-expand-xl navbar-custom bg-dark bg-opacity-90 border-bottom border-secondary">
         <div class="container">
             <a class="navbar-brand" href="../index.html">
                 <i class="bi bi-box-seam"></i> LootTable
@@ -259,7 +260,7 @@
                     <li class="nav-item"><a class="nav-link" href="#forum">Community Forum</a></li>
                     <li class="nav-item"><a class="nav-link" href="#vouchers">My Loot & Vouchers</a></li>
                     <li class="nav-item"><a class="nav-link" href="#account">Settings</a></li>
-                    <li class="nav-item"><a class="nav-link text-danger" href="../login.html">Logout</a></li>
+                    <li class="nav-item"><a class="nav-link text-danger" href="../index.html">Logout</a></li>
                 </ul>
 
                 <div class="ms-auto d-flex align-items-center gap-3 dashboard-nav-actions">
@@ -293,7 +294,7 @@
             </div>
 
             <div class="mt-auto px-3 mb-4">
-                <a href="../login.html"
+                <a href="../index.html"
                     class="sidebar-link text-danger border border-danger border-opacity-10 bg-danger bg-opacity-10">
                     <i class="bi bi-box-arrow-right"></i> Logout
                 </a>

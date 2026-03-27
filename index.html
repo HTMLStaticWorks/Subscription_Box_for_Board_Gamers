@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Premium Board Game Subscription Box Platform">
     <title>LootTable - Unbox the Unexpected 🎲</title>
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
@@ -59,7 +60,7 @@
 <body>
 
     <!-- Header / Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+    <nav class="navbar navbar-expand-xl navbar-custom fixed-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <i class="bi bi-box-seam"></i> LootTable
@@ -99,310 +100,319 @@
                 </div>
             </div>
         </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="hero-section">
-        <div class="hero-bg-particles"></div>
-        <div class="container hero-content">
+    </nav>    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-bg-particles"></div>
+            <div class="container hero-content">
                 <div class="row align-items-center">
                     <div class="col-lg-6 text-start mb-5 mb-lg-0 hero-text-column">
-                    <div class="badge badge-premium mb-3 d-inline-block px-3 py-2 rounded-pill border">
-                        <i class="bi bi-star-fill text-warning me-2"></i> #1 Board Game Subscription
-                    </div>
-                    <h1 class="hero-title">Unbox the<br>Unexpected 🎁</h1>
-                    <p class="lead mb-4">Discover premium tabletop experiences delivered right to your
-                        door every month. From deep strategy to vibrant party games.</p>
+                        <div class="badge badge-premium mb-3 d-inline-block px-3 py-2 rounded-pill border"
+                            style="margin-top: 2rem;">
+                            <i class="bi bi-star-fill text-warning me-2"></i> #1 Board Game Subscription
+                        </div>
+                        <h1 class="hero-title">Unbox the<br>Unexpected&nbsp;<span class="hero-title-emoji"
+                                aria-hidden="true">&#127873;</span></h1>
+                        <p class="lead mb-4">Discover premium tabletop experiences delivered right to your
+                            door every month. From deep strategy to vibrant party games.</p>
                         <div class="hero-btn-group d-flex flex-wrap gap-3">
-                        <a href="boxes.html" class="btn btn-premium">Subscribe Now <i
-                                class="bi bi-arrow-right ms-2"></i></a>
-                        <a href="how-it-works.html" class="btn btn-outline-glass">See How It Works</a>
-                    </div>
-
-                    <div class="mt-5 d-flex align-items-center gap-3">
-                        <div class="avatar-group d-flex">
-                            <img src="https://ui-avatars.com/api/?name=J+D&background=random" alt="User"
-                                class="avatar avatar-md rounded-circle border border-2 border-dark"
-                                style="margin-left: -10px; z-index: 3;">
-                            <img src="https://ui-avatars.com/api/?name=A+S&background=random" alt="User"
-                                class="avatar avatar-md rounded-circle border border-2 border-dark"
-                                style="margin-left: -15px; z-index: 2;">
-                            <img src="https://ui-avatars.com/api/?name=R+M&background=random" alt="User"
-                                class="avatar avatar-md rounded-circle border border-2 border-dark"
-                                style="margin-left: -15px; z-index: 1;">
+                            <a href="boxes.html" class="btn btn-premium">Subscribe Now <i
+                                    class="bi bi-arrow-right ms-2"></i></a>
+                            <a href="how-it-works.html" class="btn btn-outline-glass">See How It Works</a>
                         </div>
-                        <div>
-                            <div class="d-flex text-warning">
-                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                    class="bi bi-star-fill"></i>
+
+                        <div class="mt-5 d-flex align-items-center gap-3">
+                            <div class="avatar-group d-flex">
+                                <img src="https://ui-avatars.com/api/?name=J+D&background=random" alt="User"
+                                    class="avatar avatar-md rounded-circle border border-2 border-dark"
+                                    style="margin-left: -10px; z-index: 3;">
+                                <img src="https://ui-avatars.com/api/?name=A+S&background=random" alt="User"
+                                    class="avatar avatar-md rounded-circle border border-2 border-dark"
+                                    style="margin-left: -15px; z-index: 2;">
+                                <img src="https://ui-avatars.com/api/?name=R+M&background=random" alt="User"
+                                    class="avatar avatar-md rounded-circle border border-2 border-dark"
+                                    style="margin-left: -15px; z-index: 1;">
                             </div>
-                            <small>Join 10,000+ happy gamers</small>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-6 position-relative text-center mystery-box anti-gravity">
-                    <!-- Placeholder for Box Graphic. An SVG gives a scalable glow effect -->
-                    <div class="position-absolute w-100 h-100 rounded-circle"
-                        style="background: radial-gradient(circle, rgba(255,215,0,0.2) 0%, rgba(255,215,0,0) 70%); top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: -1;">
-                    </div>
-                    <svg width="400" height="400" viewBox="0 0 24 24" fill="none" class="img-fluid"
-                        style="filter: drop-shadow(0 20px 30px rgba(0,0,0,0.5)); max-width: 100%;">
-                        <path
-                            d="M11.9961 22.5L2.39258 16.941C1.98971 16.7081 1.74219 16.2737 1.74219 15.808C1.74219 13.918 1.74219 10.082 1.74219 8.192C1.74219 7.72628 1.98971 7.29188 2.39258 7.05896L11.9961 1.5M11.9961 22.5L21.5997 16.941C22.0026 16.7081 22.2501 16.2737 22.2501 15.808C22.2501 13.918 22.2501 10.082 22.2501 8.192C22.2501 7.72628 22.0026 7.29188 21.5997 7.05896L11.9961 1.5M11.9961 22.5V12M11.9961 1.5L12 1.50226M11.9961 12L2.0918 6.28479"
-                            stroke="#FFD700" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M12 11.9996L21.9038 6.2843" stroke="#FFD700" stroke-width="0.5" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        <!-- Filled Box -->
-                        <polygon points="12,2.5 21,7.5 12,12.5 3,7.5" fill="rgba(255,215,0,0.3)" />
-                        <polygon points="12,21.5 21,16.5 21,7.5 12,12.5" fill="rgba(255,215,0,0.15)" />
-                        <polygon points="12,21.5 3,16.5 3,7.5 12,12.5" fill="rgba(255,215,0,0.2)" />
-                    </svg>
-
-                    <!-- Floating Elements -->
-                    <div class="position-absolute end-0 top-0 badge badge-premium px-3 py-2 border anti-gravity-delayed"
-                        style="transform: rotate(15deg);">
-                        🎲 Exclusive Items
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- How It Works Timeline -->
-    <section class="section-padding" style="background-color: var(--secondary-bg);">
-        <div class="container">
-            <h2 class="section-title">How It Works</h2>
-            <div class="timeline mt-5">
-                <div class="timeline-item left glass-card is-visible" style="opacity:1; transform:translateY(0);">
-                    <div class="timeline-content">
-                        <h4 class="mb-3"><i class="bi bi-list-check text-warning me-2"></i> 1. Choose Your Vibe</h4>
-                        <p class="mb-0">Select your preferred playstyle. Are you a hardcore strategist, or just here for
-                            party vibes? We tailor every box to your taste.</p>
-                    </div>
-                </div>
-                <div class="timeline-item right mt-4 glass-card is-visible" style="opacity:1; transform:translateY(0);">
-                    <div class="timeline-content">
-                        <h4 class="mb-3"><i class="bi bi-box-fill text-warning me-2"></i> 2. The Mystery Arrives</h4>
-                        <p class="mb-0">Every month, a beautifully crafted mystery box lands on your doorstep. Packed
-                            with exclusive games, promo cards, and premium accessories.</p>
-                    </div>
-                </div>
-                <div class="timeline-item left mt-4 glass-card is-visible" style="opacity:1; transform:translateY(0);">
-                    <div class="timeline-content">
-                        <h4 class="mb-3"><i class="bi bi-people-fill text-warning me-2"></i> 3. Play & Earn</h4>
-                        <p class="mb-0">Gather your party, roll the dice, and review your games on our dashboard. Earn
-                            points towards your next epic loot drop.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Featured Games Carousel / Cards -->
-    <section class="section-padding sneak-peek-section">
-        <div class="container">
-            <div class="mb-5">
-                <h2 class="section-title mb-0">Sneak Peek 🎲</h2>
-                <div class="d-flex justify-content-end mt-2">
-                    <a href="boxes.html" class="text-warning text-decoration-none">View All <i
-                            class="bi bi-arrow-right"></i></a>
-                </div>
-            </div>
-
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="glass-card h-100 p-0 text-center">
-                        <div class="position-relative p-4 pb-0">
-                            <div class="badge bg-danger position-absolute top-0 end-0 m-3">Hardcore</div>
-                            <svg width="150" height="150" viewBox="0 0 24 24" fill="none"
-                                class="mb-3 anti-gravity img-fluid">
-                                <rect x="2" y="2" width="20" height="20" rx="4" stroke="#D4AF37" stroke-width="1.5"
-                                    fill="rgba(212,175,55,0.1)" />
-                                <circle cx="8" cy="8" r="2" fill="#D4AF37" />
-                                <circle cx="16" cy="16" r="2" fill="#D4AF37" />
-                            </svg>
-                        </div>
-                        <div class="p-4 pt-0">
-                            <h4>Space Empire</h4>
-                            <p class="small text-secondary mb-3">4X Strategy Game. Conquer the galaxy with superior
-                                tactics.</p>
-                            <div class="d-flex justify-content-between text-secondary small">
-                                <span><i class="bi bi-clock me-1"></i> 120m</span>
-                                <span><i class="bi bi-people me-1"></i> 2-4 Players</span>
+                            <div>
+                                <div class="d-flex text-warning">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i>
+                                </div>
+                                <small>Join 10,000+ happy gamers</small>
                             </div>
                         </div>
                     </div>
+
+                    <div class="col-lg-6 position-relative text-center mystery-box anti-gravity">
+                        <!-- Placeholder for Box Graphic. An SVG gives a scalable glow effect -->
+                        <div class="position-absolute w-100 h-100 rounded-circle"
+                            style="background: radial-gradient(circle, rgba(255,215,0,0.2) 0%, rgba(255,215,0,0) 70%); top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: -1;">
+                        </div>
+                        <svg width="400" height="400" viewBox="0 0 24 24" fill="none" class="img-fluid"
+                            style="filter: drop-shadow(0 20px 30px rgba(0,0,0,0.5)); max-width: 100%;">
+                            <path
+                                d="M11.9961 22.5L2.39258 16.941C1.98971 16.7081 1.74219 16.2737 1.74219 15.808C1.74219 13.918 1.74219 10.082 1.74219 8.192C1.74219 7.72628 1.98971 7.29188 2.39258 7.05896L11.9961 1.5M11.9961 22.5L21.5997 16.941C22.0026 16.7081 22.2501 16.2737 22.2501 15.808C22.2501 13.918 22.2501 10.082 22.2501 8.192C22.2501 7.72628 22.0026 7.29188 21.5997 7.05896L11.9961 1.5M11.9961 22.5V12M11.9961 1.5L12 1.50226M11.9961 12L2.0918 6.28479"
+                                stroke="#FFD700" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M12 11.9996L21.9038 6.2843" stroke="#FFD700" stroke-width="0.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <!-- Filled Box -->
+                            <polygon points="12,2.5 21,7.5 12,12.5 3,7.5" fill="rgba(255,215,0,0.3)" />
+                            <polygon points="12,21.5 21,16.5 21,7.5 12,12.5" fill="rgba(255,215,0,0.15)" />
+                            <polygon points="12,21.5 3,16.5 3,7.5 12,12.5" fill="rgba(255,215,0,0.2)" />
+                        </svg>
+
+                        <!-- Floating Elements -->
+                        <div class="position-absolute end-0 top-0 badge badge-premium px-3 py-2 border anti-gravity-delayed"
+                            style="transform: rotate(15deg);">
+                            🎲 Exclusive Items
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Timeline -->
+        <section class="section-padding" style="background-color: var(--secondary-bg);">
+            <div class="container">
+                <h2 class="section-title">How It Works</h2>
+                <div class="timeline mt-5">
+                    <div class="timeline-item left is-visible" style="opacity:1; transform:translateY(0);">
+                        <div class="timeline-content">
+                            <h4 class="mb-3"><i class="bi bi-list-check text-warning me-2"></i> 1. Choose Your Vibe</h4>
+                            <p class="mb-0">Select your preferred playstyle. Are you a hardcore strategist, or just here
+                                for
+                                party vibes? We tailor every box to your taste.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item right mt-4 is-visible" style="opacity:1; transform:translateY(0);">
+                        <div class="timeline-content">
+                            <h4 class="mb-3"><i class="bi bi-box-fill text-warning me-2"></i> 2. The Mystery Arrives</h4>
+                            <p class="mb-0">Every month, a beautifully crafted mystery box lands on your doorstep.
+                                Packed
+                                with exclusive games, promo cards, and premium accessories.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item left mt-4 is-visible" style="opacity:1; transform:translateY(0);">
+                        <div class="timeline-content">
+                            <h4 class="mb-3"><i class="bi bi-people-fill text-warning me-2"></i> 3. Play & Earn</h4>
+                            <p class="mb-0">Gather your party, roll the dice, and review your games on our dashboard.
+                                Earn
+                                points towards your next epic loot drop.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Games Carousel / Cards -->
+        <section class="section-padding sneak-peek-section">
+            <div class="container">
+                <div class="mb-5 position-relative sneak-peek-heading">
+                    <h2 class="section-title mb-0">Sneak Peek 🎲</h2>
+                    <div class="d-flex justify-content-end mt-2 sneak-peek-viewall">
+                        <a href="boxes.html" class="text-warning text-decoration-none">View All <i
+                                class="bi bi-arrow-right"></i></a>
+                    </div>
                 </div>
 
-                <div class="col-md-4">
-                    <div class="glass-card h-100 p-0 text-center">
-                        <div class="position-relative p-4 pb-0">
-                            <div class="badge bg-success position-absolute top-0 end-0 m-3">Party</div>
-                            <svg width="150" height="150" viewBox="0 0 24 24" fill="none"
-                                class="mb-3 anti-gravity-delayed img-fluid">
-                                <rect x="4" y="2" width="16" height="20" rx="2" stroke="#D4AF37" stroke-width="1.5"
-                                    fill="rgba(212,175,55,0.1)" />
-                                <path d="M12 2v20" stroke="#D4AF37" stroke-width="1" stroke-dasharray="2 2" />
-                                <circle cx="12" cy="12" r="3" fill="#D4AF37" />
-                            </svg>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="glass-card h-100 p-0 text-center">
+                            <div class="position-relative p-4 pb-0">
+                                <div class="badge bg-danger position-absolute top-0 end-0 m-3">Hardcore</div>
+                                <svg width="150" height="150" viewBox="0 0 24 24" fill="none"
+                                    class="mb-3 anti-gravity img-fluid">
+                                    <rect x="2" y="2" width="20" height="20" rx="4" stroke="#D4AF37" stroke-width="1.5"
+                                        fill="rgba(212,175,55,0.1)" />
+                                    <circle cx="8" cy="8" r="2" fill="#D4AF37" />
+                                    <circle cx="16" cy="16" r="2" fill="#D4AF37" />
+                                </svg>
+                            </div>
+                            <div class="p-4 pt-0">
+                                <h4>Space Empire</h4>
+                                <p class="small text-secondary mb-3">4X Strategy Game. Conquer the galaxy with superior
+                                    tactics.</p>
+                                <div class="d-flex justify-content-between text-secondary small">
+                                    <span><i class="bi bi-clock me-1"></i> 120m</span>
+                                    <span><i class="bi bi-people me-1"></i> 2-4 Players</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="p-4 pt-0">
-                            <h4>Deception Dash</h4>
-                            <p class="small text-secondary mb-3">Fast-paced social deduction. Trust no one, outsmart
-                                everyone.</p>
-                            <div class="d-flex justify-content-between text-secondary small">
-                                <span><i class="bi bi-clock me-1"></i> 15-30m</span>
-                                <span><i class="bi bi-people me-1"></i> 5-10 Players</span>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="glass-card h-100 p-0 text-center">
+                            <div class="position-relative p-4 pb-0">
+                                <div class="badge bg-success position-absolute top-0 end-0 m-3">Party</div>
+                                <svg width="150" height="150" viewBox="0 0 24 24" fill="none"
+                                    class="mb-3 anti-gravity-delayed img-fluid">
+                                    <rect x="4" y="2" width="16" height="20" rx="2" stroke="#D4AF37" stroke-width="1.5"
+                                        fill="rgba(212,175,55,0.1)" />
+                                    <path d="M12 2v20" stroke="#D4AF37" stroke-width="1" stroke-dasharray="2 2" />
+                                    <circle cx="12" cy="12" r="3" fill="#D4AF37" />
+                                </svg>
+                            </div>
+                            <div class="p-4 pt-0">
+                                <h4>Deception Dash</h4>
+                                <p class="small text-secondary mb-3">Fast-paced social deduction. Trust no one, outsmart
+                                    everyone.</p>
+                                <div class="d-flex justify-content-between text-secondary small">
+                                    <span><i class="bi bi-clock me-1"></i> 15-30m</span>
+                                    <span><i class="bi bi-people me-1"></i> 5-10 Players</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="glass-card h-100 p-0 text-center">
+                            <div class="position-relative p-4 pb-0">
+                                <div class="badge bg-info position-absolute top-0 end-0 m-3">Family</div>
+                                <svg width="150" height="150" viewBox="0 0 24 24" fill="none"
+                                    class="mb-3 anti-gravity img-fluid">
+                                    <polygon points="12,2 22,12 12,22 2,12" stroke="#D4AF37" stroke-width="1.5"
+                                        fill="rgba(212,175,55,0.1)" />
+                                </svg>
+                            </div>
+                            <div class="p-4 pt-0">
+                                <h4>Forest Builders</h4>
+                                <p class="small text-secondary mb-3">Cooperative tile placement game for all ages.</p>
+                                <div class="d-flex justify-content-between text-secondary small">
+                                    <span><i class="bi bi-clock me-1"></i> 45m</span>
+                                    <span><i class="bi bi-people me-1"></i> 2-6 Players</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="col-md-4">
-                    <div class="glass-card h-100 p-0 text-center">
-                        <div class="position-relative p-4 pb-0">
-                            <div class="badge bg-info position-absolute top-0 end-0 m-3">Family</div>
-                            <svg width="150" height="150" viewBox="0 0 24 24" fill="none"
-                                class="mb-3 anti-gravity img-fluid">
-                                <polygon points="12,2 22,12 12,22 2,12" stroke="#D4AF37" stroke-width="1.5"
-                                    fill="rgba(212,175,55,0.1)" />
-                            </svg>
+        <!-- New Section 1: The Loot Vault Experience -->
+        <section class="section-padding" style="background-color: var(--secondary-bg);">
+            <div class="container">
+                <h2 class="section-title">The Loot Vault</h2>
+                <div class="row g-4 mt-4 vault-grid">
+                    <div class="col-md-4">
+                        <div class="glass-card text-center p-4 hover-lift vault-card">
+                            <div class="overflow-hidden rounded-3 mb-3 vault-image-wrapper">
+                                <img src="assets/img/common-vault.png"
+                                    alt="Common Vault" class="img-fluid vault-card-img">
+                            </div>
+                            <div class="vault-card-body">
+                                <h3>Common Vault</h3>
+                                <p class="text-secondary">Essential miniatures and starter card packs to fuel your
+                                    weekly
+                                    sessions.</p>
+                                <span class="badge badge-premium">Silver Tier</span>
+                            </div>
                         </div>
-                        <div class="p-4 pt-0">
-                            <h4>Forest Builders</h4>
-                            <p class="small text-secondary mb-3">Cooperative tile placement game for all ages.</p>
-                            <div class="d-flex justify-content-between text-secondary small">
-                                <span><i class="bi bi-clock me-1"></i> 45m</span>
-                                <span><i class="bi bi-people me-1"></i> 2-6 Players</span>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="glass-card text-center p-4 border-warning shadow-lg hover-lift vault-card">
+                            <div class="overflow-hidden rounded-3 mb-3 vault-image-wrapper">
+                                <img src="https://images.unsplash.com/photo-1519974719765-e6559eac2575?auto=format&fit=crop&w=900&q=80"
+                                    alt="Epic Vault" class="img-fluid vault-card-img">
+                            </div>
+                            <div class="vault-card-body">
+                                <h3 class="text-warning">Epic Vault</h3>
+                                <p class="text-secondary">Exclusive limited-edition expansions and collector's coins in
+                                    every
+                                    box.</p>
+                                <span class="badge badge-premium">Gold Tier</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="glass-card text-center p-4 hover-lift vault-card">
+                            <div class="overflow-hidden rounded-3 mb-3 vault-image-wrapper">
+                                <img src="https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=900&q=80"
+                                    alt="Legendary Vault" class="img-fluid vault-card-img">
+                            </div>
+                            <div class="vault-card-body">
+                                <h3>Legendary Vault</h3>
+                                <p class="text-secondary">Signed prototypes, mythic-rare dice sets, and early access to
+                                    Kickstarter kits.</p>
+                                <span class="badge badge-premium">Onyx Tier</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- New Section 1: The Loot Vault Experience -->
-    <section class="section-padding" style="background-color: var(--secondary-bg);">
-        <div class="container">
-            <h2 class="section-title">The Loot Vault</h2>
-            <div class="row g-4 mt-4 vault-grid">
-                <div class="col-md-4">
-                    <div class="glass-card text-center p-4 hover-lift vault-card">
-                        <div class="overflow-hidden rounded-3 mb-3 vault-image-wrapper">
-                            <img src="https://images.unsplash.com/photo-1532634896-26909d0d2d58?auto=format&fit=crop&w=900&q=80"
-                                alt="Common Vault" class="img-fluid vault-card-img">
-                        </div>
-                        <div class="vault-card-body">
-                            <h3>Common Vault</h3>
-                            <p class="text-secondary">Essential miniatures and starter card packs to fuel your weekly
-                                sessions.</p>
-                            <span class="badge badge-premium">Silver Tier</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="glass-card text-center p-4 border-warning shadow-lg hover-lift vault-card">
-                        <div class="overflow-hidden rounded-3 mb-3 vault-image-wrapper">
-                            <img src="https://images.unsplash.com/photo-1519974719765-e6559eac2575?auto=format&fit=crop&w=900&q=80"
-                                alt="Epic Vault" class="img-fluid vault-card-img">
-                        </div>
-                        <div class="vault-card-body">
-                            <h3 class="text-warning">Epic Vault</h3>
-                            <p class="text-secondary">Exclusive limited-edition expansions and collector's coins in every
-                                box.</p>
-                            <span class="badge badge-premium">Gold Tier</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="glass-card text-center p-4 hover-lift vault-card">
-                        <div class="overflow-hidden rounded-3 mb-3 vault-image-wrapper">
-                            <img src="https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=900&q=80"
-                                alt="Legendary Vault" class="img-fluid vault-card-img">
-                        </div>
-                        <div class="vault-card-body">
-                            <h3>Legendary Vault</h3>
-                            <p class="text-secondary">Signed prototypes, mythic-rare dice sets, and early access to
-                                Kickstarter kits.</p>
-                            <span class="badge badge-premium">Onyx Tier</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- New Section 2: Global Impact -->
-    <section class="section-padding position-relative overflow-hidden"
-        style="min-height: 500px; background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('assets/img/stats.png') center/cover no-repeat fixed;">
-        <div class="container position-relative z-1 text-center py-5">
-            <h2 class="section-title text-white w-100">Our Collective Legend</h2>
-            <div class="row g-4 mt-5">
-                <div class="col-md-4">
-                    <div
-                        class="glass-card p-5 h-100 d-flex flex-column justify-content-center align-items-center hover-lift">
-                        <i class="bi bi-people-fill text-warning display-4 mb-3"></i>
-                        <h1 class="display-3 text-warning fw-bold mb-0 stat-glow">10K+</h1>
-                        <p class="h5 mt-2">Active Adventurers</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="glass-card p-5 h-100 d-flex flex-column justify-content-center align-items-center hover-lift"
-                        style="box-shadow: 0 0 30px rgba(255, 215, 0, 0.2);">
-                        <i class="bi bi-box-fill text-warning display-4 mb-3"></i>
-                        <h1 class="display-3 text-warning fw-bold mb-0 stat-glow">50K+</h1>
-                        <p class="h5 mt-2">Loots Discovered</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div
-                        class="glass-card p-5 h-100 d-flex flex-column justify-content-center align-items-center hover-lift">
-                        <i class="bi bi-star-fill text-warning display-4 mb-3"></i>
-                        <h1 class="display-3 text-warning fw-bold mb-0 stat-glow">4.9/5</h1>
-                        <p class="h5 mt-2">Vault Approval</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- New Section 3: Game Curator Feature -->
-    <section class="section-padding overflow-hidden gamer-curator-section">
-        <div class="container">
-            <div class="row align-items-center flex-column-reverse flex-lg-row">
-                <div class="col-lg-6 mt-5 mt-lg-0 gamer-curator-copy">
-                    <h2 class="section-title" style="left:0; transform:none;">Gamer DNA Curator</h2>
-                    <p class="lead text-secondary my-4">Our proprietary algorithm scans thousands of releases to match
-                        your group's unique playstyle. No more shelf orphans.</p>
-                    <ul class="list-unstyled mb-4">
-                        <li class="mb-3 d-flex gap-3 align-items-center"><i
-                                class="bi bi-shield-check text-warning h4 mb-0"></i> <span>Personalized difficulty
-                                matching</span></li>
-                        <li class="mb-3 d-flex gap-3 align-items-center"><i
-                                class="bi bi-people-fill text-warning h4 mb-0"></i> <span>Group size preference
-                                scaling</span></li>
-                        <li class="mb-3 d-flex gap-3 align-items-center"><i
-                                class="bi bi-clock-history text-warning h4 mb-0"></i> <span>Playtime optimization
-                                algorithm</span></li>
-                    </ul>
-                    <a href="signup.html" class="btn btn-premium btn-lg px-5 gamer-curator-cta">Join the Vault</a>
-                </div>
-                <div class="col-lg-6">
-                    <div class="glass-card p-2 position-relative anti-gravity shadow-lg hover-lift">
-                        <div class="overflow-hidden rounded-3">
-                            <img src="assets/img/curator.png" alt="Curator" class="img-fluid img-reveal">
-                        </div>
+        <!-- New Section 2: Global Impact -->
+        <section class="section-padding position-relative overflow-hidden"
+            style="min-height: 500px; background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('assets/img/stats.png') center/cover no-repeat fixed;">
+            <div class="container position-relative z-1 text-center py-5">
+                <h2 class="section-title text-white w-100">Our Collective Legend</h2>
+                <div class="row g-4 mt-5">
+                    <div class="col-md-4">
                         <div
-                            class="position-absolute translate-middle-y bottom-0 start-0 m-4 badge badge-premium gamer-curator-badge p-3 d-flex align-items-center gap-2">
-                            <i class="bi bi-cpu-fill"></i> Smart Recommendation Engine
+                            class="glass-card p-5 h-100 d-flex flex-column justify-content-center align-items-center hover-lift">
+                            <i class="bi bi-people-fill text-warning display-4 mb-3"></i>
+                            <h1 class="display-3 text-warning fw-bold mb-0 stat-glow">10K+</h1>
+                            <p class="h5 mt-2">Active Adventurers</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="glass-card p-5 h-100 d-flex flex-column justify-content-center align-items-center hover-lift"
+                            style="box-shadow: 0 0 30px rgba(255, 215, 0, 0.2);">
+                            <i class="bi bi-box-fill text-warning display-4 mb-3"></i>
+                            <h1 class="display-3 text-warning fw-bold mb-0 stat-glow">50K+</h1>
+                            <p class="h5 mt-2">Loots Discovered</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div
+                            class="glass-card p-5 h-100 d-flex flex-column justify-content-center align-items-center hover-lift">
+                            <i class="bi bi-star-fill text-warning display-4 mb-3"></i>
+                            <h1 class="display-3 text-warning fw-bold mb-0 stat-glow">4.9/5</h1>
+                            <p class="h5 mt-2">Vault Approval</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <!-- New Section 3: Game Curator Feature -->
+        <section class="section-padding overflow-hidden gamer-curator-section">
+            <div class="container">
+                <div class="row align-items-center flex-column-reverse flex-lg-row">
+                    <div class="col-lg-6 mt-5 mt-lg-0 gamer-curator-copy">
+                        <h2 class="section-title" style="left:0; transform:none;">Gamer DNA Curator</h2>
+                        <p class="lead text-secondary my-4">Our proprietary algorithm scans thousands of releases to
+                            match
+                            your group's unique playstyle. No more shelf orphans.</p>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-3 d-flex gap-3 align-items-center"><i
+                                    class="bi bi-shield-check text-warning h4 mb-0"></i> <span>Personalized difficulty
+                                    matching</span></li>
+                            <li class="mb-3 d-flex gap-3 align-items-center"><i
+                                    class="bi bi-people-fill text-warning h4 mb-0"></i> <span>Group size preference
+                                    scaling</span></li>
+                            <li class="mb-3 d-flex gap-3 align-items-center"><i
+                                    class="bi bi-clock-history text-warning h4 mb-0"></i> <span>Playtime optimization
+                                    algorithm</span></li>
+                        </ul>
+                        <a href="signup.html" class="btn btn-premium btn-lg px-5 gamer-curator-cta">Join the Vault</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="glass-card p-2 position-relative anti-gravity shadow-lg hover-lift">
+                            <div class="overflow-hidden rounded-3">
+                                <img src="assets/img/curator.png" alt="Curator" class="img-fluid img-reveal">
+                            </div>
+                            <div
+                                class="position-absolute translate-middle-y bottom-0 start-0 m-4 badge badge-premium gamer-curator-badge p-3 d-flex align-items-center gap-2">
+                                <i class="bi bi-cpu-fill"></i> Smart Recommendation Engine
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
         <!-- Footer -->
         <footer class="footer">

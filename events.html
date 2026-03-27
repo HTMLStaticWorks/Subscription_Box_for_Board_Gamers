@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Events & Meets | LootTable</title>
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
 
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
@@ -54,6 +55,8 @@
             border-radius: 20px;
             box-shadow: 0 40px 80px rgba(0, 0, 0, 0.6);
             border: 2px solid rgba(255, 255, 255, 0.05);
+            max-width: 80%;
+            height: auto;
         }
 
         @media (max-width: 767.98px) {
@@ -120,7 +123,7 @@
 <body>
 
     <!-- Header / Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+    <nav class="navbar navbar-expand-xl navbar-custom fixed-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <i class="bi bi-box-seam"></i> LootTable
@@ -131,7 +134,7 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto ps-3 align-items-center">
+                <ul class="navbar-nav mx-auto ps-3 align-items-center">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
                     <li class="nav-item"><a class="nav-link active" href="events.html">Events</a></li>
@@ -160,302 +163,314 @@
         </div>
     </nav>
 
-    <!-- Header -->
-    <section class="section-padding overflow-hidden" style="margin-top: 76px; background-color: var(--primary-bg);">
-        <div class="container">
-            <div class="row align-items-center g-5">
-                <div class="col-lg-6 text-start events-hero-animate">
-                    <div class="badge badge-premium mb-3 px-3 py-2 rounded-pill">Community Arena</div>
-                    <h1 class="display-3 fw-bold mb-4">Gamers <span class="text-warning">Assemble.</span>
-                    </h1>
-                    <p class="lead mb-5">From nationwide tournaments to local tabletop meetups, join the
-                        official LootTable events network and prove your strategy prowess.</p>
-                    <div class="d-flex flex-wrap gap-4 align-items-center events-hero-actions">
-                        <button class="btn btn-premium px-5 py-3">Explore Calendar</button>
-                        <div class="small text-secondary d-flex align-items-center gap-2 mt-2 mt-md-0">
-                            <i class="bi bi-calendar-check-fill text-warning h4 m-0"></i> 150+ Monthly Meets
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 events-hero-animate text-center" style="animation-delay: 0.3s;">
-                    <div class="position-relative">
-                        <div class="position-absolute translate-middle top-50 start-50 bg-danger rounded-circle"
-                            style="width: 350px; height: 350px; filter: blur(150px); opacity: 0.1; z-index: -1;"></div>
-                        <img src="assets/img/events-hero.png" class="img-fluid event-hero-img anti-gravity"
-                            alt="Events Hero">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section-padding pt-0">
-        <div class="container">
-
-            <!-- Filter similar to boxes -->
-            <div class="mb-5 d-flex gap-3 justify-content-center border-bottom border-secondary pb-4 flex-wrap">
-                <button class="btn btn-premium rounded-pill active px-4">All Events</button>
-                <button class="btn btn-outline-glass text-secondary rounded-pill px-4">In-Person</button>
-                <button class="btn btn-outline-glass text-secondary rounded-pill px-4">Online / TTS</button>
-                <button class="btn btn-outline-glass text-secondary rounded-pill px-4">Tournaments</button>
-            </div>
-
-            <div class="row g-4">
-
-                <!-- Event Card 1 -->
-                <div class="col-12">
-                    <div
-                        class="glass-card p-0 overflow-hidden d-flex flex-column flex-md-row border border-warning hover-border-warning sequence-card">
-                        <div class="bg-black p-4 text-center d-flex flex-column justify-content-center align-items-center"
-                            style="min-width: 200px; background-color: rgba(255,215,0,0.1);">
-                            <h2 class="display-3 text-warning fw-bold mb-0">15</h2>
-                            <h4 class="text-white text-uppercase">Nov</h4>
-                            <span class="badge badge-premium mt-2">Online</span>
-                        </div>
-                        <div class="p-4 flex-grow-1 d-flex flex-column justify-content-center text-start">
-                            <h3 class="mb-2">Digital Convention: Tabletopia Fest</h3>
-                            <p class="text-secondary mb-3">A fully virtual convention hosted on Tabletopia. Try out the
-                                prototypes for next year's curated boxes directly with the designers. Over 50 digital
-                                tables available!</p>
-                            <div class="d-flex align-items-center gap-4 text-secondary small flex-wrap">
-                                <span><i class="bi bi-clock text-warning pe-1"></i> 10:00 AM - 10:00 PM EST</span>
-                                <span><i class="bi bi-people-fill text-warning pe-1"></i> 5k+ Expected Attendees</span>
-                            </div>
-                        </div>
-                        <div class="p-4 d-flex align-items-center justify-content-center border-start border-secondary"
-                            style="min-width: 200px;">
-                            <button class="btn btn-premium w-100 py-3">Register Free</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Event Card 2 -->
-                <div class="col-12">
-                    <div class="glass-card p-0 overflow-hidden d-flex flex-column flex-md-row sequence-card">
-                        <div class="bg-black p-4 text-center d-flex flex-column justify-content-center align-items-center"
-                            style="min-width: 200px; background-color: var(--primary-bg);">
-                            <h2 class="display-3 fw-bold mb-0 text-white">22</h2>
-                            <h4 class="text-secondary text-uppercase">Nov</h4>
-                            <span class="badge bg-danger mt-2 text-white">Tournament</span>
-                        </div>
-                        <div
-                            class="p-4 flex-grow-1 d-flex flex-column justify-content-center border-start border-secondary text-start">
-                            <h3 class="mb-2 text-white">National Catan Championship Qualifiers</h3>
-                            <p class="text-secondary mb-3">Official qualifier matches for the world championship. The
-                                winner receives a VIP Annual LootTable subscription and fully paid travel to the finals.
-                            </p>
-                            <div class="d-flex flex-wrap align-items-center gap-4 text-secondary small">
-                                <span><i class="bi bi-clock text-warning pe-1"></i> 9:00 AM PST</span>
-                                <span><i class="bi bi-geo-alt-fill text-warning pe-1"></i> Seattle Convention
-                                    Center</span>
-                                <span><i class="bi bi-tag-fill text-warning pe-1"></i> $25 Entry Fee</span>
-                            </div>
-                        </div>
-                        <div class="p-4 d-flex align-items-center justify-content-center border-start border-secondary"
-                            style="min-width: 200px;">
-                            <button class="btn btn-outline-glass w-100 py-3">Buy Tickets</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Event Card 3 -->
-                <div class="col-12">
-                    <div class="glass-card p-0 overflow-hidden d-flex flex-column flex-md-row sequence-card">
-                        <div class="bg-black p-4 text-center d-flex flex-column justify-content-center align-items-center"
-                            style="min-width: 200px; background-color: var(--primary-bg);">
-                            <h2 class="display-3 fw-bold mb-0 text-white">05</h2>
-                            <h4 class="text-secondary text-uppercase">Dec</h4>
-                            <span class="badge bg-success mt-2 text-white">Community</span>
-                        </div>
-                        <div
-                            class="p-4 flex-grow-1 d-flex flex-column justify-content-center border-start border-secondary text-start">
-                            <h3 class="mb-2 text-white">Winter Setup Sharing Call</h3>
-                            <p class="text-secondary mb-3">Join us in Discord to show off your game night setups!
-                                Curators will be awarding XP to the most insane play tables, storage setups, and painted
-                                miniature armies.</p>
-                            <div class="d-flex align-items-center gap-4 text-secondary small flex-wrap">
-                                <span><i class="bi bi-clock text-warning pe-1"></i> 6:00 PM GMT</span>
-                                <span><i class="bi bi-discord text-info pe-1"></i> Discord Main Stage</span>
-                            </div>
-                        </div>
-                        <div class="p-4 d-flex align-items-center justify-content-center border-start border-secondary"
-                            style="min-width: 200px;">
-                            <button class="btn btn-outline-glass w-100 py-3">Add to Calendar</button>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- New Section 1: Host a Community Quest -->
-    <section class="section-padding" style="background-color: var(--secondary-bg);">
-        <div class="container overflow-hidden">
-            <div class="row align-items-center g-5">
-                <div class="col-lg-6 community-hub-copy">
-                    <div class="badge badge-premium mb-3">Community Hub</div>
-                    <h2 class="display-5 fw-bold mb-4 community-hub-heading">Host Your Own Quest.</h2>
-                    <p class="lead text-secondary mb-4">Missing a local group? Take command and start your own
-                        официально sanctioned meetup. We'll provide the boxes and handle the registrations.</p>
-                    <ul class="list-unstyled mb-5">
-                        <li class="mb-3 d-flex gap-3 align-items-center"><i
-                                class="bi bi-gift-fill text-warning h4 mb-0"></i> <span>Get free Host Vaults every
-                                month</span></li>
-                        <li class="mb-3 d-flex gap-3 align-items-center"><i
-                                class="bi bi-patch-check-fill text-warning h4 mb-0"></i> <span>Official LootTable
-                                certification</span></li>
-                    </ul>
-                    <button class="btn btn-premium btn-lg px-5 community-hub-cta">Start Your Journey</button>
-                </div>
-                <div class="col-lg-6">
-                    <div class="glass-card p-2 hover-lift anti-gravity">
-                        <div class="overflow-hidden rounded-3">
-                            <img src="assets/img/curator.png" alt="Host Event" class="img-fluid img-reveal">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- New Section 2: Hall of Fame Leaderboard -->
-    <section class="section-padding position-relative overflow-hidden hall-of-fame-section"
-        style="background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('assets/img/stats.png') center/cover no-repeat fixed;">
-        <div class="container position-relative z-1 text-center py-5">
-            <h2 class="section-title text-white w-100">Hall of Fame</h2>
-            <div class="row g-4 mt-5">
-                <div class="col-md-4">
-                    <div class="glass-card p-5 h-100 hover-lift d-flex flex-column align-items-center hall-of-fame-card">
-                        <div class="rounded-circle border border-warning p-2 mb-3">
-                            <img src="https://ui-avatars.com/api/?name=Viper+9&background=random" class="rounded-circle"
-                                style="width: 80px;" alt="User">
-                        </div>
-                        <h4 class="text-warning fw-bold">Viper 9</h4>
-                        <p class="mb-0 small text-secondary hall-of-fame-meta">Season 4 Grandmaster</p>
-                        <hr class="w-100 border-secondary hall-of-fame-divider">
-                        <div class="d-flex gap-3 mt-2 h3 mb-0 text-warning hall-of-fame-icons">
-                            <i class="bi bi-shield-shaded"></i> <i class="bi bi-gem"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="glass-card p-5 h-100 hover-lift d-flex flex-column align-items-center border-warning hall-of-fame-card"
-                        style="transform: scale(1.05); z-index: 2;">
-                        <div class="rounded-circle border border-warning p-2 mb-3 shadow-lg">
-                            <img src="https://ui-avatars.com/api/?name=Loot+Lord&background=random"
-                                class="rounded-circle" style="width: 100px;" alt="User">
-                        </div>
-                        <h3 class="text-warning fw-bold">Loot Lord</h3>
-                        <p class="mb-0 text-light hall-of-fame-meta">Global Rank #1</p>
-                        <hr class="w-100 border-secondary hall-of-fame-divider">
-                        <div class="d-flex gap-4 mt-2 h2 mb-0 text-warning hall-of-fame-icons">
-                            <i class="bi bi-trophy-fill"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="glass-card p-5 h-100 hover-lift d-flex flex-column align-items-center hall-of-fame-card">
-                        <div class="rounded-circle border border-warning p-2 mb-3">
-                            <img src="https://ui-avatars.com/api/?name=Shadow+X&background=random"
-                                class="rounded-circle" style="width: 80px;" alt="User">
-                        </div>
-                        <h4 class="text-warning fw-bold">Shadow X</h4>
-                        <p class="mb-0 small text-secondary hall-of-fame-meta">Strategy Specialist</p>
-                        <hr class="w-100 border-secondary hall-of-fame-divider">
-                        <div class="d-flex gap-3 mt-2 h3 mb-0 text-warning hall-of-fame-icons">
-                            <i class="bi bi-star-fill"></i> <i class="bi bi-lightning-fill"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Footer -->
-        <footer class="footer d-none">
-            <div class="container text-center pt-4 border-top border-secondary">
-                <div class="nav justify-content-center gap-3 mb-3">
-                    <a href="about.html" class="text-secondary text-decoration-none">About</a>
-                    <a href="community.html" class="text-secondary text-decoration-none">Community</a>
-                    <a href="faq.html" class="text-secondary text-decoration-none">FAQ</a>
-                </div>
-                <p class="text-secondary small m-0">©
-                    <script>document.write(new Date().getFullYear())</script> LootTable. All rights reserved.
-                </p>
-            </div>
-        </footer>
-
-        <footer class="footer">
+    <main class="main-content">
+        <!-- Header -->
+        <section class="section-padding overflow-hidden" style="margin-top: 76px; background-color: var(--primary-bg);">
             <div class="container">
-                <div class="row g-5">
-                    <div class="col-lg-4 text-start">
-                        <div class="footer-logo">
-                            <i class="bi bi-box-seam"></i> LootTable
-                        </div>
-                        <p class="text-secondary mb-4 pe-lg-5">Curating the ultimate tabletop experience. From mystery
-                            boxes
-                            to a thriving gamer community, we bring the fun directly to you.</p>
-                        <div class="social-links">
-                            <a href="#"><i class="bi bi-twitter"></i></a>
-                            <a href="#"><i class="bi bi-discord"></i></a>
-                            <a href="#"><i class="bi bi-instagram"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-2 col-md-4 text-start">
-                        <h5 class="mb-4">Quick Links</h5>
-                        <ul class="footer-links">
-                            <li><a href="boxes.html">Shop Boxes</a></li>
-                            <li><a href="how-it-works.html">How It Works</a></li>
-                            <li><a href="pricing.html">Pricing</a></li>
-                            <li><a href="about.html">About Us</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-lg-2 col-md-4 text-start">
-                        <h5 class="mb-4">Community</h5>
-                        <ul class="footer-links">
-                            <li><a href="community.html">Forum</a></li>
-                            <li><a href="events.html">Events</a></li>
-                            <li><a href="blog.html">Blog</a></li>
-                            <li><a href="testimonials.html">Reviews</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-lg-4 col-md-4 text-start">
-                        <h5 class="mb-4">Newsletter</h5>
-                        <p class="text-secondary small">Sign up for exclusive dice drops and game keys.</p>
-                        <div class="input-group">
-                            <input type="email" class="form-control" placeholder="Your email">
-                            <button class="btn btn-premium px-3" type="button"><i class="bi bi-send-fill"></i></button>
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6 text-center text-lg-start events-hero-animate">
+                        <div class="badge badge-premium mb-3 px-3 py-2 rounded-pill">Community Arena</div>
+                        <h1 class="display-3 fw-bold mb-4">Gamers <span class="text-warning">Assemble.</span>
+                        </h1>
+                        <p class="lead mb-5">From nationwide tournaments to local tabletop meetups, join the
+                            official LootTable events network and prove your strategy prowess.</p>
+                        <div class="d-flex flex-wrap gap-4 align-items-center events-hero-actions">
+                            <button class="btn btn-premium px-5 py-3">Explore Calendar</button>
+                            <div class="small text-secondary d-flex align-items-center gap-2 mt-2 mt-md-0">
+                                <i class="bi bi-calendar-check-fill text-warning h4 m-0"></i> 150+ Monthly Meets
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="border-top border-secondary mt-5 pt-4 text-center text-secondary small">
-                    Â©
-                    <script>document.write(new Date().getFullYear())</script> LootTable. All rights reserved.
-                    <div class="mt-2 text-start d-flex justify-content-center gap-3">
-                        <a href="faq.html" class="text-secondary text-decoration-none">FAQ</a> |
-                        <a href="contact.html" class="text-secondary text-decoration-none">Contact Support</a>
+                    <div class="col-lg-6 events-hero-animate text-center" style="animation-delay: 0.3s;">
+                        <div class="position-relative">
+                            <div class="position-absolute translate-middle top-50 start-50 bg-danger rounded-circle"
+                                style="width: 350px; height: 350px; filter: blur(150px); opacity: 0.1; z-index: -1;">
+                            </div>
+                            <img src="assets/img/events-hero.png" class="img-fluid event-hero-img anti-gravity"
+                                alt="Events Hero">
+                        </div>
                     </div>
                 </div>
             </div>
-        </footer>
+        </section>
 
-        <style>
-            .sequence-card {
-                transition: all 0.3s ease;
-            }
+        <section class="section-padding pt-0">
+            <div class="container">
 
-            .sequence-card:hover {
-                transform: translateY(-3px) scale(1.01);
-                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-                border-color: var(--accent-color) !important;
-            }
-        </style>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/js/main.js"></script>
+                <!-- Filter similar to boxes -->
+                <div class="mb-5 d-flex gap-3 justify-content-center border-bottom border-secondary pb-4 flex-wrap">
+                    <button class="btn btn-premium rounded-pill active px-4">All Events</button>
+                    <button class="btn btn-outline-glass text-secondary rounded-pill px-4">In-Person</button>
+                    <button class="btn btn-outline-glass text-secondary rounded-pill px-4">Online / TTS</button>
+                    <button class="btn btn-outline-glass text-secondary rounded-pill px-4">Tournaments</button>
+                </div>
+
+                <div class="row g-4">
+
+                    <!-- Event Card 1 -->
+                    <div class="col-12">
+                        <div
+                            class="glass-card p-0 overflow-hidden d-flex flex-column flex-md-row border border-warning hover-border-warning sequence-card">
+                            <div class="bg-black p-4 text-center d-flex flex-column justify-content-center align-items-center"
+                                style="min-width: 200px; background-color: rgba(255,215,0,0.1);">
+                                <h2 class="display-3 text-warning fw-bold mb-0">15</h2>
+                                <h4 class="text-white text-uppercase">Nov</h4>
+                                <span class="badge badge-premium mt-2">Online</span>
+                            </div>
+                            <div class="p-4 flex-grow-1 d-flex flex-column justify-content-center text-start">
+                                <h3 class="mb-2">Digital Convention: Tabletopia Fest</h3>
+                                <p class="text-secondary mb-3">A fully virtual convention hosted on Tabletopia. Try out
+                                    the
+                                    prototypes for next year's curated boxes directly with the designers. Over 50
+                                    digital
+                                    tables available!</p>
+                                <div class="d-flex align-items-center gap-4 text-secondary small flex-wrap">
+                                    <span><i class="bi bi-clock text-warning pe-1"></i> 10:00 AM - 10:00 PM EST</span>
+                                    <span><i class="bi bi-people-fill text-warning pe-1"></i> 5k+ Expected
+                                        Attendees</span>
+                                </div>
+                            </div>
+                            <div class="p-4 d-flex align-items-center justify-content-center border-start border-secondary"
+                                style="min-width: 200px;">
+                                <button class="btn btn-premium w-100 py-3">Register Free</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Event Card 2 -->
+                    <div class="col-12">
+                        <div class="glass-card p-0 overflow-hidden d-flex flex-column flex-md-row sequence-card">
+                            <div class="bg-black p-4 text-center d-flex flex-column justify-content-center align-items-center"
+                                style="min-width: 200px; background-color: var(--primary-bg);">
+                                <h2 class="display-3 fw-bold mb-0 text-white">22</h2>
+                                <h4 class="text-secondary text-uppercase">Nov</h4>
+                                <span class="badge bg-danger mt-2 text-white">Tournament</span>
+                            </div>
+                            <div
+                                class="p-4 flex-grow-1 d-flex flex-column justify-content-center border-start border-secondary text-start">
+                                <h3 class="mb-2 text-white">National Catan Championship Qualifiers</h3>
+                                <p class="text-secondary mb-3">Official qualifier matches for the world championship.
+                                    The
+                                    winner receives a VIP Annual LootTable subscription and fully paid travel to the
+                                    finals.
+                                </p>
+                                <div class="d-flex flex-wrap align-items-center gap-4 text-secondary small">
+                                    <span><i class="bi bi-clock text-warning pe-1"></i> 9:00 AM PST</span>
+                                    <span><i class="bi bi-geo-alt-fill text-warning pe-1"></i> Seattle Convention
+                                        Center</span>
+                                    <span><i class="bi bi-tag-fill text-warning pe-1"></i> $25 Entry Fee</span>
+                                </div>
+                            </div>
+                            <div class="p-4 d-flex align-items-center justify-content-center border-start border-secondary"
+                                style="min-width: 200px;">
+                                <button class="btn btn-outline-glass w-100 py-3">Buy Tickets</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Event Card 3 -->
+                    <div class="col-12">
+                        <div class="glass-card p-0 overflow-hidden d-flex flex-column flex-md-row sequence-card">
+                            <div class="bg-black p-4 text-center d-flex flex-column justify-content-center align-items-center"
+                                style="min-width: 200px; background-color: var(--primary-bg);">
+                                <h2 class="display-3 fw-bold mb-0 text-white">05</h2>
+                                <h4 class="text-secondary text-uppercase">Dec</h4>
+                                <span class="badge bg-success mt-2 text-white">Community</span>
+                            </div>
+                            <div
+                                class="p-4 flex-grow-1 d-flex flex-column justify-content-center border-start border-secondary text-start">
+                                <h3 class="mb-2 text-white">Winter Setup Sharing Call</h3>
+                                <p class="text-secondary mb-3">Join us in Discord to show off your game night setups!
+                                    Curators will be awarding XP to the most insane play tables, storage setups, and
+                                    painted
+                                    miniature armies.</p>
+                                <div class="d-flex align-items-center gap-4 text-secondary small flex-wrap">
+                                    <span><i class="bi bi-clock text-warning pe-1"></i> 6:00 PM GMT</span>
+                                    <span><i class="bi bi-discord text-info pe-1"></i> Discord Main Stage</span>
+                                </div>
+                            </div>
+                            <div class="p-4 d-flex align-items-center justify-content-center border-start border-secondary"
+                                style="min-width: 200px;">
+                                <button class="btn btn-outline-glass w-100 py-3">Add to Calendar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- New Section 1: Host a Community Quest -->
+        <section class="section-padding" style="background-color: var(--secondary-bg);">
+            <div class="container overflow-hidden">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6 community-hub-copy text-center text-lg-start">
+                        <div class="badge badge-premium mb-3">Community Hub</div>
+                        <h2 class="display-5 fw-bold mb-4 community-hub-heading">Host Your Own Quest.</h2>
+                        <p class="lead text-secondary mb-4">Missing a local group? Take command and start your own
+                            официально sanctioned meetup. We'll provide the boxes and handle the registrations.</p>
+                        <ul class="list-unstyled mb-5 d-inline-block text-start">
+                            <li class="mb-3 d-flex gap-3 align-items-center"><i
+                                    class="bi bi-gift-fill text-warning h4 mb-0"></i> <span>Get free Host Vaults every
+                                    month</span></li>
+                            <li class="mb-3 d-flex gap-3 align-items-center"><i
+                                    class="bi bi-patch-check-fill text-warning h4 mb-0"></i> <span>Official LootTable
+                                    certification</span></li>
+                        </ul>
+                        <button class="btn btn-premium btn-lg px-5 community-hub-cta">Start Your Journey</button>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="glass-card p-2 hover-lift anti-gravity">
+                            <div class="overflow-hidden rounded-3">
+                                <img src="assets/img/curator.png" alt="Host Event" class="img-fluid img-reveal">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Section 2: Hall of Fame Leaderboard -->
+        <section class="section-padding position-relative overflow-hidden hall-of-fame-section"
+            style="background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('assets/img/stats.png') center/cover no-repeat fixed;">
+            <div class="container position-relative z-1 text-center py-5">
+                <h2 class="section-title text-white w-100">Hall of Fame</h2>
+                <div class="row g-4 mt-5">
+                    <div class="col-md-4">
+                        <div
+                            class="glass-card p-5 h-100 hover-lift d-flex flex-column align-items-center hall-of-fame-card">
+                            <div class="rounded-circle border border-warning p-2 mb-3">
+                                <img src="https://ui-avatars.com/api/?name=Viper+9&background=random"
+                                    class="rounded-circle" style="width: 80px;" alt="User">
+                            </div>
+                            <h4 class="text-warning fw-bold">Viper 9</h4>
+                            <p class="mb-0 small text-secondary hall-of-fame-meta">Season 4 Grandmaster</p>
+                            <hr class="w-100 border-secondary hall-of-fame-divider">
+                            <div class="d-flex gap-3 mt-2 h3 mb-0 text-warning hall-of-fame-icons">
+                                <i class="bi bi-shield-shaded"></i> <i class="bi bi-gem"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="glass-card p-5 h-100 hover-lift d-flex flex-column align-items-center border-warning hall-of-fame-card"
+                            style="transform: scale(1.05); z-index: 2;">
+                            <div class="rounded-circle border border-warning p-2 mb-3 shadow-lg">
+                                <img src="https://ui-avatars.com/api/?name=Loot+Lord&background=random"
+                                    class="rounded-circle" style="width: 100px;" alt="User">
+                            </div>
+                            <h3 class="text-warning fw-bold">Loot Lord</h3>
+                            <p class="mb-0 text-light hall-of-fame-meta">Global Rank #1</p>
+                            <hr class="w-100 border-secondary hall-of-fame-divider">
+                            <div class="d-flex gap-4 mt-2 h2 mb-0 text-warning hall-of-fame-icons">
+                                <i class="bi bi-trophy-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div
+                            class="glass-card p-5 h-100 hover-lift d-flex flex-column align-items-center hall-of-fame-card">
+                            <div class="rounded-circle border border-warning p-2 mb-3">
+                                <img src="https://ui-avatars.com/api/?name=Shadow+X&background=random"
+                                    class="rounded-circle" style="width: 80px;" alt="User">
+                            </div>
+                            <h4 class="text-warning fw-bold">Shadow X</h4>
+                            <p class="mb-0 small text-secondary hall-of-fame-meta">Strategy Specialist</p>
+                            <hr class="w-100 border-secondary hall-of-fame-divider">
+                            <div class="d-flex gap-3 mt-2 h3 mb-0 text-warning hall-of-fame-icons">
+                                <i class="bi bi-star-fill"></i> <i class="bi bi-lightning-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer d-none">
+        <div class="container text-center pt-4 border-top border-secondary">
+            <div class="nav justify-content-center gap-3 mb-3">
+                <a href="about.html" class="text-secondary text-decoration-none">About</a>
+                <a href="community.html" class="text-secondary text-decoration-none">Community</a>
+                <a href="faq.html" class="text-secondary text-decoration-none">FAQ</a>
+            </div>
+            <p class="text-secondary small m-0">©
+                <script>document.write(new Date().getFullYear())</script> LootTable. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4 text-start">
+                    <div class="footer-logo">
+                        <i class="bi bi-box-seam"></i> LootTable
+                    </div>
+                    <p class="text-secondary mb-4 pe-lg-5">Curating the ultimate tabletop experience. From mystery
+                        boxes
+                        to a thriving gamer community, we bring the fun directly to you.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-discord"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4 text-start">
+                    <h5 class="mb-4">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="boxes.html">Shop Boxes</a></li>
+                        <li><a href="how-it-works.html">How It Works</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-4 text-start">
+                    <h5 class="mb-4">Community</h5>
+                    <ul class="footer-links">
+                        <li><a href="community.html">Forum</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="testimonials.html">Reviews</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-4 text-start">
+                    <h5 class="mb-4">Newsletter</h5>
+                    <p class="text-secondary small">Sign up for exclusive dice drops and game keys.</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Your email">
+                        <button class="btn btn-premium px-3" type="button"><i class="bi bi-send-fill"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-top border-secondary mt-5 pt-4 text-center text-secondary small">
+                ©
+                <script>document.write(new Date().getFullYear())</script> LootTable. All rights reserved.
+                <div class="mt-2 text-start d-flex justify-content-center gap-3">
+                    <a href="faq.html" class="text-secondary text-decoration-none">FAQ</a> |
+                    <a href="contact.html" class="text-secondary text-decoration-none">Contact Support</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        .sequence-card {
+            transition: all 0.3s ease;
+        }
+
+        .sequence-card:hover {
+            transform: translateY(-3px) scale(1.01);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            border-color: var(--accent-color) !important;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>

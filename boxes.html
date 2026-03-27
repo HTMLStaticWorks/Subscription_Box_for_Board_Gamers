@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boxes | LootTable</title>
+    <title>Browse Our Boxes | LootTable</title>
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
 
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
@@ -51,18 +52,20 @@
             filter: drop-shadow(0 0 30px rgba(255, 215, 0, 0.1));
         }
 
-        .boxes-hero-copy .boxes-hero-heading {
-            text-align: center;
-        }
+        @media (max-width: 991.98px) {
+            .boxes-hero-copy .boxes-hero-heading {
+                text-align: center;
+            }
 
-        .boxes-hero-copy .boxes-hero-tag {
-            display: inline-flex;
-            width: fit-content;
-            margin-inline: auto;
-        }
+            .boxes-hero-copy .boxes-hero-tag {
+                display: inline-flex;
+                width: fit-content;
+                margin-inline: auto;
+            }
 
-        .boxes-hero-copy .boxes-hero-actions {
-            justify-content: center;
+            .boxes-hero-copy .boxes-hero-actions {
+                justify-content: center;
+            }
         }
 
         @media (min-width: 992px) {
@@ -104,7 +107,7 @@
 <body>
 
     <!-- Header / Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+    <nav class="navbar navbar-expand-xl navbar-custom fixed-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <i class="bi bi-box-seam"></i> LootTable
@@ -115,7 +118,7 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto ps-3 align-items-center">
+                <ul class="navbar-nav mx-auto ps-3 align-items-center">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
                     <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
@@ -144,443 +147,466 @@
         </div>
     </nav>
 
-    <!-- Page Header -->
-    <section class="section-padding overflow-hidden"
-        style="margin-top: 76px; background: radial-gradient(circle at top right, rgba(255,215,0,0.05), transparent);">
-        <div class="container">
-            <div class="row align-items-center g-5">
-                <div class="col-lg-7 text-start boxes-hero-animate boxes-hero-copy">
-                    <div class="badge badge-premium mb-3 px-3 py-2 rounded-pill boxes-hero-tag">Unbox the Meta</div>
-                    <h1 class="display-3 fw-bold mb-4 boxes-hero-heading">Legendary <span class="text-warning">Drops.</span>
-                    </h1>
-                    <p class="lead mb-5">Browse our complete archive of themed mystery boxes. From
-                        Strategy Titans to Party Legends, find the perfect addition to your game shelf.</p>
-                    <div class="d-flex gap-3 boxes-hero-actions">
-                        <button class="btn btn-premium px-5 py-3">Browse All</button>
-                        <button class="btn btn-outline-glass px-5 py-3">How it Works</button>
-                    </div>
-                </div>
-                <div class="col-lg-5 boxes-hero-animate text-center" style="animation-delay: 0.3s;">
-                    <div class="position-relative">
-                        <div class="position-absolute translate-middle top-50 start-50 bg-secondary rounded-circle"
-                            style="width: 300px; height: 300px; filter: blur(150px); opacity: 0.1; z-index: -1;"></div>
-                        <img src="assets/img/boxes-hero.png" class="img-fluid box-hero-img anti-gravity"
-                            alt="Boxes Hero">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- App Content -->
-    <section class="section-padding">
-        <div class="container">
-
-            <!-- Filter Bar -->
-            <div class="glass-card mb-5 d-flex flex-wrap gap-3 justify-content-center align-items-center p-3"
-                style="background-color: var(--primary-bg);">
-                <strong class="me-3 d-none d-md-block"><i class="bi bi-funnel"></i> Genre Filters:</strong>
-                <button class="btn btn-premium rounded-pill px-4 filter-btn active" data-filter="all">All Drops</button>
-                <button class="btn btn-outline-glass rounded-pill px-4 filter-btn"
-                    data-filter="strategy">Strategy</button>
-                <button class="btn btn-outline-glass rounded-pill px-4 filter-btn" data-filter="party">Party</button>
-                <button class="btn btn-outline-glass rounded-pill px-4 filter-btn" data-filter="family">Family</button>
-                <button class="btn btn-outline-glass rounded-pill px-4 filter-btn"
-                    data-filter="hardcore">Hardcore</button>
-            </div>
-
-            <!-- Grid -->
-            <div class="row g-4 justify-content-center" id="boxGrid">
-
-                <!-- Strategy Box -->
-                <div class="col-lg-4 col-md-6 grid-item strategy">
-                    <a href="box-details.html" class="text-decoration-none">
-                        <div class="glass-card h-100 p-0 text-center position-relative transition hover-border-warning">
-                            <div class="p-4 bg-black pb-0 rounded-top"
-                                style="background: rgba(0,0,0,0.3); height: 250px; display:flex; align-items:center; justify-content:center;">
-                                <svg width="150" height="150" viewBox="0 0 24 24" fill="none"
-                                    class="anti-gravity img-fluid filter-drop-shadow">
-                                    <polygon points="12,2 22,7 22,17 12,22 2,17 2,7" stroke="#D4AF37" stroke-width="1"
-                                        fill="rgba(212,175,55,0.15)" />
-                                    <polyline points="12,22 12,12 2,7" stroke="#D4AF37" stroke-width="1" />
-                                    <polyline points="12,12 22,7" stroke="#D4AF37" stroke-width="1" />
-                                </svg>
-                            </div>
-                            <div class="position-absolute top-0 end-0 m-3 d-flex gap-2">
-                                <span class="badge bg-primary">Strategy</span>
-                                <span class="badge badge-premium">Nov 2026</span>
-                            </div>
-                            <div class="p-4 text-start pt-3">
-                                <h4 class="text-white mb-2">Cosmic Command</h4>
-                                <p class="small text-secondary mb-3">4X Exploration & Resource Management.</p>
-                                <div class="d-flex justify-content-between text-secondary small">
-                                    <span><i class="bi bi-star-fill text-warning me-1"></i> 4.8</span>
-                                    <span><i class="bi bi-clock me-1"></i> 120-180m</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Party Box -->
-                <div class="col-lg-4 col-md-6 grid-item party">
-                    <a href="box-details.html" class="text-decoration-none">
-                        <div class="glass-card h-100 p-0 text-center position-relative transition hover-border-warning">
-                            <div class="p-4 bg-black pb-0 rounded-top"
-                                style="background: rgba(0,0,0,0.3); height: 250px; display:flex; align-items:center; justify-content:center;">
-                                <svg width="150" height="150" viewBox="0 0 24 24" fill="none"
-                                    class="anti-gravity-delayed img-fluid filter-drop-shadow">
-                                    <rect x="6" y="6" width="12" height="12" rx="2" stroke="#ff4757" stroke-width="1.5"
-                                        fill="rgba(255,71,87,0.15)" />
-                                    <circle cx="9" cy="9" r="1.5" fill="#ff4757" />
-                                    <circle cx="15" cy="15" r="1.5" fill="#ff4757" />
-                                </svg>
-                            </div>
-                            <div class="position-absolute top-0 end-0 m-3 d-flex gap-2">
-                                <span class="badge bg-success">Party</span>
-                                <span class="badge badge-premium">Oct 2026</span>
-                            </div>
-                            <div class="p-4 text-start pt-3">
-                                <h4 class="text-white mb-2">Wild Words</h4>
-                                <p class="small text-secondary mb-3">Hilarious word association and deceit.</p>
-                                <div class="d-flex justify-content-between text-secondary small">
-                                    <span><i class="bi bi-star-fill text-warning me-1"></i> 4.6</span>
-                                    <span><i class="bi bi-clock me-1"></i> 15-30m</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Hardcore Box -->
-                <div class="col-lg-4 col-md-6 grid-item hardcore">
-                    <a href="box-details.html" class="text-decoration-none">
-                        <div class="glass-card h-100 p-0 text-center position-relative transition hover-border-warning">
-                            <div class="p-4 bg-black pb-0 rounded-top"
-                                style="background: rgba(0,0,0,0.3); height: 250px; display:flex; align-items:center; justify-content:center;">
-                                <svg width="150" height="150" viewBox="0 0 24 24" fill="none"
-                                    class="anti-gravity img-fluid filter-drop-shadow">
-                                    <path d="M12 2L2 12l10 10 10-10L12 2z" stroke="#ff6b81" stroke-width="1.5"
-                                        fill="rgba(255,107,129,0.15)" />
-                                    <path d="M12 2v20M2 12h20" stroke="#ff6b81" stroke-width="1"
-                                        stroke-dasharray="2 2" />
-                                </svg>
-                            </div>
-                            <div class="position-absolute top-0 end-0 m-3 d-flex gap-2">
-                                <span class="badge bg-danger">Hardcore</span>
-                                <span class="badge badge-premium">Archive</span>
-                            </div>
-                            <div class="p-4 text-start pt-3">
-                                <h4 class="text-white mb-2">Dungeon Depths</h4>
-                                <p class="small text-secondary mb-3">Brutal dungeon crawling with mini campaigns.</p>
-                                <div class="d-flex justify-content-between text-secondary small">
-                                    <span><i class="bi bi-star-fill text-warning me-1"></i> 4.9</span>
-                                    <span><i class="bi bi-clock me-1"></i> 240m+</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Family Box -->
-                <div class="col-lg-4 col-md-6 grid-item family">
-                    <a href="box-details.html" class="text-decoration-none">
-                        <div class="glass-card h-100 p-0 text-center position-relative transition hover-border-warning">
-                            <div class="p-4 bg-black pb-0 rounded-top"
-                                style="background: rgba(0,0,0,0.3); height: 250px; display:flex; align-items:center; justify-content:center;">
-                                <svg width="150" height="150" viewBox="0 0 24 24" fill="none"
-                                    class="anti-gravity-delayed img-fluid filter-drop-shadow">
-                                    <rect x="4" y="8" width="16" height="12" stroke="#2ed573" stroke-width="1.5"
-                                        fill="rgba(46,213,115,0.15)" rx="1" />
-                                    <path d="M12 3L3 9h18L12 3z" stroke="#2ed573" fill="rgba(46,213,115,0.3)" />
-                                </svg>
-                            </div>
-                            <div class="position-absolute top-0 end-0 m-3 d-flex gap-2">
-                                <span class="badge bg-info">Family</span>
-                                <span class="badge badge-premium">Archive</span>
-                            </div>
-                            <div class="p-4 text-start pt-3">
-                                <h4 class="text-white mb-2">Forest Builders</h4>
-                                <p class="small text-secondary mb-3">Co-op tile laying in a magical forest.</p>
-                                <div class="d-flex justify-content-between text-secondary small">
-                                    <span><i class="bi bi-star-fill text-warning me-1"></i> 4.5</span>
-                                    <span><i class="bi bi-clock me-1"></i> 45m</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-            </div>
-
-            <div class="text-center mt-5 pt-3 border-top border-secondary">
-                <button class="btn btn-premium px-5"><i class="bi bi-arrow-clockwise me-2"></i> Load More
-                    Archives</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- New Section 1: Vault Tier Comparison -->
-    <section class="section-padding choose-your-legend" style="background-color: var(--secondary-bg);">
-        <div class="container text-center">
-            <div class="badge badge-premium mb-3">Choose Your Legend</div>
-            <h2 class="display-5 fw-bold mb-5">Which Tier Will You Claim?</h2>
-
-            <div class="row g-4 justify-content-center">
-                <div class="col-lg-4">
-                    <div class="glass-card h-100 p-5 hover-lift legend-card">
-                        <i class="bi bi-shield-shaded text-secondary h1 mb-4 d-block"></i>
-                        <h3 class="fw-bold mb-3">Silver Vault</h3>
-                        <p class="text-secondary small mb-4">Perfect for casual players looking to expand their
-                            collection with 1 core game + 2 exclusive accessories.</p>
-                        <div class="h2 fw-bold text-white mb-4">$39<span
-                                class="fs-6 fw-normal text-secondary">/mo</span></div>
-                        <ul class="list-unstyled text-start mb-5 small">
-                            <li class="mb-2"><i class="bi bi-check-circle-fill text-warning me-2"></i> 1 Full Premium
-                                Game</li>
-                            <li class="mb-2"><i class="bi bi-check-circle-fill text-warning me-2"></i> 2 Collector Items
-                            </li>
-                            <li class="mb-2"><i class="bi bi-check-circle-fill text-warning me-2"></i> $60 Guaranteed
-                                Value</li>
-                        </ul>
-                        <button class="btn btn-outline-glass w-100">Select Silver</button>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="glass-card h-100 p-5 border-warning hover-lift shadow-lg position-relative overflow-hidden legend-card"
-                        style="transform: scale(1.05); z-index: 2;">
-                        <div class="position-absolute bg-warning text-dark px-3 py-1 small fw-bold legend-ribbon">
-                            TOP CHOICE</div>
-                        <i class="bi bi-trophy-fill text-warning h1 mb-4 d-block"></i>
-                        <h3 class="fw-bold mb-3 text-warning">Gold Vault</h3>
-                        <p class="text-secondary small mb-4">The ultimate balance. 2 high-ranked games + 4 exclusive
-                            promos + priority dashboard perks.</p>
-                        <div class="h2 fw-bold text-white mb-4">$79<span
-                                class="fs-6 fw-normal text-secondary">/mo</span></div>
-                        <ul class="list-unstyled text-start mb-5 small">
-                            <li class="mb-2"><i class="bi bi-check-circle-fill text-warning me-2"></i> 2 Full Premium
-                                Games</li>
-                            <li class="mb-2"><i class="bi bi-check-circle-fill text-warning me-2"></i> 4 Exclusive
-                                Promos</li>
-                            <li class="mb-2"><i class="bi bi-check-circle-fill text-warning me-2"></i> $120 Guaranteed
-                                Value</li>
-                        </ul>
-                        <button class="btn btn-premium w-100">Select Gold</button>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="glass-card h-100 p-5 hover-lift legend-card">
-                        <i class="bi bi-gem text-info h1 mb-4 d-block"></i>
-                        <h3 class="fw-bold mb-3">Onyx Vault</h3>
-                        <p class="text-secondary small mb-4">For the hardcore strategists. 3 massive games + full
-                            kickstarter content + lifetime XP multiplier.</p>
-                        <div class="h2 fw-bold text-white mb-4">$149<span
-                                class="fs-6 fw-normal text-secondary">/mo</span></div>
-                        <ul class="list-unstyled text-start mb-5 small">
-                            <li class="mb-2"><i class="bi bi-check-circle-fill text-warning me-2"></i> 3+ Mega Games
-                            </li>
-                            <li class="mb-2"><i class="bi bi-check-circle-fill text-warning me-2"></i> Kickstarter
-                                Exclusives</li>
-                            <li class="mb-2"><i class="bi bi-check-circle-fill text-warning me-2"></i> $250 Guaranteed
-                                Value</li>
-                        </ul>
-                        <button class="btn btn-outline-glass w-100">Select Onyx</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- New Section 2: Community Unboxing Feed -->
-    <section class="section-padding">
-        <div class="container">
-            <h2 class="section-title">The Unboxing Feed</h2>
-            <div class="row g-4 mt-2">
-                <div class="col-md-6 col-lg-3">
-                    <div class="glass-card p-0 overflow-hidden hover-lift anti-gravity">
-                        <div class="position-relative">
-                            <img src="assets/img/curator.png" class="img-fluid img-reveal" alt="Unboxing">
-                            <div class="position-absolute top-50 start-50 translate-middle h1 text-white opacity-75">
-                                <i class="bi bi-play-circle"></i>
-                            </div>
-                        </div>
-                        <div class="p-3">
-                            <p class="small text-secondary m-0">@TableTopAlex - 12.4k Views</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="glass-card p-0 overflow-hidden hover-lift anti-gravity-delayed">
-                        <div class="position-relative">
-                            <img src="assets/img/vault.png" class="img-fluid img-reveal" alt="Unboxing">
-                            <div class="position-absolute top-50 start-50 translate-middle h1 text-white opacity-75">
-                                <i class="bi bi-play-circle"></i>
-                            </div>
-                        </div>
-                        <div class="p-3">
-                            <p class="small text-secondary m-0">@BoardLady - 8.2k Views</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="glass-card p-0 overflow-hidden hover-lift anti-gravity">
-                        <div class="position-relative">
-                            <img src="assets/img/stats.png" class="img-fluid img-reveal" alt="Unboxing">
-                            <div class="position-absolute top-50 start-50 translate-middle h1 text-white opacity-75">
-                                <i class="bi bi-play-circle"></i>
-                            </div>
-                        </div>
-                        <div class="p-3">
-                            <p class="small text-secondary m-0">@DiceRoller - 15k Views</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="glass-card p-0 overflow-hidden hover-lift anti-gravity-delayed">
-                        <div class="position-relative">
-                            <img src="assets/img/curator.png" class="img-fluid img-reveal" alt="Unboxing">
-                            <div class="position-absolute top-50 start-50 translate-middle h1 text-white opacity-75">
-                                <i class="bi bi-play-circle"></i>
-                            </div>
-                        </div>
-                        <div class="p-3">
-                            <p class="small text-secondary m-0">@GamerGeek - 5.1k Views</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="mt-5 text-center unboxing-feed-cta">
-                <button class="btn btn-premium btn-lg px-5">Share Your Unboxing <i
-                        class="bi bi-camera-fill ms-2"></i></button>
-            </div>
-        </div>
-
-        <!-- Footer -->
-        <footer class="footer d-none">
-            <div class="container text-center pt-4 border-top border-secondary">
-                <div class="nav justify-content-center gap-3 mb-3">
-                    <a href="dashboard/dashboard.html" class="text-secondary text-decoration-none">Dashboard</a>
-                    <a href="pricing.html" class="text-secondary text-decoration-none">Pricing</a>
-                    <a href="faq.html" class="text-secondary text-decoration-none">FAQ</a>
-                </div>
-                <p class="text-secondary small m-0">©
-                    <script>document.write(new Date().getFullYear())</script> LootTable. All rights reserved.
-                </p>
-            </div>
-        </footer>
-
-        <footer class="footer">
+    <main class="main-content">
+        <!-- Page Header -->
+        <section class="section-padding overflow-hidden"
+            style="margin-top: 76px; background-color: var(--secondary-bg);">
             <div class="container">
-                <div class="row g-5">
-                    <div class="col-lg-4 text-start">
-                        <div class="footer-logo">
-                            <i class="bi bi-box-seam"></i> LootTable
-                        </div>
-                        <p class="text-secondary mb-4 pe-lg-5">Curating the ultimate tabletop experience. From mystery
-                            boxes
-                            to a thriving gamer community, we bring the fun directly to you.</p>
-                        <div class="social-links">
-                            <a href="#"><i class="bi bi-twitter"></i></a>
-                            <a href="#"><i class="bi bi-discord"></i></a>
-                            <a href="#"><i class="bi bi-instagram"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-2 col-md-4 text-start">
-                        <h5 class="mb-4">Quick Links</h5>
-                        <ul class="footer-links">
-                            <li><a href="boxes.html">Shop Boxes</a></li>
-                            <li><a href="how-it-works.html">How It Works</a></li>
-                            <li><a href="pricing.html">Pricing</a></li>
-                            <li><a href="about.html">About Us</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-lg-2 col-md-4 text-start">
-                        <h5 class="mb-4">Community</h5>
-                        <ul class="footer-links">
-                            <li><a href="community.html">Forum</a></li>
-                            <li><a href="events.html">Events</a></li>
-                            <li><a href="blog.html">Blog</a></li>
-                            <li><a href="testimonials.html">Reviews</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-lg-4 col-md-4 text-start">
-                        <h5 class="mb-4">Newsletter</h5>
-                        <p class="text-secondary small">Sign up for exclusive dice drops and game keys.</p>
-                        <div class="input-group">
-                            <input type="email" class="form-control" placeholder="Your email">
-                            <button class="btn btn-premium px-3" type="button"><i class="bi bi-send-fill"></i></button>
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-7 text-center text-lg-start boxes-hero-animate boxes-hero-copy">
+                        <div class="badge badge-premium mb-3 px-3 py-2 rounded-pill boxes-hero-tag">Unbox the Meta</div>
+                        <h1 class="display-3 fw-bold mb-4 boxes-hero-heading">Legendary <span
+                                class="text-warning">Drops.</span>
+                        </h1>
+                        <p class="lead mb-5">Browse our complete archive of themed mystery boxes. From
+                            Strategy Titans to Party Legends, find the perfect addition to your game shelf.</p>
+                        <div class="d-flex gap-3 boxes-hero-actions">
+                            <button class="btn btn-premium px-5 py-3">Browse All</button>
+                            <button class="btn btn-outline-glass px-5 py-3">How it Works</button>
                         </div>
                     </div>
-                </div>
-
-                <div class="border-top border-secondary mt-5 pt-4 text-center text-secondary small">
-                    Â©
-                    <script>document.write(new Date().getFullYear())</script> LootTable. All rights reserved.
-                    <div class="mt-2 text-start d-flex justify-content-center gap-3">
-                        <a href="faq.html" class="text-secondary text-decoration-none">FAQ</a> |
-                        <a href="contact.html" class="text-secondary text-decoration-none">Contact Support</a>
+                    <div class="col-lg-5 boxes-hero-animate text-center" style="animation-delay: 0.3s;">
+                        <div class="position-relative">
+                            <div class="position-absolute translate-middle top-50 start-50 bg-secondary rounded-circle"
+                                style="width: 300px; height: 300px; filter: blur(150px); opacity: 0.1; z-index: -1;">
+                            </div>
+                            <img src="assets/img/boxes-hero.png" class="img-fluid box-hero-img anti-gravity"
+                                alt="Boxes Hero">
+                        </div>
                     </div>
                 </div>
             </div>
-        </footer>
+        </section>
 
-        <style>
-            .hover-border-warning:hover {
-                border-color: var(--accent-color) !important;
-                box-shadow: 0 5px 20px rgba(255, 215, 0, 0.2) !important;
-            }
+        <!-- App Content -->
+        <section class="section-padding">
+            <div class="container">
 
-            .filter-drop-shadow {
-                filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.5));
-            }
+                <!-- Filter Bar -->
+                <div class="glass-card mb-5 d-flex flex-wrap gap-3 justify-content-center align-items-center p-3"
+                    style="background-color: var(--primary-bg);">
+                    <strong class="me-3 d-none d-md-block"><i class="bi bi-funnel"></i> Genre Filters:</strong>
+                    <button class="btn btn-premium rounded-pill px-4 filter-btn active" data-filter="all">All
+                        Drops</button>
+                    <button class="btn btn-outline-glass rounded-pill px-4 filter-btn"
+                        data-filter="strategy">Strategy</button>
+                    <button class="btn btn-outline-glass rounded-pill px-4 filter-btn"
+                        data-filter="party">Party</button>
+                    <button class="btn btn-outline-glass rounded-pill px-4 filter-btn"
+                        data-filter="family">Family</button>
+                    <button class="btn btn-outline-glass rounded-pill px-4 filter-btn"
+                        data-filter="hardcore">Hardcore</button>
+                </div>
 
-            .grid-item {
-                transition: opacity 0.4s ease, transform 0.4s ease;
-            }
-        </style>
+                <!-- Grid -->
+                <div class="row g-4 justify-content-center" id="boxGrid">
 
-        <script>
-            document.addEventListener('DOMContentLoaded', () => {
-                const buttons = document.querySelectorAll('.filter-btn');
-                const items = document.querySelectorAll('.grid-item');
+                    <!-- Strategy Box -->
+                    <div class="col-lg-4 col-md-6 grid-item strategy">
+                        <a href="box-details.html" class="text-decoration-none">
+                            <div
+                                class="glass-card h-100 p-0 text-center position-relative transition hover-border-warning">
+                                <div class="p-4 bg-black pb-0 rounded-top"
+                                    style="background: rgba(0,0,0,0.3); height: 250px; display:flex; align-items:center; justify-content:center;">
+                                    <svg width="150" height="150" viewBox="0 0 24 24" fill="none"
+                                        class="anti-gravity img-fluid filter-drop-shadow">
+                                        <polygon points="12,2 22,7 22,17 12,22 2,17 2,7" stroke="#D4AF37"
+                                            stroke-width="1" fill="rgba(212,175,55,0.15)" />
+                                        <polyline points="12,22 12,12 2,7" stroke="#D4AF37" stroke-width="1" />
+                                        <polyline points="12,12 22,7" stroke="#D4AF37" stroke-width="1" />
+                                    </svg>
+                                </div>
+                                <div class="position-absolute top-0 end-0 m-3 d-flex gap-2">
+                                    <span class="badge bg-primary">Strategy</span>
+                                    <span class="badge badge-premium">Nov 2026</span>
+                                </div>
+                                <div class="p-4 text-start pt-3">
+                                    <h4 class="text-white mb-2">Cosmic Command</h4>
+                                    <p class="small text-secondary mb-3">4X Exploration & Resource Management.</p>
+                                    <div class="d-flex justify-content-between text-secondary small">
+                                        <span><i class="bi bi-star-fill text-warning me-1"></i> 4.8</span>
+                                        <span><i class="bi bi-clock me-1"></i> 120-180m</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
 
-                buttons.forEach(btn => {
-                    btn.addEventListener('click', () => {
-                        // Toggle active class
-                        buttons.forEach(b => {
-                            b.classList.remove('btn-premium', 'active');
-                            b.classList.add('btn-outline-glass');
-                        });
-                        btn.classList.add('btn-premium', 'active');
-                        btn.classList.remove('btn-outline-glass');
+                    <!-- Party Box -->
+                    <div class="col-lg-4 col-md-6 grid-item party">
+                        <a href="box-details.html" class="text-decoration-none">
+                            <div
+                                class="glass-card h-100 p-0 text-center position-relative transition hover-border-warning">
+                                <div class="p-4 bg-black pb-0 rounded-top"
+                                    style="background: rgba(0,0,0,0.3); height: 250px; display:flex; align-items:center; justify-content:center;">
+                                    <svg width="150" height="150" viewBox="0 0 24 24" fill="none"
+                                        class="anti-gravity-delayed img-fluid filter-drop-shadow">
+                                        <rect x="6" y="6" width="12" height="12" rx="2" stroke="#ff4757"
+                                            stroke-width="1.5" fill="rgba(255,71,87,0.15)" />
+                                        <circle cx="9" cy="9" r="1.5" fill="#ff4757" />
+                                        <circle cx="15" cy="15" r="1.5" fill="#ff4757" />
+                                    </svg>
+                                </div>
+                                <div class="position-absolute top-0 end-0 m-3 d-flex gap-2">
+                                    <span class="badge bg-success">Party</span>
+                                    <span class="badge badge-premium">Oct 2026</span>
+                                </div>
+                                <div class="p-4 text-start pt-3">
+                                    <h4 class="text-white mb-2">Wild Words</h4>
+                                    <p class="small text-secondary mb-3">Hilarious word association and deceit.</p>
+                                    <div class="d-flex justify-content-between text-secondary small">
+                                        <span><i class="bi bi-star-fill text-warning me-1"></i> 4.6</span>
+                                        <span><i class="bi bi-clock me-1"></i> 15-30m</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
 
-                        // Filter logic
-                        const filter = btn.getAttribute('data-filter');
-                        items.forEach(item => {
-                            item.style.opacity = '0';
-                            item.style.transform = 'scale(0.95)';
-                            setTimeout(() => {
-                                if (filter === 'all' || item.classList.contains(filter)) {
-                                    item.style.display = 'block';
-                                    setTimeout(() => {
-                                        item.style.opacity = '1';
-                                        item.style.transform = 'scale(1)';
-                                    }, 50);
-                                } else {
-                                    item.style.display = 'none';
-                                }
-                            }, 300);
-                        });
+                    <!-- Hardcore Box -->
+                    <div class="col-lg-4 col-md-6 grid-item hardcore">
+                        <a href="box-details.html" class="text-decoration-none">
+                            <div
+                                class="glass-card h-100 p-0 text-center position-relative transition hover-border-warning">
+                                <div class="p-4 bg-black pb-0 rounded-top"
+                                    style="background: rgba(0,0,0,0.3); height: 250px; display:flex; align-items:center; justify-content:center;">
+                                    <svg width="150" height="150" viewBox="0 0 24 24" fill="none"
+                                        class="anti-gravity img-fluid filter-drop-shadow">
+                                        <path d="M12 2L2 12l10 10 10-10L12 2z" stroke="#ff6b81" stroke-width="1.5"
+                                            fill="rgba(255,107,129,0.15)" />
+                                        <path d="M12 2v20M2 12h20" stroke="#ff6b81" stroke-width="1"
+                                            stroke-dasharray="2 2" />
+                                    </svg>
+                                </div>
+                                <div class="position-absolute top-0 end-0 m-3 d-flex gap-2">
+                                    <span class="badge bg-danger">Hardcore</span>
+                                    <span class="badge badge-premium">Archive</span>
+                                </div>
+                                <div class="p-4 text-start pt-3">
+                                    <h4 class="text-white mb-2">Dungeon Depths</h4>
+                                    <p class="small text-secondary mb-3">Brutal dungeon crawling with mini campaigns.
+                                    </p>
+                                    <div class="d-flex justify-content-between text-secondary small">
+                                        <span><i class="bi bi-star-fill text-warning me-1"></i> 4.9</span>
+                                        <span><i class="bi bi-clock me-1"></i> 240m+</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Family Box -->
+                    <div class="col-lg-4 col-md-6 grid-item family">
+                        <a href="box-details.html" class="text-decoration-none">
+                            <div
+                                class="glass-card h-100 p-0 text-center position-relative transition hover-border-warning">
+                                <div class="p-4 bg-black pb-0 rounded-top"
+                                    style="background: rgba(0,0,0,0.3); height: 250px; display:flex; align-items:center; justify-content:center;">
+                                    <svg width="150" height="150" viewBox="0 0 24 24" fill="none"
+                                        class="anti-gravity-delayed img-fluid filter-drop-shadow">
+                                        <rect x="4" y="8" width="16" height="12" stroke="#2ed573" stroke-width="1.5"
+                                            fill="rgba(46,213,115,0.15)" rx="1" />
+                                        <path d="M12 3L3 9h18L12 3z" stroke="#2ed573" fill="rgba(46,213,115,0.3)" />
+                                    </svg>
+                                </div>
+                                <div class="position-absolute top-0 end-0 m-3 d-flex gap-2">
+                                    <span class="badge bg-info">Family</span>
+                                    <span class="badge badge-premium">Archive</span>
+                                </div>
+                                <div class="p-4 text-start pt-3">
+                                    <h4 class="text-white mb-2">Forest Builders</h4>
+                                    <p class="small text-secondary mb-3">Co-op tile laying in a magical forest.</p>
+                                    <div class="d-flex justify-content-between text-secondary small">
+                                        <span><i class="bi bi-star-fill text-warning me-1"></i> 4.5</span>
+                                        <span><i class="bi bi-clock me-1"></i> 45m</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="text-center mt-5 pt-3 border-top border-secondary">
+                    <button class="btn btn-premium px-5"><i class="bi bi-arrow-clockwise me-2"></i> Load More
+                        Archives</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Section 1: Vault Tier Comparison -->
+        <section class="section-padding choose-your-legend" style="background-color: var(--secondary-bg);">
+            <div class="container text-center">
+                <div class="badge badge-premium mb-3">Choose Your Legend</div>
+                <h2 class="display-5 fw-bold mb-5">Which Tier Will You Claim?</h2>
+
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-4">
+                        <div class="glass-card h-100 p-5 hover-lift legend-card">
+                            <i class="bi bi-shield-shaded text-secondary h1 mb-4 d-block"></i>
+                            <h3 class="fw-bold mb-3">Silver Vault</h3>
+                            <p class="text-secondary small mb-4">Perfect for casual players looking to expand their
+                                collection with 1 core game + 2 exclusive accessories.</p>
+                            <div class="h2 fw-bold text-white mb-4">$39<span
+                                    class="fs-6 fw-normal text-secondary">/mo</span></div>
+                            <ul class="list-unstyled text-start mb-5 small">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-warning me-2"></i> 1 Full
+                                    Premium
+                                    Game</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-warning me-2"></i> 2 Collector
+                                    Items
+                                </li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-warning me-2"></i> $60
+                                    Guaranteed
+                                    Value</li>
+                            </ul>
+                            <button class="btn btn-outline-glass w-100">Select Silver</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="glass-card h-100 p-5 border-warning hover-lift shadow-lg position-relative overflow-hidden legend-card"
+                            style="transform: scale(1.05); z-index: 2;">
+                            <div class="position-absolute bg-warning text-dark px-3 py-1 small fw-bold legend-ribbon">
+                                TOP CHOICE</div>
+                            <i class="bi bi-trophy-fill text-warning h1 mb-4 d-block"></i>
+                            <h3 class="fw-bold mb-3 text-warning">Gold Vault</h3>
+                            <p class="text-secondary small mb-4">The ultimate balance. 2 high-ranked games + 4 exclusive
+                                promos + priority dashboard perks.</p>
+                            <div class="h2 fw-bold text-white mb-4">$79<span
+                                    class="fs-6 fw-normal text-secondary">/mo</span></div>
+                            <ul class="list-unstyled text-start mb-5 small">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-warning me-2"></i> 2 Full
+                                    Premium
+                                    Games</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-warning me-2"></i> 4 Exclusive
+                                    Promos</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-warning me-2"></i> $120
+                                    Guaranteed
+                                    Value</li>
+                            </ul>
+                            <button class="btn btn-premium w-100">Select Gold</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="glass-card h-100 p-5 hover-lift legend-card">
+                            <i class="bi bi-gem text-info h1 mb-4 d-block"></i>
+                            <h3 class="fw-bold mb-3">Onyx Vault</h3>
+                            <p class="text-secondary small mb-4">For the hardcore strategists. 3 massive games + full
+                                kickstarter content + lifetime XP multiplier.</p>
+                            <div class="h2 fw-bold text-white mb-4">$149<span
+                                    class="fs-6 fw-normal text-secondary">/mo</span></div>
+                            <ul class="list-unstyled text-start mb-5 small">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-warning me-2"></i> 3+ Mega Games
+                                </li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-warning me-2"></i> Kickstarter
+                                    Exclusives</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-warning me-2"></i> $250
+                                    Guaranteed
+                                    Value</li>
+                            </ul>
+                            <button class="btn btn-outline-glass w-100">Select Onyx</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Section 2: Community Unboxing Feed -->
+        <section class="section-padding">
+            <div class="container">
+                <h2 class="section-title">The Unboxing Feed</h2>
+                <div class="row g-4 mt-2">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="glass-card p-0 overflow-hidden hover-lift anti-gravity">
+                            <div class="position-relative">
+                                <img src="assets/img/curator.png" class="img-fluid img-reveal" alt="Unboxing">
+                                <div
+                                    class="position-absolute top-50 start-50 translate-middle h1 text-white opacity-75">
+                                    <i class="bi bi-play-circle"></i>
+                                </div>
+                            </div>
+                            <div class="p-3">
+                                <p class="small text-secondary m-0">@TableTopAlex - 12.4k Views</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="glass-card p-0 overflow-hidden hover-lift anti-gravity-delayed">
+                            <div class="position-relative">
+                                <img src="assets/img/vault.png" class="img-fluid img-reveal" alt="Unboxing">
+                                <div
+                                    class="position-absolute top-50 start-50 translate-middle h1 text-white opacity-75">
+                                    <i class="bi bi-play-circle"></i>
+                                </div>
+                            </div>
+                            <div class="p-3">
+                                <p class="small text-secondary m-0">@BoardLady - 8.2k Views</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="glass-card p-0 overflow-hidden hover-lift anti-gravity">
+                            <div class="position-relative">
+                                <img src="assets/img/stats.png" class="img-fluid img-reveal" alt="Unboxing">
+                                <div
+                                    class="position-absolute top-50 start-50 translate-middle h1 text-white opacity-75">
+                                    <i class="bi bi-play-circle"></i>
+                                </div>
+                            </div>
+                            <div class="p-3">
+                                <p class="small text-secondary m-0">@DiceRoller - 15k Views</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="glass-card p-0 overflow-hidden hover-lift anti-gravity-delayed">
+                            <div class="position-relative">
+                                <img src="assets/img/curator.png" class="img-fluid img-reveal" alt="Unboxing">
+                                <div
+                                    class="position-absolute top-50 start-50 translate-middle h1 text-white opacity-75">
+                                    <i class="bi bi-play-circle"></i>
+                                </div>
+                            </div>
+                            <div class="p-3">
+                                <p class="small text-secondary m-0">@GamerGeek - 5.1k Views</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-5 text-center unboxing-feed-cta">
+                    <button class="btn btn-premium btn-lg px-5">Share Your Unboxing <i
+                            class="bi bi-camera-fill ms-2"></i></button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer d-none">
+        <div class="container text-center pt-4 border-top border-secondary">
+            <div class="nav justify-content-center gap-3 mb-3">
+                <a href="dashboard/dashboard.html" class="text-secondary text-decoration-none">Dashboard</a>
+                <a href="pricing.html" class="text-secondary text-decoration-none">Pricing</a>
+                <a href="faq.html" class="text-secondary text-decoration-none">FAQ</a>
+            </div>
+            <p class="text-secondary small m-0">©
+                <script>document.write(new Date().getFullYear())</script> LootTable. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4 text-start">
+                    <div class="footer-logo">
+                        <i class="bi bi-box-seam"></i> LootTable
+                    </div>
+                    <p class="text-secondary mb-4 pe-lg-5">Curating the ultimate tabletop experience. From mystery
+                        boxes
+                        to a thriving gamer community, we bring the fun directly to you.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-discord"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4 text-start">
+                    <h5 class="mb-4">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="boxes.html">Shop Boxes</a></li>
+                        <li><a href="how-it-works.html">How It Works</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-4 text-start">
+                    <h5 class="mb-4">Community</h5>
+                    <ul class="footer-links">
+                        <li><a href="community.html">Forum</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="testimonials.html">Reviews</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-4 text-start">
+                    <h5 class="mb-4">Newsletter</h5>
+                    <p class="text-secondary small">Sign up for exclusive dice drops and game keys.</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Your email">
+                        <button class="btn btn-premium px-3" type="button"><i class="bi bi-send-fill"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-top border-secondary mt-5 pt-4 text-center text-secondary small">
+                ©
+                <script>document.write(new Date().getFullYear())</script> LootTable. All rights reserved.
+                <div class="mt-2 text-start d-flex justify-content-center gap-3">
+                    <a href="faq.html" class="text-secondary text-decoration-none">FAQ</a> |
+                    <a href="contact.html" class="text-secondary text-decoration-none">Contact Support</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        .hover-border-warning:hover {
+            border-color: var(--accent-color) !important;
+            box-shadow: 0 5px 20px rgba(255, 215, 0, 0.2) !important;
+        }
+
+        .filter-drop-shadow {
+            filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.5));
+        }
+
+        .grid-item {
+            transition: opacity 0.4s ease, transform 0.4s ease;
+        }
+    </style>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const buttons = document.querySelectorAll('.filter-btn');
+            const items = document.querySelectorAll('.grid-item');
+
+            buttons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Toggle active class
+                    buttons.forEach(b => {
+                        b.classList.remove('btn-premium', 'active');
+                        b.classList.add('btn-outline-glass');
+                    });
+                    btn.classList.add('btn-premium', 'active');
+                    btn.classList.remove('btn-outline-glass');
+
+                    // Filter logic
+                    const filter = btn.getAttribute('data-filter');
+                    items.forEach(item => {
+                        item.style.opacity = '0';
+                        item.style.transform = 'scale(0.95)';
+                        setTimeout(() => {
+                            if (filter === 'all' || item.classList.contains(filter)) {
+                                item.style.display = 'block';
+                                setTimeout(() => {
+                                    item.style.opacity = '1';
+                                    item.style.transform = 'scale(1)';
+                                }, 50);
+                            } else {
+                                item.style.display = 'none';
+                            }
+                        }, 300);
                     });
                 });
             });
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/js/main.js"></script>
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
