@@ -24,13 +24,36 @@
     <style>
         .auth-wrapper {
             min-height: 100vh;
+            min-height: 100dvh;
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 2rem;
+            padding: calc(4rem + env(safe-area-inset-top, 0px)) 2rem calc(4rem + env(safe-area-inset-bottom, 0px)) 2rem;
             position: relative;
-            overflow: hidden;
+            overflow-y: auto;
             background: var(--primary-bg);
+        }
+
+        @media (max-height: 850px) {
+            .auth-wrapper {
+                align-items: flex-start;
+                padding-top: calc(2.5rem + env(safe-area-inset-top, 0px));
+                padding-bottom: calc(2.5rem + env(safe-area-inset-bottom, 0px));
+            }
+        }
+
+        .auth-toggles {
+            z-index: 2;
+        }
+
+        @media (max-width: 576px) {
+            .auth-card {
+                margin-top: 4.5rem;
+            }
+
+            .auth-toggles {
+                padding: 1rem !important;
+            }
         }
 
         .auth-brand {
@@ -40,7 +63,6 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 0.5rem;
             text-decoration: none !important;
             margin-bottom: 2rem;
             transition: transform 0.3s ease;
@@ -53,16 +75,17 @@
         .auth-brand i {
             color: var(--accent-color);
             font-size: 1.8rem;
+            margin-right: 0.5rem;
         }
 
         .auth-card {
             width: 100%;
-            max-width: 500px;
+            max-width: 440px;
             z-index: 1;
         }
 
         .auth-card .glass-card {
-            padding: 3rem;
+            padding: 2.5rem;
         }
 
         .auth-footer {
@@ -100,14 +123,15 @@
         </div>
 
         <div class="auth-card">
-            <a href="index.html" class="auth-brand">
-                <i class="bi bi-box-seam"></i>
-                <span class="auth-brand-text">LootTable</span>
-            </a>
-
             <div class="glass-card">
-                <h2 class="text-center mb-4">Join the Collective</h2>
-                <p class="text-center text-secondary mb-4">Start your mystery box journey today</p>
+                <div class="text-center mb-5 mt-2">
+                    <a href="index.html" class="auth-brand">
+                        <i class="bi bi-box-seam"></i>
+                        <span class="auth-brand-text">LootTable</span>
+                    </a>
+                    <h2 class="mb-2">Join the Collective</h2>
+                    <p class="text-secondary small">Start your mystery box journey today</p>
+                </div>
 
                 <form>
                     <div class="mb-3">
@@ -154,7 +178,7 @@
         </div>
 
         <!-- Quick Toggles -->
-        <div class="position-absolute top-0 end-0 p-4 d-flex gap-3">
+        <div class="auth-toggles position-absolute top-0 end-0 p-4 d-flex gap-3">
             <button id="themeToggle" class="btn btn-outline-glass rounded-circle p-2" title="Toggle Theme">
                 <i class="bi bi-moon-stars"></i>
             </button>

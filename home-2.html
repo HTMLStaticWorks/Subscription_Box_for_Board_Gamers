@@ -16,14 +16,15 @@
 
 <body>
 
-    <!-- Header / Navbar (Transparent variant) -->
-    <nav class="navbar navbar-expand-xl navbar-custom fixed-top" style="background: transparent; border-bottom: none;">
+    <!-- Header / Navbar -->
+    <nav class="navbar navbar-expand-xl navbar-custom fixed-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <i class="bi bi-box-seam"></i> LootTable
             </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="bi bi-list" style="color: var(--text-primary); font-size: 1.5rem;"></i>
             </button>
 
@@ -38,7 +39,7 @@
                     <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
                     <li class="nav-item pe-3"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
-                <div class="nav-toggles ms-auto ps-3 align-items-center d-flex gap-3">
+                <div class="nav-toggles ms-auto ps-3 d-flex align-items-center gap-3">
                     <a href="login.html" class="btn btn-outline-glass d-flex align-items-center" title="Login">
                         <i class="bi bi-box-arrow-in-right"></i>
                     </a>
@@ -50,8 +51,9 @@
                         title="Toggle RTL/LTR">
                         <i class="bi bi-text-left"></i>
                     </button>
-                    <button id="themeToggle" class="toggle-btn" title="Toggle Theme"><i
-                            class="bi bi-moon-stars home-two-theme-icon"></i></button>
+                    <button id="themeToggle" class="toggle-btn" title="Toggle Theme">
+                        <i class="bi bi-moon-stars"></i>
+                    </button>
                 </div>
             </div>
         </div>
@@ -60,7 +62,7 @@
     <main class="main-content">
         <!-- Alternative Hero Section (Full Cover Image + Overlay) -->
         <section class="hero-section text-center position-relative"
-            style="background: url('https://images.unsplash.com/photo-1611891487122-2075bc9d3f15?q=80&w=2671&auto=format&fit=crop') center/cover no-repeat; min-height: 100vh;">
+            style="background: url('assets/img/hero-2-bg.png') center/cover no-repeat; min-height: 100vh;">
             <!-- Dark Overlay -->
             <div class="position-absolute w-100 h-100 top-0 start-0"
                 style="background: rgba(11,15,20, 0.85); z-index: 0;">
@@ -410,22 +412,6 @@
         </div>
     </footer>
 
-    <!-- Small script to handle navbar background on scroll since starting transparent -->
-    <script>
-        document.addEventListener('scroll', () => {
-            const nav = document.querySelector('.navbar-custom');
-            const themeIcon = document.querySelector('.home-two-theme-icon');
-            if (window.scrollY > 50) {
-                nav.style.background = 'var(--glass-bg)';
-                nav.style.borderBottom = '1px solid var(--border-color)';
-                if (themeIcon) themeIcon.style.color = 'var(--text-primary)';
-            } else {
-                nav.style.background = 'transparent';
-                nav.style.borderBottom = 'none';
-                if (themeIcon) themeIcon.style.color = '#fff';
-            }
-        });
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>

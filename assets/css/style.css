@@ -89,6 +89,10 @@ a:hover {
   text-shadow: 0 0 10px var(--accent-color);
 }
 
+.text-secondary {
+  color: var(--text-secondary) !important;
+}
+
 /* Utility Classes with Logical Properties */
 .ms-auto {
   margin-inline-start: auto !important;
