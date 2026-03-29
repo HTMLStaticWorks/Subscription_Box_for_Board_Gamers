@@ -113,6 +113,52 @@
             color: #9a6b00 !important;
             border-color: #c99500 !important;
         }
+
+        [data-theme="light"] .contact-hero-lead {
+            color: #ffffff !important;
+        }
+
+        [data-theme="light"] .support-ticket-section {
+            background-color: var(--primary-bg) !important;
+        }
+
+        [data-theme="light"] .support-ticket-title {
+            color: var(--text-primary) !important;
+        }
+
+        [data-theme="light"] .support-ticket-section .support-ticket-card,
+        [data-theme="light"] .support-ticket-section .support-ticket-alert {
+            background-color: var(--secondary-bg) !important;
+            border-color: rgba(15, 23, 42, 0.12) !important;
+        }
+
+        [data-theme="light"] .support-ticket-section .support-ticket-form .form-control,
+        [data-theme="light"] .support-ticket-section .support-ticket-form .form-select {
+            background-color: var(--primary-bg) !important;
+            color: var(--text-primary) !important;
+            border-color: rgba(15, 23, 42, 0.12) !important;
+        }
+
+        [data-theme="light"] .support-ticket-section .support-ticket-form .form-control::placeholder {
+            color: #64748b;
+            opacity: 1;
+        }
+
+        [data-theme="light"] .support-ticket-section .support-ticket-form .form-control:focus,
+        [data-theme="light"] .support-ticket-section .support-ticket-form .form-select:focus {
+            background-color: var(--primary-bg) !important;
+            color: var(--text-primary) !important;
+            border-color: var(--accent-color) !important;
+            box-shadow: 0 0 10px rgba(212, 175, 55, 0.15);
+        }
+
+        [data-theme="light"] .support-ticket-section .direct-comms-icon {
+            background: var(--primary-bg);
+        }
+
+        [data-theme="light"] .support-ticket-section .text-white {
+            color: var(--text-primary) !important;
+        }
     </style>
 </head>
 
@@ -175,7 +221,7 @@
                         </div>
                         <h1 class="display-3 fw-bold mb-4">Signal the <span class="text-warning">Guildmasters.</span>
                         </h1>
-                        <p class="lead mb-5 mx-auto" style="max-width: 700px;">Direct comms to our curation
+                        <p class="lead mb-5 mx-auto contact-hero-lead" style="max-width: 700px;">Direct comms to our curation
                             armory and support command center. We're standing by to ensure your tabletop experience is
                             legendary.</p>
                     </div>
@@ -184,20 +230,20 @@
         </section>
 
         <!-- Contact View Container -->
-        <section class="section-padding bg-black d-flex align-items-center">
+        <section class="section-padding bg-black d-flex align-items-center support-ticket-section">
             <div class="container">
 
                 <div class="row align-items-center g-5 justify-content-between">
                     <!-- Contact Form Area -->
                     <div class="col-lg-6">
-                        <h1 class="display-3 fw-bold mb-3 text-white">Open a <span class="text-warning">Support
+                        <h1 class="display-3 fw-bold mb-3 text-white support-ticket-title">Open a <span class="text-warning">Support
                                 Ticket</span></h1>
                         <p class="text-secondary lead mb-5">Have a question about your loot drop? Damaged component?
                             Missing
                             rules insert? File a support ticket directly with our command center.</p>
 
                         <div class="glass-card p-5">
-                            <form id="contactForm">
+                            <form id="contactForm" class="support-ticket-form">
                                 <div class="row g-4">
                                     <div class="col-md-6">
                                         <label class="form-label text-secondary small text-uppercase">Gamer Tag /
@@ -251,7 +297,7 @@
 
                     <!-- Alternative Contact Methods -->
                     <div class="col-lg-5">
-                        <div class="glass-card p-5 border-start border-4 border-warning bg-black"
+                        <div class="glass-card p-5 border-start border-4 border-warning bg-black support-ticket-card"
                             style="background-color: var(--primary-bg);">
                             <h3 class="mb-4 text-white">Direct Comms</h3>
 
@@ -290,7 +336,7 @@
                         </div>
 
                         <div
-                            class="alert bg-black border-secondary text-secondary mt-4 d-flex gap-3 align-items-start small p-4">
+                            class="alert bg-black border-secondary text-secondary mt-4 d-flex gap-3 align-items-start small p-4 support-ticket-alert">
                             <i class="bi bi-info-circle-fill text-warning fs-5"></i>
                             <div>
                                 Are you attempting to cancel, skip, or modify your subscription billing cycle? You can

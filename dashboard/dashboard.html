@@ -23,15 +23,14 @@
     <style>
         html,
         body {
-            height: 100%;
-            overflow: hidden !important;
+            min-height: 100%;
+            overflow-x: hidden;
         }
 
         .dashboard-wrapper {
             display: flex;
-            height: calc(100vh - 80px);
+            min-height: calc(100vh - 80px);
             margin-top: 80px;
-            overflow: hidden;
         }
 
         .sidebar {
@@ -39,7 +38,7 @@
             background: var(--secondary-bg);
             border-right: 1px solid var(--border-color);
             padding: 2rem 1rem;
-            height: 100%;
+            height: calc(100vh - 80px);
             overflow-y: auto;
             z-index: 100;
             display: flex;
@@ -58,9 +57,9 @@
         .dashboard-content {
             flex: 1;
             padding: 2rem;
+            padding-bottom: 4rem;
             background-color: var(--primary-bg);
-            overflow-y: auto;
-            height: 100%;
+            min-height: calc(100vh - 80px);
         }
 
         .profile-header {
@@ -147,6 +146,14 @@
             margin-left: auto;
             display: flex;
             justify-content: flex-end;
+        }
+
+        [data-theme="dark"] .dashboard-navbar {
+            background: var(--secondary-bg) !important;
+        }
+
+        [data-theme="light"] .dashboard-navbar {
+            background: rgba(255, 255, 255, 0.92) !important;
         }
 
         @media (min-width: 1200px) {
@@ -259,7 +266,7 @@
 <body>
 
     <!-- Header / Navbar -->
-    <nav class="navbar navbar-expand-xl navbar-custom bg-dark bg-opacity-90 border-bottom border-secondary">
+    <nav class="navbar navbar-expand-xl navbar-custom dashboard-navbar fixed-top bg-dark bg-opacity-90 border-bottom border-secondary">
         <div class="container">
             <a class="navbar-brand" href="../index.html">
                 <i class="bi bi-box-seam"></i> LootTable
