@@ -72,6 +72,41 @@
             object-fit: cover;
         }
 
+        .faq-dropdown {
+            max-width: 980px;
+            margin: 0 auto;
+        }
+
+        .faq-dropdown .accordion-item {
+            background: var(--secondary-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 14px !important;
+            overflow: hidden;
+            margin-bottom: 1rem;
+        }
+
+        .faq-dropdown .accordion-button {
+            background: transparent;
+            color: var(--text-primary);
+            font-weight: 700;
+            box-shadow: none;
+        }
+
+        .faq-dropdown .accordion-button:not(.collapsed) {
+            background: rgba(255, 215, 0, 0.08);
+            color: var(--text-primary);
+        }
+
+        .faq-dropdown .accordion-body {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            text-align: start;
+        }
+
+        [data-theme="dark"] .faq-dropdown .accordion-button::after {
+            filter: brightness(0) invert(1);
+        }
+
         @media (min-width: 768px) {
             .gift-experience-section .glass-card {
                 max-width: 100%;
@@ -110,9 +145,9 @@
                 <ul class="navbar-nav mx-auto ps-3 align-items-center">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
                     <li class="nav-item"><a class="nav-link" href="boxes.html">Boxes</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                     <li class="nav-item"><a class="nav-link active" href="pricing.html">Pricing</a></li>
                     <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
                     <li class="nav-item pe-3"><a class="nav-link" href="contact.html">Contact</a></li>
@@ -211,7 +246,7 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="glass-card h-100 p-5 position-relative border border-warning d-flex flex-column is-visible"
                             style="opacity:1; transform:translateY(0); box-shadow: 0 0 30px rgba(255,215,0,0.2);">
-                            <div class="badge badge-premium px-3 py-2 mx-auto mb-3"
+                            <div class="badge badge-premium px-3 py-2 position-absolute top-0 start-50 translate-middle-x mt-4"
                                 style="font-size: 0.9rem; width: fit-content;">Most Popular</div>
                             <h3 class="mb-3 text-warning">Premium 👑</h3>
                             <p class="text-secondary small mb-4">For the dedicated connoisseur who wants the absolute
@@ -281,33 +316,53 @@
                 <div class="badge badge-premium mb-3">Support</div>
                 <h2 class="display-6 fw-bold mb-5">Common Questions</h2>
 
-                <div class="row g-4 text-start justify-content-center">
-                    <div class="col-lg-4">
-                        <div class="glass-card p-4 h-100">
-                            <h5 class="fw-bold mb-3"><i class="bi bi-question-circle text-warning me-2"></i> Can I skip
-                                a
-                                month?</h5>
-                            <p class="text-secondary small mb-0">Absolutely. You can skip any month or cancel your
-                                subscription directly from your dashboard with zero penalties.</p>
+                <div class="accordion faq-dropdown text-start" id="pricingFaqAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faqHeadingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faqCollapseOne" aria-expanded="true" aria-controls="faqCollapseOne">
+                                <i class="bi bi-question-circle text-warning me-2"></i> Can I skip a month?
+                            </button>
+                        </h2>
+                        <div id="faqCollapseOne" class="accordion-collapse collapse show" aria-labelledby="faqHeadingOne"
+                            data-bs-parent="#pricingFaqAccordion">
+                            <div class="accordion-body">
+                                Absolutely. You can skip any month or cancel your subscription directly from your
+                                dashboard with zero penalties.
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="glass-card p-4 h-100">
-                            <h5 class="fw-bold mb-3"><i class="bi bi-question-circle text-warning me-2"></i> What games
-                                are
-                                inside?</h5>
-                            <p class="text-secondary small mb-0">We curate only highly-rated titles (typically 7.5+ on
-                                BGG)
-                                across strategy, thematic, and family categories.</p>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faqHeadingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo">
+                                <i class="bi bi-question-circle text-warning me-2"></i> What games are inside?
+                            </button>
+                        </h2>
+                        <div id="faqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadingTwo"
+                            data-bs-parent="#pricingFaqAccordion">
+                            <div class="accordion-body">
+                                We curate only highly-rated titles (typically 7.5+ on BGG) across strategy, thematic, and
+                                family categories.
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="glass-card p-4 h-100">
-                            <h5 class="fw-bold mb-3"><i class="bi bi-question-circle text-warning me-2"></i> When does
-                                it
-                                ship?</h5>
-                            <p class="text-secondary small mb-0">Our monthly vaults ship on the 15th of every month.
-                                Tracking codes are sent automatically once the courier scans the box.</p>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faqHeadingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faqCollapseThree" aria-expanded="false"
+                                aria-controls="faqCollapseThree">
+                                <i class="bi bi-question-circle text-warning me-2"></i> When does it ship?
+                            </button>
+                        </h2>
+                        <div id="faqCollapseThree" class="accordion-collapse collapse" aria-labelledby="faqHeadingThree"
+                            data-bs-parent="#pricingFaqAccordion">
+                            <div class="accordion-body">
+                                Our monthly vaults ship on the 15th of every month. Tracking codes are sent automatically
+                                once the courier scans the box.
+                            </div>
                         </div>
                     </div>
                 </div>

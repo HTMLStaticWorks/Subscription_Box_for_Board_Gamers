@@ -221,6 +221,21 @@
             color: var(--accent-color) !important;
         }
 
+        .mobile-logout-link {
+            display: flex;
+            align-items: center;
+            gap: 0.55rem;
+            color: #dc3545 !important;
+            border: 1px solid rgba(220, 53, 69, 0.2);
+            background: rgba(220, 53, 69, 0.1);
+        }
+
+        .mobile-logout-link:hover,
+        .mobile-logout-link:focus {
+            color: #dc3545 !important;
+            background: rgba(220, 53, 69, 0.15) !important;
+        }
+
         @media (max-width: 1199.98px) {
             .dashboard-wrapper {
                 flex-direction: column;
@@ -322,7 +337,11 @@
                     <li class="nav-item"><a class="nav-link" href="#forum">Community Forum</a></li>
                     <li class="nav-item"><a class="nav-link" href="#vouchers">My Loot & Vouchers</a></li>
                     <li class="nav-item"><a class="nav-link" href="#account">Settings</a></li>
-                    <li class="nav-item"><a class="nav-link text-danger" href="../index.html">Logout</a></li>
+                    <li class="nav-item mt-2">
+                        <a class="nav-link mobile-logout-link" href="../index.html">
+                            <i class="bi bi-box-arrow-right"></i> Logout
+                        </a>
+                    </li>
                 </ul>
 
                 <div class="ms-auto d-flex align-items-center gap-3 dashboard-nav-actions">
