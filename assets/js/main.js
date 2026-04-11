@@ -57,13 +57,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!rtlToggle) return;
         const icon = rtlToggle.querySelector('i');
         if (!icon) return;
-        if (dir === 'rtl') {
-            icon.classList.remove('bi-text-left');
-            icon.classList.add('bi-text-right');
-        } else {
-            icon.classList.remove('bi-text-right');
-            icon.classList.add('bi-text-left');
-        }
+        icon.classList.remove('bi-text-left', 'bi-text-right');
+        icon.classList.add('bi-arrow-left-right');
     }
 
     // Smooth scroll for anchor links

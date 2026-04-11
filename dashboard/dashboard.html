@@ -148,6 +148,41 @@
             justify-content: flex-end;
         }
 
+        .dashboard-menu-close-icon {
+            display: none;
+        }
+
+        .navbar-toggler[aria-expanded="true"] .dashboard-menu-open-icon {
+            display: none;
+        }
+
+        .navbar-toggler[aria-expanded="true"] .dashboard-menu-close-icon {
+            display: inline-block;
+        }
+
+        .dashboard-header-profile {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.65rem;
+            white-space: nowrap;
+        }
+
+        .dashboard-header-avatar {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            border: 2px solid var(--accent-color);
+            padding: 2px;
+            background: var(--glass-bg);
+        }
+
+        .dashboard-header-greeting {
+            margin: 0;
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
         [data-theme="dark"] .dashboard-navbar {
             background: var(--secondary-bg) !important;
         }
@@ -272,13 +307,16 @@
                 <i class="bi bi-box-seam"></i> LootTable
             </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#dashboardNav"
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dashboardNav"
                 aria-controls="dashboardNav" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="bi bi-list" style="color: var(--text-primary); font-size: 1.5rem;"></i>
+                <i class="bi bi-list dashboard-menu-open-icon"
+                    style="color: var(--text-primary); font-size: 1.5rem;"></i>
+                <i class="bi bi-x-lg dashboard-menu-close-icon"
+                    style="color: var(--text-primary); font-size: 1.5rem;"></i>
             </button>
 
             <div class="collapse navbar-collapse" id="dashboardNav">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-lg-none">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-xl-none">
                     <li class="nav-item"><a class="nav-link" href="#overview">Dashboard</a></li>
                     <li class="nav-item"><a class="nav-link" href="#subscription">My Subscription</a></li>
                     <li class="nav-item"><a class="nav-link" href="#forum">Community Forum</a></li>
@@ -295,6 +333,11 @@
                     <button id="themeToggle" class="toggle-btn" title="Toggle Theme">
                         <i class="bi bi-moon-stars"></i>
                     </button>
+                    <div class="dashboard-header-profile d-none d-xl-inline-flex">
+                        <img src="https://ui-avatars.com/api/?name=Alex+Gamer&background=FFB300&color=000&bold=true"
+                            alt="Avatar" class="dashboard-header-avatar">
+                        <p class="dashboard-header-greeting">Welcome back, Alex!</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -329,18 +372,7 @@
         <main class="dashboard-content">
             <div class="container-fluid">
 
-                <!-- Welcome Section -->
-                <div id="overview" class="profile-header">
-                    <img src="https://ui-avatars.com/api/?name=Alex+Gamer&background=FFB300&color=000&bold=true"
-                        alt="Avatar" class="profile-avatar">
-                    <div class="profile-copy">
-                        <h2 class="mb-1">Welcome back, Alex!</h2>
-                        <p class="text-secondary mb-0">You've unboxed <span class="text-warning fw-bold">12 epic
-                                mysteries</span> so far.</p>
-                    </div>
-                </div>
-
-                <div class="row g-4 mb-5">
+                <div id="overview" class="row g-4 mb-5">
                     <div class="col-xl-3 col-sm-6 text-start">
                         <div class="glass-card stat-card h-100">
                             <i class="bi bi-box-seam"></i>

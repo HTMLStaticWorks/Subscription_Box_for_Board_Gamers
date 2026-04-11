@@ -54,6 +54,39 @@
             .auth-toggles {
                 padding: 1rem !important;
             }
+
+            .remember-forgot-row {
+                gap: 0.75rem;
+            }
+
+            .remember-forgot-row .form-check {
+                display: flex;
+                align-items: center;
+                margin: 0;
+                flex-shrink: 0;
+            }
+
+            .remember-forgot-row .form-check-input {
+                float: none;
+                margin-top: 0;
+                margin-left: 0;
+                margin-right: 0.45rem;
+            }
+
+            .remember-forgot-row .form-check-label,
+            .remember-forgot-row .text-accent {
+                font-size: 0.875rem;
+                line-height: 1.2;
+            }
+
+            .remember-forgot-row .form-check-label {
+                white-space: nowrap;
+            }
+
+            .remember-forgot-row .text-accent {
+                white-space: nowrap;
+                flex-shrink: 0;
+            }
         }
 
         .auth-brand {
@@ -142,13 +175,15 @@
                     <div class="mb-3">
                         <div class="d-flex justify-content-between">
                             <label for="password" class="form-label">Password</label>
-                            <a href="#" class="small text-accent">Forgot?</a>
                         </div>
                         <input type="password" class="form-control" id="password" placeholder="••••••••" required>
                     </div>
-                    <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="remember">
-                        <label class="form-check-label" for="remember">Remember me</label>
+                    <div class="mb-3 d-flex justify-content-between align-items-center remember-forgot-row">
+                        <div class="form-check mb-0">
+                            <input type="checkbox" class="form-check-input" id="remember">
+                            <label class="form-check-label" for="remember">Remember me</label>
+                        </div>
+                        <a href="#" class="small text-accent">Forgot password</a>
                     </div>
                     <button type="submit" class="btn btn-premium w-100 py-3 mt-2">Login to Vault</button>
 
@@ -175,7 +210,7 @@
                 <i class="bi bi-moon-stars"></i>
             </button>
             <button id="rtlToggle" class="btn btn-outline-glass rounded-circle p-2" title="Toggle RTL">
-                <i class="bi bi-text-left"></i>
+                <i class="bi bi-arrow-left-right"></i>
             </button>
         </div>
     </div>

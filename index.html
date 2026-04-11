@@ -54,6 +54,35 @@
         .glass-card:hover .img-reveal {
             transform: scale(1.1);
         }
+
+        .sneak-peek-section .game-card-content {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .sneak-peek-section .game-card-desc {
+            min-height: 3.2em;
+            text-align: center;
+        }
+
+        .sneak-peek-section .game-card-meta {
+            margin-top: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .sneak-peek-section .game-card-meta span {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            white-space: nowrap;
+        }
+
+        .sneak-peek-section .game-card-meta i {
+            margin: 0 !important;
+        }
     </style>
 </head>
 
@@ -84,7 +113,7 @@
                 </ul>
                 <div class="nav-toggles ms-auto ps-3 d-flex align-items-center gap-3">
                     <a href="login.html" class="btn btn-outline-glass d-flex align-items-center" title="Login">
-                        <i class="bi bi-box-arrow-in-right"></i>
+                        <i class="bi bi-door-open"></i>
                     </a>
                     <a href="dashboard/dashboard.html#account" class="btn btn-premium d-flex align-items-center"
                         title="Profile">
@@ -92,7 +121,7 @@
                     </a>
                     <button id="rtlToggle" class="btn btn-outline-glass d-flex align-items-center"
                         title="Toggle RTL/LTR">
-                        <i class="bi bi-text-left"></i>
+                        <i class="bi bi-arrow-left-right"></i>
                     </button>
                     <button id="themeToggle" class="toggle-btn" title="Toggle Theme">
                         <i class="bi bi-moon-stars"></i>
@@ -229,11 +258,11 @@
                                     <circle cx="16" cy="16" r="2" fill="#D4AF37" />
                                 </svg>
                             </div>
-                            <div class="p-4 pt-0">
+                            <div class="p-4 pt-0 game-card-content">
                                 <h4>Space Empire</h4>
-                                <p class="small text-secondary mb-3">4X Strategy Game. Conquer the galaxy with superior
+                                <p class="small text-secondary mb-3 game-card-desc">4X Strategy Game. Conquer the galaxy with superior
                                     tactics.</p>
-                                <div class="d-flex justify-content-between text-secondary small">
+                                <div class="text-secondary small game-card-meta">
                                     <span><i class="bi bi-clock me-1"></i> 120m</span>
                                     <span><i class="bi bi-people me-1"></i> 2-4 Players</span>
                                 </div>
@@ -253,11 +282,11 @@
                                     <circle cx="12" cy="12" r="3" fill="#D4AF37" />
                                 </svg>
                             </div>
-                            <div class="p-4 pt-0">
+                            <div class="p-4 pt-0 game-card-content">
                                 <h4>Deception Dash</h4>
-                                <p class="small text-secondary mb-3">Fast-paced social deduction. Trust no one, outsmart
+                                <p class="small text-secondary mb-3 game-card-desc">Fast-paced social deduction. Trust no one, outsmart
                                     everyone.</p>
-                                <div class="d-flex justify-content-between text-secondary small">
+                                <div class="text-secondary small game-card-meta">
                                     <span><i class="bi bi-clock me-1"></i> 15-30m</span>
                                     <span><i class="bi bi-people me-1"></i> 5-10 Players</span>
                                 </div>
@@ -275,10 +304,10 @@
                                         fill="rgba(212,175,55,0.1)" />
                                 </svg>
                             </div>
-                            <div class="p-4 pt-0">
+                            <div class="p-4 pt-0 game-card-content">
                                 <h4>Forest Builders</h4>
-                                <p class="small text-secondary mb-3">Cooperative tile placement game for all ages.</p>
-                                <div class="d-flex justify-content-between text-secondary small">
+                                <p class="small text-secondary mb-3 game-card-desc">Cooperative tile placement game for all ages.</p>
+                                <div class="text-secondary small game-card-meta">
                                     <span><i class="bi bi-clock me-1"></i> 45m</span>
                                     <span><i class="bi bi-people me-1"></i> 2-6 Players</span>
                                 </div>
