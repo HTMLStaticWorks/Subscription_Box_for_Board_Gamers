@@ -176,6 +176,11 @@
             background: var(--glass-bg);
         }
 
+        .dashboard-header-profile-mobile {
+            margin-left: auto;
+            margin-right: 0.5rem;
+        }
+
         .dashboard-header-greeting {
             margin: 0;
             font-size: 1rem;
@@ -322,6 +327,11 @@
                 <i class="bi bi-box-seam"></i> LootTable
             </a>
 
+            <div class="dashboard-header-profile dashboard-header-profile-mobile d-xl-none">
+                <img src="https://ui-avatars.com/api/?name=Alex+Gamer&background=FFB300&color=000&bold=true"
+                    alt="Avatar" class="dashboard-header-avatar">
+            </div>
+
             <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dashboardNav"
                 aria-controls="dashboardNav" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="bi bi-list dashboard-menu-open-icon"
@@ -355,7 +365,6 @@
                     <div class="dashboard-header-profile d-none d-xl-inline-flex">
                         <img src="https://ui-avatars.com/api/?name=Alex+Gamer&background=FFB300&color=000&bold=true"
                             alt="Avatar" class="dashboard-header-avatar">
-                        <p class="dashboard-header-greeting">Welcome back, Alex!</p>
                     </div>
                 </div>
             </div>

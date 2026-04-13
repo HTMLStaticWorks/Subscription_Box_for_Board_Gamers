@@ -442,6 +442,18 @@ a:hover {
     font-size: 0.7em;
     vertical-align: middle;
   }
+
+  .hero-btn-group {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-btn-group .btn {
+    width: min(100%, 220px);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 /* Sections */
