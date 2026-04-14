@@ -57,7 +57,6 @@
 
             .remember-forgot-row {
                 gap: 0.75rem;
-                align-items: center !important;
             }
 
             .remember-forgot-row .form-check {
@@ -65,7 +64,6 @@
                 align-items: center;
                 margin: 0;
                 flex-shrink: 0;
-                padding-left: 0;
             }
 
             .remember-forgot-row .form-check-input {
@@ -78,14 +76,11 @@
             .remember-forgot-row .form-check-label,
             .remember-forgot-row .text-accent {
                 font-size: 0.875rem;
-                line-height: normal;
-                display: flex;
-                align-items: center;
+                line-height: 1.2;
             }
 
             .remember-forgot-row .form-check-label {
                 white-space: nowrap;
-                margin-bottom: 0;
             }
 
             .remember-forgot-row .text-accent {
