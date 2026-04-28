@@ -96,15 +96,81 @@ document.addEventListener('DOMContentLoaded', () => {
     // Listeners
     if (themeToggle) themeToggle.addEventListener('click', toggleTheme);
     if (rtlToggle) rtlToggle.addEventListener('click', toggleRTL);
-    if (mobileRtlToggle) mobileRtlToggle.addEventListener('click', (e) => {
-        e.preventDefault();
-        toggleRTL();
-    });
+
 
     initMobileMenu();
     
     window.addEventListener('scroll', checkReveal);
     checkReveal(); // Run once on load
+
+    // Dashboard Tab Switching
+    const navItems = document.querySelectorAll('.nav-item');
+    const tabContents = document.querySelectorAll('.tab-content');
+
+    window.switchTab = function(tabId) {
+        // Hide all tabs
+        tabContents.forEach(content => {
+            content.style.display = 'none';
+            content.classList.remove('active');
+        });
+
+        // Show selected tab
+        const selectedTab = document.getElementById(`${tabId}-tab`);
+        if (selectedTab) {
+            selectedTab.style.display = 'block';
+            setTimeout(() => selectedTab.classList.add('active'), 10);
+        }
+
+        // Update Nav UI
+        navItems.forEach(item => {
+            if (item.getAttribute('data-tab') === tabId) {
+                item.classList.add('btn-primary', 'active');
+                item.style.background = 'var(--primary)';
+                item.style.color = 'white';
+            } else {
+                item.classList.remove('btn-primary', 'active');
+                item.style.background = 'transparent';
+                item.style.color = 'var(--text-muted)';
+            }
+        });
+
+        // Update Mobile Nav UI
+        const mobileLinks = document.querySelectorAll('.mobile-nav-links a');
+        mobileLinks.forEach(link => {
+            if (link.getAttribute('onclick')?.includes(tabId)) {
+                link.classList.add('active');
+            } else if (link.getAttribute('onclick')?.includes('switchTab')) {
+                link.classList.remove('active');
+            }
+        });
+
+        // Close mobile menu if open
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenu && mobileMenu.classList.contains('active')) {
+            mobileMenu.classList.remove('active');
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const icon = mobileMenuBtn?.querySelector('i');
+            if (icon) {
+                icon.setAttribute('data-lucide', 'menu');
+                lucide.createIcons();
+            }
+        }
+
+        // Create icons for new content
+        lucide.createIcons();
+        
+        // Re-run reveal check
+        checkReveal();
+    };
+
+    // Add click listeners to desktop nav items
+    navItems.forEach(item => {
+        item.addEventListener('click', (e) => {
+            e.preventDefault();
+            const tabId = item.getAttribute('data-tab');
+            switchTab(tabId);
+        });
+    });
 
     // Lucide Icons
     lucide.createIcons();
