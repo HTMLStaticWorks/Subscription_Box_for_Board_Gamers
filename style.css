@@ -251,13 +251,17 @@ header {
     background: var(--border);
 }
 
-/* Match header theme toggle shape with RTL button across pages */
+/* Keep RTL and theme controls the same size in all headers */
+#rtl-toggle,
 #theme-toggle {
+    width: 84px !important;
+    height: 52px !important;
     padding: 0.5rem 1rem !important;
     border-radius: 12px !important;
-    width: auto !important;
-    height: auto !important;
     border: 2px solid var(--primary) !important;
+}
+
+#theme-toggle {
     color: var(--primary) !important;
     background: transparent !important;
 }
@@ -952,13 +956,15 @@ footer {
         height: 22px !important;
     }
 
-    #rtl-toggle {
+    #rtl-toggle,
+    #theme-toggle {
+        width: 56px !important;
+        height: 34px !important;
         padding: 0.25rem 0.4rem !important;
-        font-size: 0.6rem !important;
     }
 
-    #theme-toggle {
-        padding: 0.25rem 0.4rem !important;
+    #rtl-toggle {
+        font-size: 0.6rem !important;
     }
 
     #theme-toggle svg {
