@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | GameBox</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i data-lucide="dices"></i>
+                GameBox
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Home 1</a>
+                <a href="home2.html">Home 2</a>
+                <a href="shop.html">Shop</a>
+                <a href="plans.html">Plans</a>
+                <a href="about.html" class="active">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="dashboard.html">Dashboard</a>
+            </nav>
+            <div class="header-actions">
+                <button id="rtl-toggle" class="btn btn-outline"
+                    style="padding: 0.5rem 1rem; font-size: 0.8rem;">RTL</button>
+                <button id="theme-toggle" class="toggle-btn"><i data-lucide="moon"></i></button>
+                <a href="login.html" class="btn btn-outline">Login</a>
+                <button id="mobile-menu-btn" class="toggle-btn mobile-only" title="Menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu">
+        <nav class="mobile-nav-links">
+            <a href="index.html">Home 1</a>
+            <a href="home2.html">Home 2</a>
+            <a href="shop.html">Shop</a>
+            <a href="plans.html">Plans</a>
+            <a href="about.html" class="active">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="#" id="mobile-rtl-toggle">RTL</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </div>
+
+    <!-- Section 1: Hero -->
+    <section class="hero"
+        style="background-image: url('https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&q=80&w=2000');">
+        <div class="container">
+            <div class="hero-content reveal">
+                <h1>Our Mission: <br><span style="color: var(--accent);">Bring People Together.</span></h1>
+                <p>We believe that board games are more than just pieces on a board—they're catalysts for connection,
+                    laughter, and unforgettable memories.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Core Content -->
+    <section>
+        <div class="container">
+            <div class="grid about-grid reveal" style="align-items: center; gap: 4rem;">
+                <div>
+                    <h2 style="font-size: 2.5rem;">Born from a Love of Tabletop</h2>
+                    <p style="color: var(--text-muted); margin-bottom: 1.5rem;">GameBox started in a small garage in
+                        2020 by three friends who were tired of spending hours scrolling through game reviews only to
+                        end up with a dud. We wanted to create a service that did the heavy lifting for you.</p>
+                    <p style="color: var(--text-muted);">Today, we are a team of 20+ game enthusiasts, designers, and
+                        curators who play-test every single game before it even makes it onto our shortlist.</p>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&q=80&w=800"
+                        style="width: 100%; border-radius: 32px; box-shadow: var(--shadow);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Supporting Cards -->
+    <section style="background-color: var(--surface);">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <h2 style="font-size: 2.5rem;">Our Core Values</h2>
+            </div>
+            <div class="grid grid-3 reveal">
+                <div class="card">
+                    <div
+                        style="background: rgba(99, 102, 241, 0.1); width: 60px; height: 60px; border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; color: var(--primary);">
+                        <i data-lucide="users" size="32"></i>
+                    </div>
+                    <h3>Community First</h3>
+                    <p style="color: var(--text-muted);">We don't just sell boxes; we build a community of gamers who
+                        support and play with each other.</p>
+                </div>
+                <div class="card">
+                    <div
+                        style="background: rgba(251, 146, 60, 0.1); width: 60px; height: 60px; border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; color: var(--secondary);">
+                        <i data-lucide="gem" size="32"></i>
+                    </div>
+                    <h3>Uncompromising Quality</h3>
+                    <p style="color: var(--text-muted);">If we wouldn't spend a Saturday night playing it, we won't send
+                        it to you. Period.</p>
+                </div>
+                <div class="card">
+                    <div
+                        style="background: rgba(45, 212, 191, 0.1); width: 60px; height: 60px; border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; color: var(--accent);">
+                        <i data-lucide="leaf" size="32"></i>
+                    </div>
+                    <h3>Sustainability</h3>
+                    <p style="color: var(--text-muted);">We use 100% recyclable packaging and partner with eco-conscious
+                        game manufacturers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Visual/Interactive -->
+    <section>
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <h2 style="font-size: 2.5rem;">Meet the Founders</h2>
+            </div>
+            <div class="grid grid-3 reveal">
+                <div style="text-align: center;">
+                    <img src="https://i.pravatar.cc/300?u=a"
+                        style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; margin-bottom: 1.5rem; border: 5px solid var(--primary);">
+                    <h3>Marcus Thorne</h3>
+                    <p style="color: var(--primary); font-weight: 700;">CEO & Lead Curator</p>
+                </div>
+                <div style="text-align: center;">
+                    <img src="https://i.pravatar.cc/300?u=b"
+                        style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; margin-bottom: 1.5rem; border: 5px solid var(--secondary);">
+                    <h3>Elena Rodriguez</h3>
+                    <p style="color: var(--secondary); font-weight: 700;">Head of Community</p>
+                </div>
+                <div style="text-align: center;">
+                    <img src="https://i.pravatar.cc/300?u=c"
+                        style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; margin-bottom: 1.5rem; border: 5px solid var(--accent);">
+                    <h3>Samual Jenkins</h3>
+                    <p style="color: var(--accent); font-weight: 700;">Operations Director</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: CTA/Info -->
+    <section style="background-color: var(--surface);">
+        <div class="container">
+            <div class="reveal" style="text-align: center; max-width: 800px; margin: 0 auto;">
+                <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem;">Join Our Journey</h2>
+                <p style="color: var(--text-muted); margin-bottom: 2rem;">We're always looking for more people to join
+                    our gaming revolution. Whether as a subscriber or a partner, we'd love to have you.</p>
+                <div style="display: flex; gap: 1rem; justify-content: center;">
+                    <button class="btn btn-primary">Our Careers</button>
+                    <button class="btn btn-outline">Partner with Us</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <!-- Footer CTA -->
+            <div class="footer-cta reveal">
+                <div>
+                    <h2>Want to Learn More?</h2>
+                    <p>Our community is always open for new members.</p>
+                </div>
+            </div>
+
+            <div class="footer-grid">
+                <div>
+                    <a href="index.html" class="logo" style="margin-bottom: 1.5rem;">
+                        <i data-lucide="dices"></i>
+                        GameBox
+                    </a>
+                    <p style="color: var(--text-muted);">Bringing the joy of tabletop gaming to your doorstep, one box
+                        at a time.</p>
+                    <div style="display: flex; gap: 0.75rem; margin-top: 1.5rem;">
+                        <a href="#" class="social-btn" style="width: 32px; height: 32px;"><i data-lucide="facebook"></i></a>
+                        <a href="#" class="social-btn" style="width: 32px; height: 32px;"><i data-lucide="instagram"></i></a>
+                        <a href="#" class="social-btn" style="width: 32px; height: 32px;"><i data-lucide="twitter"></i></a>
+                        <a href="#" class="social-btn" style="width: 32px; height: 32px;"><i data-lucide="youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul style="list-style: none;">
+                        <li><a href="index.html">Home 1</a></li>
+                        <li><a href="home2.html">Home 2</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Support</h4>
+                    <ul style="list-style: none;">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Newsletter</h4>
+                    <form style="display: flex; gap: 0.5rem;">
+                        <input type="email" class="form-control" placeholder="Email address">
+                        <button class="btn btn-primary" style="padding: 0.75rem;"><i data-lucide="send"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 GameBox Inc. All rights reserved.</p>
+                <a href="#" class="back-to-top" title="Back to Top">
+                    <i data-lucide="arrow-up"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameBox | Premium Board Game Subscriptions</title>
+    <meta name="description"
+        content="Subscribe to GameBox and receive a hand-picked premium board game every month. Join our community of gamers today!">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i data-lucide="dices"></i>
+                GameBox
+            </a>
+            <nav class="nav-links">
+                <a href="index.html" class="active">Home 1</a>
+                <a href="home2.html">Home 2</a>
+                <a href="shop.html">Shop</a>
+                <a href="plans.html">Plans</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="dashboard.html">Dashboard</a>
+            </nav>
+            <div class="header-actions">
+                <button id="rtl-toggle" class="btn btn-outline"
+                    style="padding: 0.5rem 1rem; font-size: 0.8rem;">RTL</button>
+                <button id="theme-toggle" class="toggle-btn" title="Toggle Theme">
+                    <i data-lucide="moon"></i>
+                </button>
+                <a href="login.html" class="btn btn-outline">Login</a>
+                <button id="mobile-menu-btn" class="toggle-btn mobile-only" title="Menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu">
+        <nav class="mobile-nav-links">
+            <a href="index.html" class="active">Home 1</a>
+            <a href="home2.html">Home 2</a>
+            <a href="shop.html">Shop</a>
+            <a href="plans.html">Plans</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="#" id="mobile-rtl-toggle">RTL</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </div>
+
+    <!-- Section 1: Hero Section -->
+    <section class="hero"
+        style="background-image: url('https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09?auto=format&fit=crop&q=80&w=2000');">
+        <div class="container">
+            <div class="hero-content reveal">
+                <h1>Game Night, <br><span style="color: var(--accent);">Delivered Every Month.</span></h1>
+                <p>Unlock a world of strategy, adventure, and fun. We hand-pick the highest-rated board games and
+                    deliver them straight to your door.</p>
+                <div style="display: flex; gap: 1rem;">
+                    <a href="plans.html" class="btn btn-primary btn-lg">Explore Plans</a>
+                    <a href="shop.html" class="btn btn-outline btn-lg" style="color: white; border-color: white;">Browse
+                        Games</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Featured Monthly Box -->
+    <section class="featured-box">
+        <div class="container">
+            <div class="grid featured-grid reveal" style="align-items: center; gap: 4rem;">
+                <div>
+                    <span
+                        style="color: var(--primary); font-weight: 700; text-transform: uppercase; letter-spacing: 2px;">This
+                        Month's Pick</span>
+                    <h2 style="font-size: 3rem; margin-top: 1rem;">The Explorer's Quest</h2>
+                    <p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 2rem;">A strategic journey
+                        through uncharted lands. This month's featured game includes exclusive expansion packs and
+                        premium metallic components only for GameBox subscribers.</p>
+                    <ul style="list-style: none; margin-bottom: 2rem;">
+                        <li style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;"><i
+                                data-lucide="check-circle" style="color: var(--accent);"></i> Award-winning Strategy
+                            Game</li>
+                        <li style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;"><i
+                                data-lucide="check-circle" style="color: var(--accent);"></i> 2 Exclusive
+                            Mini-Expansions</li>
+                        <li style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;"><i
+                                data-lucide="check-circle" style="color: var(--accent);"></i> Hand-crafted Wooden Tokens
+                        </li>
+                    </ul>
+                    <button class="btn btn-secondary">Claim Your Box</button>
+                </div>
+                <div>
+                    <img src="https://images.pexels.com/photos/6955022/pexels-photo-6955022.jpeg" alt="Monthly Box"
+                        style="width: 100%; border-radius: 32px; box-shadow: var(--shadow);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: How It Works -->
+    <section style="background-color: var(--surface);">
+        <div class="container">
+            <div style="text-align: center; max-width: 700px; margin: 0 auto 4rem;">
+                <h2 style="font-size: 2.5rem;">Three Steps to Fun</h2>
+                <p style="color: var(--text-muted);">Starting your board game collection has never been easier.</p>
+            </div>
+            <div class="grid grid-3 reveal">
+                <div class="card" style="text-align: center;">
+                    <div
+                        style="background: var(--primary); width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; color: white;">
+                        <i data-lucide="package-check" size="40"></i>
+                    </div>
+                    <h3>1. Choose Your Plan</h3>
+                    <p style="color: var(--text-muted);">Select from our monthly or annual subscription options that
+                        best fit your gaming lifestyle.</p>
+                </div>
+                <div class="card" style="text-align: center;">
+                    <div
+                        style="background: var(--secondary); width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; color: white;">
+                        <i data-lucide="truck" size="40"></i>
+                    </div>
+                    <h3>2. Monthly Delivery</h3>
+                    <p style="color: var(--text-muted);">Wait for the excitement! Each month, we ship a hand-picked,
+                        high-quality game to your doorstep.</p>
+                </div>
+                <div class="card" style="text-align: center;">
+                    <div
+                        style="background: var(--accent); width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; color: white;">
+                        <i data-lucide="party-popper" size="40"></i>
+                    </div>
+                    <h3>3. Unbox & Play</h3>
+                    <p style="color: var(--text-muted);">Gather your friends and family, unbox the fun, and start
+                        playing your new favorite game!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Popular Games Preview -->
+    <section>
+        <div class="container">
+            <div class="section-header" style="margin-bottom: 3rem;">
+                <div>
+                    <h2>Popular in the Community</h2>
+                    <p style="color: var(--text-muted);">Check out some of the favorites from our past boxes.</p>
+                </div>
+                <a href="shop.html" class="btn btn-outline">View Full Shop</a>
+            </div>
+            <div class="grid grid-3 reveal">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOdYAdK639VYVHCHpVEf7uOtL5uV2VWuru2Q&s"
+                        class="card-img" alt="Game 1">
+                    <h3>Catan: Starfarers</h3>
+                    <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Explore the galaxy and settle on distant
+                        planets in this space-themed classic.</p>
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-weight: 700; font-size: 1.25rem;">$49.99</span>
+                        <button class="btn btn-primary" style="padding: 0.5rem 1rem;">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/81B3kQu4lvL._AC_UF350,350_QL80_.jpg" class="card-img"
+                        alt="Game 2">
+                    <h3>Wingspan</h3>
+                    <p style="color: var(--text-muted); margin-bottom: 1.5rem;">A relaxing engine-building game about
+                        attracting birds to your wildlife preserve.</p>
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-weight: 700; font-size: 1.25rem;">$55.00</span>
+                        <button class="btn btn-primary" style="padding: 0.5rem 1rem;">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1590494165264-1ebe3602eb80?auto=format&fit=crop&q=80&w=800"
+                        class="card-img" alt="Game 3">
+                    <h3>7 Wonders</h3>
+                    <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Build your civilization and
+                        architectural wonders across three ages of history.</p>
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-weight: 700; font-size: 1.25rem;">$45.00</span>
+                        <button class="btn btn-primary" style="padding: 0.5rem 1rem;">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Testimonials -->
+    <section style="background-color: var(--surface);">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <h2 style="font-size: 2.5rem;">What Our Gamers Say</h2>
+            </div>
+            <div class="grid grid-3 reveal">
+                <div class="card">
+                    <div style="display: flex; gap: 0.5rem; color: #fbbf24; margin-bottom: 1rem;">
+                        <i data-lucide="star" fill="currentColor"></i>
+                        <i data-lucide="star" fill="currentColor"></i>
+                        <i data-lucide="star" fill="currentColor"></i>
+                        <i data-lucide="star" fill="currentColor"></i>
+                        <i data-lucide="star" fill="currentColor"></i>
+                    </div>
+                    <p style="font-style: italic; margin-bottom: 1.5rem;">"GameBox has completely changed our family
+                        game nights. We look forward to the unboxing every month!"</p>
+                    <div style="display: flex; align-items: center; gap: 1rem;">
+                        <div style="width: 50px; height: 50px; border-radius: 50%; background: #ddd; overflow: hidden;">
+                            <img src="https://i.pravatar.cc/150?u=1" alt="User"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div>
+                            <p style="font-weight: 700; margin: 0;">Sarah Jenkins</p>
+                            <p style="font-size: 0.8rem; color: var(--text-muted); margin: 0;">Casual Gamer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div style="display: flex; gap: 0.5rem; color: #fbbf24; margin-bottom: 1rem;">
+                        <i data-lucide="star" fill="currentColor"></i>
+                        <i data-lucide="star" fill="currentColor"></i>
+                        <i data-lucide="star" fill="currentColor"></i>
+                        <i data-lucide="star" fill="currentColor"></i>
+                        <i data-lucide="star" fill="currentColor"></i>
+                    </div>
+                    <p style="font-style: italic; margin-bottom: 1.5rem;">"I love that I don't have to spend hours
+                        researching what to buy next. The selection is always top-notch."</p>
+                    <div style="display: flex; align-items: center; gap: 1rem;">
+                        <div style="width: 50px; height: 50px; border-radius: 50%; background: #ddd; overflow: hidden;">
+                            <img src="https://i.pravatar.cc/150?u=2" alt="User"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div>
+                            <p style="font-weight: 700; margin: 0;">David Chen</p>
+                            <p style="font-size: 0.8rem; color: var(--text-muted); margin: 0;">Pro Strategist</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div style="display: flex; gap: 0.5rem; color: #fbbf24; margin-bottom: 1rem;">
+                        <i data-lucide="star" fill="currentColor"></i>
+                        <i data-lucide="star" fill="currentColor"></i>
+                        <i data-lucide="star" fill="currentColor"></i>
+                        <i data-lucide="star" fill="currentColor"></i>
+                        <i data-lucide="star" fill="currentColor"></i>
+                    </div>
+                    <p style="font-style: italic; margin-bottom: 1.5rem;">"The community forums are great. Met so many
+                        people to play with in my local social area!"</p>
+                    <div style="display: flex; align-items: center; gap: 1rem;">
+                        <div style="width: 50px; height: 50px; border-radius: 50%; background: #ddd; overflow: hidden;">
+                            <img src="https://i.pravatar.cc/150?u=3" alt="User"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div>
+                            <p style="font-weight: 700; margin: 0;">Alex Rivera</p>
+                            <p style="font-size: 0.8rem; color: var(--text-muted); margin: 0;">Community Member</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6: Subscription Plans -->
+    <section>
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <h2 style="font-size: 2.5rem;">Join the Club</h2>
+                <p style="color: var(--text-muted);">Choose the plan that's right for you.</p>
+            </div>
+            <div class="grid grid-3 reveal">
+                <div class="card">
+                    <h3>Casual Gamer</h3>
+                    <p style="font-size: 2rem; font-weight: 800; margin: 1rem 0;">$39<span
+                            style="font-size: 1rem; color: var(--text-muted); font-weight: 400;">/mo</span></p>
+                    <ul style="list-style: none; margin-bottom: 2rem; flex-grow: 1;">
+                        <li style="margin-bottom: 0.5rem;"><i data-lucide="check" style="color: var(--accent);"></i> 1
+                            Game per Month</li>
+                        <li style="margin-bottom: 0.5rem;"><i data-lucide="check" style="color: var(--accent);"></i>
+                            Digital Rulebooks</li>
+                        <li style="margin-bottom: 0.5rem; opacity: 0.5;"><i data-lucide="x"
+                                style="color: var(--text-muted);"></i> Exclusive Expansions</li>
+                    </ul>
+                    <button class="btn btn-outline" style="width: 100%;">Select Plan</button>
+                </div>
+                <div class="card" style="border: 2px solid var(--primary); transform: scale(1.05); z-index: 1;">
+                    <div
+                        style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: var(--primary); color: white; padding: 0.25rem 1rem; border-radius: 20px; font-size: 0.8rem; font-weight: 700;">
+                        MOST POPULAR</div>
+                    <h3>Dungeon Master</h3>
+                    <p style="font-size: 2rem; font-weight: 800; margin: 1rem 0;">$59<span
+                            style="font-size: 1rem; color: var(--text-muted); font-weight: 400;">/mo</span></p>
+                    <ul style="list-style: none; margin-bottom: 2rem; flex-grow: 1;">
+                        <li style="margin-bottom: 0.5rem;"><i data-lucide="check" style="color: var(--accent);"></i> 1
+                            Premium Game per Month</li>
+                        <li style="margin-bottom: 0.5rem;"><i data-lucide="check" style="color: var(--accent);"></i>
+                            Exclusive Expansions</li>
+                        <li style="margin-bottom: 0.5rem;"><i data-lucide="check" style="color: var(--accent);"></i>
+                            Community Early Access</li>
+                    </ul>
+                    <button class="btn btn-primary" style="width: 100%;">Select Plan</button>
+                </div>
+                <div class="card">
+                    <h3>Game Legend</h3>
+                    <p style="font-size: 2rem; font-weight: 800; margin: 1rem 0;">$99<span
+                            style="font-size: 1rem; color: var(--text-muted); font-weight: 400;">/mo</span></p>
+                    <ul style="list-style: none; margin-bottom: 2rem; flex-grow: 1;">
+                        <li style="margin-bottom: 0.5rem;"><i data-lucide="check" style="color: var(--accent);"></i> 2
+                            Premium Games per Month</li>
+                        <li style="margin-bottom: 0.5rem;"><i data-lucide="check" style="color: var(--accent);"></i> VIP
+                            Community Perks</li>
+                        <li style="margin-bottom: 0.5rem;"><i data-lucide="check" style="color: var(--accent);"></i>
+                            Free Worldwide Shipping</li>
+                    </ul>
+                    <button class="btn btn-outline" style="width: 100%;">Select Plan</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <!-- Footer CTA -->
+            <div class="footer-cta reveal">
+                <div>
+                    <h2>Ready to Join the Adventure?</h2>
+                    <p>Subscribe today and get your first box next week!</p>
+                </div>
+                <a href="plans.html" class="btn"
+                    style="background: white; color: var(--primary); padding: 1rem 2rem; font-size: 1.1rem;">Start
+                    Subscription</a>
+            </div>
+
+            <div class="footer-grid">
+                <div>
+                    <a href="index.html" class="logo" style="margin-bottom: 1.5rem;">
+                        <i data-lucide="dices"></i>
+                        GameBox
+                    </a>
+                    <p style="color: var(--text-muted);">Bringing the joy of tabletop gaming to your doorstep, one box
+                        at a time. Join thousands of happy gamers worldwide.</p>
+                    <div style="display: flex; gap: 0.75rem; margin-top: 1.5rem;">
+                        <a href="#" class="social-btn" style="width: 32px; height: 32px;"><i data-lucide="facebook"></i></a>
+                        <a href="#" class="social-btn" style="width: 32px; height: 32px;"><i data-lucide="instagram"></i></a>
+                        <a href="#" class="social-btn" style="width: 32px; height: 32px;"><i data-lucide="twitter"></i></a>
+                        <a href="#" class="social-btn" style="width: 32px; height: 32px;"><i data-lucide="youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul style="list-style: none;">
+                        <li><a href="index.html">Home 1</a></li>
+                        <li><a href="home2.html">Home 2</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Support</h4>
+                    <ul style="list-style: none;">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Newsletter</h4>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">Get gaming tips and box
+                        reveals!</p>
+                    <form style="display: flex; gap: 0.5rem;">
+                        <input type="email" class="form-control" placeholder="Email address">
+                        <button class="btn btn-primary" style="padding: 0.75rem;"><i data-lucide="send"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 GameBox Inc. All rights reserved. Designed for gamers, by gamers.</p>
+                <a href="#" class="back-to-top" title="Back to Top">
+                    <i data-lucide="arrow-up"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Overlay -->
+    <div class="modal-overlay">
+        <div id="subscribe-modal" class="modal">
+            <i data-lucide="x" class="close-modal" onclick="closeModal()"></i>
+            <h2 style="text-align: center;">Get 15% Off!</h2>
+            <p style="text-align: center; color: var(--text-muted); margin-bottom: 2rem;">Subscribe to our newsletter
+                and get a discount on your first box.</p>
+            <form>
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" class="form-control" placeholder="Enter your email">
+                </div>
+                <button class="btn btn-primary" style="width: 100%;" type="button">Claim Offer</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

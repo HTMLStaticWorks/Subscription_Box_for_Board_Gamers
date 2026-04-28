@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Games | GameBox</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i data-lucide="dices"></i>
+                GameBox
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Home 1</a>
+                <a href="home2.html">Home 2</a>
+                <a href="shop.html" class="active">Shop</a>
+                <a href="plans.html">Plans</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="dashboard.html">Dashboard</a>
+            </nav>
+            <div class="header-actions">
+                <button id="rtl-toggle" class="btn btn-outline"
+                    style="padding: 0.5rem 1rem; font-size: 0.8rem;">RTL</button>
+                <button id="theme-toggle" class="toggle-btn"><i data-lucide="moon"></i></button>
+                <a href="login.html" class="btn btn-outline">Login</a>
+                <button id="mobile-menu-btn" class="toggle-btn mobile-only" title="Menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu">
+        <nav class="mobile-nav-links">
+            <a href="index.html">Home 1</a>
+            <a href="home2.html">Home 2</a>
+            <a href="shop.html" class="active">Shop</a>
+            <a href="plans.html">Plans</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="#" id="mobile-rtl-toggle">RTL</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </div>
+
+    <!-- Section 1: Hero -->
+    <section class="hero"
+        style="background-image: url('https://images.unsplash.com/photo-1585504198199-202774bc65c5?auto=format&fit=crop&q=80&w=2000');">
+        <div class="container">
+            <div class="hero-content reveal">
+                <h1>The Vault: <br><span style="color: var(--secondary);">Hand-Picked Gems.</span></h1>
+                <p>Missed a previous box? Or just looking for that one specific title? Explore our curated collection of
+                    the world's best board games.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Core Content (Filters & Grid) -->
+    <section>
+        <div class="container">
+            <div
+                style="display: flex; gap: 2rem; margin-bottom: 3rem; flex-wrap: wrap; align-items: center; justify-content: space-between;">
+                <div style="display: flex; gap: 1rem;">
+                    <button class="btn btn-primary">All Games</button>
+                    <button class="btn btn-outline"
+                        style="border-color: var(--border); color: var(--text);">Strategy</button>
+                    <button class="btn btn-outline"
+                        style="border-color: var(--border); color: var(--text);">Party</button>
+                    <button class="btn btn-outline"
+                        style="border-color: var(--border); color: var(--text);">Family</button>
+                </div>
+                <div style="display: flex; align-items: center; gap: 1rem;">
+                    <span style="color: var(--text-muted);">Sort by:</span>
+                    <select class="form-control" style="width: auto;">
+                        <option>Most Popular</option>
+                        <option>Newest</option>
+                        <option>Price: Low to High</option>
+                        <option>Price: High to Low</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="grid grid-3 reveal">
+                <!-- Product 1 -->
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1632501641765-e568d28b0015?auto=format&fit=crop&q=80&w=800"
+                        class="card-img">
+                    <h3>Everdell</h3>
+                    <p style="color: var(--text-muted); margin-bottom: 1.5rem;">A charming game of building a woodland
+                        civilization for critters.</p>
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-weight: 700; font-size: 1.25rem;">$60.00</span>
+                        <button class="btn btn-primary" style="padding: 0.5rem 1rem;">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1563941402622-4e7a488bcc57?auto=format&fit=crop&q=80&w=800"
+                        class="card-img">
+                    <h3>Terraforming Mars</h3>
+                    <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Lead a corporation and make Mars
+                        habitable for humanity.</p>
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-weight: 700; font-size: 1.25rem;">$65.00</span>
+                        <button class="btn btn-primary" style="padding: 0.5rem 1rem;">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1590494165264-1ebe3602eb80?auto=format&fit=crop&q=80&w=800"
+                        class="card-img">
+                    <h3>Azul</h3>
+                    <p style="color: var(--text-muted); margin-bottom: 1.5rem;">A beautiful tile-placement game inspired
+                        by Portuguese mosaics.</p>
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-weight: 700; font-size: 1.25rem;">$40.00</span>
+                        <button class="btn btn-primary" style="padding: 0.5rem 1rem;">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Supporting Content (Bestsellers) -->
+    <section style="background-color: var(--surface);">
+        <div class="container">
+            <h2 style="margin-bottom: 3rem;">Bundle & Save</h2>
+            <div class="grid grid-2 reveal" style="grid-template-columns: 1fr 1fr;">
+                <div class="card"
+                    style="display: flex; flex-direction: row; align-items: center; gap: 2rem; background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(45, 212, 191, 0.1));">
+                    <img src="https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09?auto=format&fit=crop&q=80&w=300"
+                        style="width: 150px; height: 150px; border-radius: 16px; object-fit: cover;">
+                    <div>
+                        <h3>The Starter Bundle</h3>
+                        <p style="color: var(--text-muted); margin-bottom: 1rem;">3 classic games to jumpstart your
+                            collection.</p>
+                        <span style="font-weight: 800; font-size: 1.5rem; color: var(--primary);">$99.00</span>
+                    </div>
+                </div>
+                <div class="card"
+                    style="display: flex; flex-direction: row; align-items: center; gap: 2rem; background: linear-gradient(135deg, rgba(251, 146, 60, 0.1), rgba(220, 38, 38, 0.1));">
+                    <img src="https://images.unsplash.com/photo-1632501641765-e568d28b0015?auto=format&fit=crop&q=80&w=300"
+                        style="width: 150px; height: 150px; border-radius: 16px; object-fit: cover;">
+                    <div>
+                        <h3>The Strategy Pro Pack</h3>
+                        <p style="color: var(--text-muted); margin-bottom: 1rem;">2 heavy-weight titles for the serious
+                            gamer.</p>
+                        <span style="font-weight: 800; font-size: 1.5rem; color: var(--secondary);">$110.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Interactive/Visual (Gift Finder) -->
+    <section>
+        <div class="container">
+            <div class="reveal"
+                style="background: var(--surface); border-radius: 40px; padding: 4rem; box-shadow: var(--shadow); display: flex; align-items: center; gap: 4rem;">
+                <div style="flex: 1;">
+                    <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem;">Gift Finder Quiz</h2>
+                    <p style="color: var(--text-muted); margin-bottom: 2rem;">Not sure what to buy for that special
+                        someone? Answer 3 quick questions and we'll find the perfect game for them.</p>
+                    <button class="btn btn-secondary">Start Quiz</button>
+                </div>
+                <div style="flex: 1; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;">
+                    <div
+                        style="height: 100px; background: var(--border); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                        <i data-lucide="gift" size="32" style="color: var(--primary);"></i>
+                    </div>
+                    <div
+                        style="height: 100px; background: var(--border); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                        <i data-lucide="search" size="32" style="color: var(--secondary);"></i>
+                    </div>
+                    <div
+                        style="height: 100px; background: var(--border); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                        <i data-lucide="check" size="32" style="color: var(--accent);"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: CTA/Info -->
+    <section style="background-color: var(--surface);">
+        <div class="container">
+            <div class="grid grid-3 reveal">
+                <div class="card"
+                    style="text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 3rem 2rem;">
+                    <div
+                        style="background: rgba(99, 102, 241, 0.1); width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; color: var(--primary);">
+                        <i data-lucide="truck" size="40"></i>
+                    </div>
+                    <h4 style="font-size: 1.25rem;">Free Shipping</h4>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">On orders over $75</p>
+                </div>
+                <div class="card"
+                    style="text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 3rem 2rem;">
+                    <div
+                        style="background: rgba(251, 146, 60, 0.1); width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; color: var(--secondary);">
+                        <i data-lucide="rotate-ccw" size="40"></i>
+                    </div>
+                    <h4 style="font-size: 1.25rem;">Easy Returns</h4>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">30-day money back guarantee</p>
+                </div>
+                <div class="card"
+                    style="text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 3rem 2rem;">
+                    <div
+                        style="background: rgba(45, 212, 191, 0.1); width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; color: var(--accent);">
+                        <i data-lucide="shield-lock" size="40"></i>
+                    </div>
+                    <h4 style="font-size: 1.25rem;">Secure Checkout</h4>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">100% encrypted payments</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <!-- Footer CTA -->
+            <div class="footer-cta reveal">
+                <div>
+                    <h2>Found Your Perfect Game?</h2>
+                    <p>Add it to your cart or start a monthly subscription.</p>
+                </div>
+                <a href="plans.html" class="btn"
+                    style="background: white; color: var(--primary); padding: 1rem 2rem; font-size: 1.1rem;">Subscribe
+                    Now</a>
+            </div>
+
+            <div class="footer-grid">
+                <div>
+                    <a href="index.html" class="logo" style="margin-bottom: 1.5rem;">
+                        <i data-lucide="dices"></i>
+                        GameBox
+                    </a>
+                    <p style="color: var(--text-muted);">Bringing the joy of tabletop gaming to your doorstep, one box
+                        at a time.</p>
+                    <div style="display: flex; gap: 0.75rem; margin-top: 1.5rem;">
+                        <a href="#" class="social-btn" style="width: 32px; height: 32px;"><i data-lucide="facebook"></i></a>
+                        <a href="#" class="social-btn" style="width: 32px; height: 32px;"><i data-lucide="instagram"></i></a>
+                        <a href="#" class="social-btn" style="width: 32px; height: 32px;"><i data-lucide="twitter"></i></a>
+                        <a href="#" class="social-btn" style="width: 32px; height: 32px;"><i data-lucide="youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul style="list-style: none;">
+                        <li><a href="index.html">Home 1</a></li>
+                        <li><a href="home2.html">Home 2</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Support</h4>
+                    <ul style="list-style: none;">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Newsletter</h4>
+                    <form style="display: flex; gap: 0.5rem;">
+                        <input type="email" class="form-control" placeholder="Email address">
+                        <button class="btn btn-primary" style="padding: 0.75rem;"><i data-lucide="send"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 GameBox Inc. All rights reserved.</p>
+                <a href="#" class="back-to-top" title="Back to Top">
+                    <i data-lucide="arrow-up"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
