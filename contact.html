@@ -61,18 +61,21 @@
 
     <!-- Section 1: Hero -->
     <section class="hero"
-        style="background-image: url('https://images.unsplash.com/photo-1423666639041-f56000c27a9a?auto=format&fit=crop&q=80&w=2000');">
+        style="background-image: url('https://images.unsplash.com/photo-1423666639041-f56000c27a9a?auto=format&fit=crop&q=80&w=2000'); min-height: 48vh; padding: 90px 0 50px;">
         <div class="container">
             <div class="hero-content reveal">
-                <h1 style="font-size: 5rem;">We're Here <br><span style="color: var(--secondary);">to Help.</span></h1>
-                <p style="font-size: 1.4rem; max-width: 800px; margin: 0 auto 3rem;">Have a question about your subscription? Need help with game rules? Our support team is ready to
+                <h1>We're Here <br><span style="color: var(--secondary);">to Help.</span></h1>
+                <p style="max-width: 800px; margin: 0 auto 3rem;">Have a question about your subscription? Need help
+                    with game rules? Our support team is ready to
                     assist you.</p>
                 <div style="display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap;">
-                    <div style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); padding: 1rem 2rem; border-radius: 50px; border: 1px solid rgba(255,255,255,0.2); display: flex; align-items: center; gap: 0.75rem;">
+                    <div
+                        style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); padding: 1rem 2rem; border-radius: 50px; border: 1px solid rgba(255,255,255,0.2); display: flex; align-items: center; gap: 0.75rem;">
                         <i data-lucide="clock" size="20" style="color: var(--secondary);"></i>
                         <span style="font-weight: 600; font-size: 1rem;">Response time: &lt; 24h</span>
                     </div>
-                    <div style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); padding: 1rem 2rem; border-radius: 50px; border: 1px solid rgba(255,255,255,0.2); display: flex; align-items: center; gap: 0.75rem;">
+                    <div
+                        style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); padding: 1rem 2rem; border-radius: 50px; border: 1px solid rgba(255,255,255,0.2); display: flex; align-items: center; gap: 0.75rem;">
                         <i data-lucide="message-square" size="20" style="color: var(--secondary);"></i>
                         <span style="font-weight: 600; font-size: 1rem;">Live Chat Available</span>
                     </div>
@@ -123,10 +126,14 @@
                         <div style="margin-top: 1rem; border-top: 1px solid var(--border); padding-top: 1.5rem;">
                             <p style="font-weight: 700; margin-bottom: 1rem;">Follow Us</p>
                             <div style="display: flex; gap: 1rem;">
-                                <a href="#" class="social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-                                <a href="#" class="social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                                <a href="#" class="social-btn" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
-                                <a href="#" class="social-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                                <a href="#" class="social-btn" aria-label="Facebook"><i
+                                        class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#" class="social-btn" aria-label="Instagram"><i
+                                        class="fa-brands fa-instagram"></i></a>
+                                <a href="#" class="social-btn" aria-label="Twitter"><i
+                                        class="fa-brands fa-x-twitter"></i></a>
+                                <a href="#" class="social-btn" aria-label="YouTube"><i
+                                        class="fa-brands fa-youtube"></i></a>
                             </div>
                         </div>
                     </div>
@@ -163,15 +170,15 @@
             </div>
         </div>
     </section>
-<!-- Map Section instead of CTA -->
-            <div class="reveal"
-                style="margin-bottom: 4rem; border-radius: 32px; overflow: hidden; box-shadow: var(--shadow); height: 400px;">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.507345435017!2d-122.3492773!3d47.6062095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906ab3f15dc1d1%3A0xa62503264663e264!2sPike%20Place%20Market!5e0!3m2!1sen!2sus!4v1714236000000!5m2!1sen!2sus"
-                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
+    <!-- Map Section instead of CTA -->
+    <div class="reveal"
+        style="margin-bottom: 4rem; border-radius: 32px; overflow: hidden; box-shadow: var(--shadow); height: 400px;">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.507345435017!2d-122.3492773!3d47.6062095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906ab3f15dc1d1%3A0xa62503264663e264!2sPike%20Place%20Market!5e0!3m2!1sen!2sus!4v1714236000000!5m2!1sen!2sus"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
     <!-- Section 3: Supporting Content (Global Offices) -->
     <section style="background-color: var(--surface);">
         <div class="container">
@@ -217,8 +224,10 @@
                     <p style="color: var(--text-muted); margin-bottom: 2rem;">Check out our comprehensive library of
                         game tutorials, rulebooks, and FAQ before reaching out.</p>
                     <div class="help-center-btns" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
-                        <button class="btn btn-outline" style="width: 100%;"><i data-lucide="book-open"></i> Rulebooks</button>
-                        <button class="btn btn-outline" style="width: 100%;"><i data-lucide="help-circle"></i> FAQ</button>
+                        <button class="btn btn-outline" style="width: 100%;"><i data-lucide="book-open"></i>
+                            Rulebooks</button>
+                        <button class="btn btn-outline" style="width: 100%;"><i data-lucide="help-circle"></i>
+                            FAQ</button>
                     </div>
                 </div>
                 <div style="flex: 1; width: 100%;">
@@ -234,7 +243,7 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            
+
 
             <div class="footer-grid">
                 <div>
